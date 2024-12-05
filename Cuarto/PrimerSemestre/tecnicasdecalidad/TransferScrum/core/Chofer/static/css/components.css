@@ -1,0 +1,181 @@
+switch{
+    height: 40px;
+    width: 3.3rem;
+}
+switch>switch-lane{
+    display: block;
+    position: relative;
+    top: 5px;
+    height: 30px;
+    width: 100%;
+    border-radius: 1.25rem;
+    border: 2px solid;
+    transition-property: background-color, border-color;
+    transition-duration: 100ms;
+}
+switch[value="true"]>switch-lane{
+    background-color: var(--bs-orange);
+    border-color: var(--bs-orange);
+
+}
+switch[value="false"]>switch-lane{
+    background-color: var(--bs-gray-400);
+    border-color: var(--bs-gray-400);
+}
+switch>switch-lane>switch-circle{
+    --switch-w: 26px;
+    display: block;
+    position: relative;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    width: var(--switch-w);
+    background-color: white;
+    transition-property: left;
+    transition-duration: 100ms;
+}
+switch[value="true"]>switch-lane>switch-circle{
+    left: calc(100% - var(--switch-w));
+}
+switch[value="false"]>switch-lane>switch-circle{
+    left: 0;
+}
+switch[disabled="true"]{
+    visibility: hidden;
+}
+
+#sidemenu{
+    position: absolute;
+    height: calc(var(--max-height) - 30px);
+    width: var(--max-width);
+    top: calc(1rem + 30px);
+    
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+    transition: visibility 0s step-end, background-color 300ms ease-in-out;
+}
+
+#sidemenu[data-open="true"]{
+    visibility: visible;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition-delay: 0s;
+
+}
+#sidemenu[data-open="false"]{
+    visibility: hidden;
+    background-color: transparent;
+    transition-delay: 300ms, 0s;
+}
+
+#sidemenu>div{
+    position: relative;
+    height: 50%;
+    width: 100%;
+    top: 4rem;
+    background-color: white;
+    box-shadow: 0px 5px 30px rgb(0, 0, 0, 0.5);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+    transition: top 300ms ease-in-out;
+
+    overflow: hidden;
+}
+#sidemenu[data-open="true"]>div{
+    top: 0%;
+}
+#sidemenu[data-open="false"]>div{
+    top: -65%;
+}
+
+#menu-user{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--bs-orange);
+    box-shadow: 0 0 15px var(--bs-orange);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    height: 45%;
+    width: 100%;
+}
+
+#menu-user>img{
+    aspect-ratio: 1 / 1;
+    width: 6rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 0 0 15px  white;
+    filter: contrast(2);
+}
+
+#menu-nav{
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+    width: 100%;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.menu-item{
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    color: black;
+}
+
+/* RESERVA CARD */
+#reserva-pivot{
+    position: absolute;
+    width: var(--max-width);
+    top: calc(var(--max-height) + 1rem);
+    transition: visibility 500ms;
+}
+#reserva-pivot[data-active="true"]{
+    visibility: visible;
+    transition-delay: 0s;
+}
+#reserva-pivot[data-active="false"]{
+    visibility: hidden;
+    transition-delay: 1s;
+
+}
+
+#reserva-container{
+    position:relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    transition: bottom 500ms, opacity 500ms;
+}
+
+#reserva-pivot[data-active="true"] #reserva-container{
+    bottom: 20rem;
+    opacity: 1;
+    transition-timing-function: ease-in-out, ease-in;
+}
+#reserva-pivot[data-active="false"] #reserva-container{
+    bottom: 0;
+    opacity: 0;
+
+    transition-timing-function: ease-in-out, ease-out;
+}
+
+#reserva-container>.card{
+    border-radius: 15px;
+    box-shadow: 0 3px 10px -3px rgba(0, 0, 0, 0.4);
+    height: 276px;
+}
+#reserva-cliente{
+    text-transform: capitalize;
+}

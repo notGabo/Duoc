@@ -1,0 +1,28 @@
+CREATE TABLE TEST(
+    id_paciente NUMBER(10) NOT NULL CONSTRAINT pk_paciente PRIMARY KEY,
+    nombre_paciente VARCHAR2(50) NOT NULL,
+    foto_paciente BLOB DEFAULT EMPTY_BLOB()
+)
+
+BEGIN
+ DBMS_CLOUD.CREATE_CREDENTIAL(
+ credential_name => 'testCredencial',
+ username => 'ga.soto@duocuc.cl',
+ password => '(#0i(zy72pRCCg+-VH(W'
+ );
+END;
+
+SELECT * FROM DBMS_CLOUD.LIST_OBJECTS ('testCredencial', 
+                                       'https://objectstorage.sa-santiago-1.oraclecloud.com/n/axwbrohy7aok/b/fotosExamen/');
+
+DECLARE
+    l_blob BLOB := NULL;
+BEGIN
+    l_blob := DBMS_CLOUD.GET_OBJECT(
+        credential_name => 'testCredencial',
+        object_uri => 'https://objectstorage.sa-santiago-1.oraclecloud.com/n/axwbrohy7aok/b/fotosExamen/o/12084102.jpg');
+    INSERT INTO TEST VALUES(1,'testPacien', l_blob);
+END;
+
+
+select * from test;

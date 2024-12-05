@@ -1,0 +1,21 @@
+.volver{
+    text-align: right;
+    color:blueviolet;
+}
+.datos{
+    color:rgb(0, 0, 0);
+}
+
+.parrafo{
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.moverpoco{
+    margin-left: 6.5%;
+}
+
+.centrar{
+    text-align: center;
+}

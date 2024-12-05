@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:37:54",
+    "Id": "PA95",
+    "Nombre": "Parada 9 / (M) Matta",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "LZPS-14, RYJG-94, LZPW-15, FLXK-68, FLXK-73",
+    "ContadorBusesActivos": 5,
+    "ServiciosActivos": "203, 206, 385",
+    "ServiciosInactivos": "203N, 203E",
+    "ContadorServiciosActivos": 3,
+    "ContadorServiciosInactivos": 2,
+    "ServiciosTotales": 5
+}

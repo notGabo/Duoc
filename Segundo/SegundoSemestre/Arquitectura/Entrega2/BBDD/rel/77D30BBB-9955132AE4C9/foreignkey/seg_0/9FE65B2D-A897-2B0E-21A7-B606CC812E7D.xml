@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9FE65B2D-A897-2B0E-21A7-B606CC812E7D" containerWithKeyObject="6F83836D-4135-0556-D453-C902B615A918" localFKIndex="A37C6D26-F708-4F52-1B53-FCF33407E88D" name="seccion_unidad_FK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>96324E1A-7123-608F-5956-F35DCA1A48B7</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<referredTableLongName>unidad</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B99F46DD-CB48-AA1A-F965-9EC7AC257FF4</referredTableID>
+<keyObject>7C8BE014-73EA-1BB1-B59E-3453629467F9</keyObject>
+<referredKeyID>7C8BE014-73EA-1BB1-B59E-3453629467F9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_unidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

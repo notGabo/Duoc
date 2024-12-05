@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2B88D87-C063-317D-AA82-CECD58A3B99F" name="Minera">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>F675DAB0-8E84-E044-EAF1-32DF24AAF551</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rutminera" id="68398BB7-B34E-2BD9-9E90-EC722BB18E09">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>1432C7BD-2A0D-8254-FC65-467C414298BB</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="razonsocial" id="73F85075-F739-0BBA-FD5E-9387237FA640">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>B015876B-97DF-3C9D-A755-4DF547B9137C</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direccion" id="DEEF64A6-B006-EC7D-07B1-D8C29A9DAE93">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>54E964E6-76A8-EB07-8D5B-78DDD07C409C</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8858B925-E67B-5785-07F2-B992ADFDBE30" name="Minera_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>E4D49E3E-693B-D3E4-4007-F996D0CB6049</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68398BB7-B34E-2BD9-9E90-EC722BB18E09"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

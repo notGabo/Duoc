@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CBE225F2-70D5-C035-CA9E-9CE8F6F32995" name="especialidad_persalud">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:45:36 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cod_especialidad" id="3F505CAB-D400-35FC-371E-FF0F716DA01F">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:45:48 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_especialidad" id="CD9764B0-B485-D7BA-BB87-9CB721185A84">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:46:47 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="699B614F-F51D-3F35-8831-60B573C7EB51" name="especialidad_persalud PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:46:05 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3F505CAB-D400-35FC-371E-FF0F716DA01F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

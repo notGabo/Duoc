@@ -1,0 +1,107 @@
+#include <Wire.h>
+#include <MPU6050_tockn.h>
+#include <Arduino.h>
+
+MPU6050 mpu(Wire);
+
+// Variables para almacenar los offsets
+float ax_offset = 0;
+float ay_offset = 0;
+float az_offset = 0;
+float gx_offset = 0;
+float gy_offset = 0;
+float gz_offset = 0;
+
+void setup() {
+  Serial.begin(9600);
+  Wire.begin();
+
+  Serial.println("Iniciando el MPU6050...");
+
+  mpu.begin();
+  mpu.calcGyroOffsets(true);
+
+  Serial.println("Calibrando el sensor...");
+
+  // Calibración inicial para determinar los offsets
+  const int numReadings = 100;
+  for (int i = 0; i < numReadings; i++) {
+    mpu.update();
+
+    ax_offset += mpu.getAccX();
+    ay_offset += mpu.getAccY();
+    az_offset += mpu.getAccZ();
+    gx_offset += mpu.getGyroX();
+    gy_offset += mpu.getGyroY();
+    gz_offset += mpu.getGyroZ();
+
+    delay(50);
+  }
+
+  ax_offset /= numReadings;
+  ay_offset /= numReadings;
+  az_offset /= numReadings;
+  gx_offset /= numReadings;
+  gy_offset /= numReadings;
+  gz_offset /= numReadings;
+
+  Serial.println("Calibración completada");
+  Serial.print("Offsets - Aceleración: X=");
+  Serial.print(ax_offset);
+  Serial.print(", Y=");
+  Serial.print(ay_offset);
+  Serial.print(", Z=");
+  Serial.println(az_offset);
+  Serial.print("Offsets - Giroscopio: X=");
+  Serial.print(gx_offset);
+  Serial.print(", Y=");
+  Serial.print(gy_offset);
+  Serial.print(", Z=");
+  Serial.println(gz_offset);
+}
+
+void loop() {
+  mpu.update();
+
+  // Leer los valores del acelerómetro y restar los offsets
+  float ax = mpu.getAccX() - ax_offset;
+  float ay = mpu.getAccY() - ay_offset;
+  float az = mpu.getAccZ() - az_offset;
+
+  // Leer los valores del giroscopio y restar los offsets
+  float gx = mpu.getGyroX() - gx_offset;
+  float gy = mpu.getGyroY() - gy_offset;
+  float gz = mpu.getGyroZ() - gz_offset;
+
+  // Calcular los ángulos de Roll y Pitch
+  float roll = atan2(ay, sqrt(ax * ax + az * az)) * 180.0 / PI;
+  float pitch = atan2(-ax, sqrt(ay * ay + az * az)) * 180.0 / PI;
+
+  // Imprimir los valores del acelerómetro en el monitor serial
+  Serial.print("Aceleración en X: ");
+  Serial.print(ax);
+  Serial.print(" g, Y: ");
+  Serial.print(ay);
+  Serial.print(" g, Z: ");
+  Serial.print(az);
+  Serial.println(" g");
+
+  // Imprimir los valores del giroscopio en el monitor serial
+  Serial.print("Giroscopio en X: ");
+  Serial.print(gx);
+  Serial.print(" °/s, Y: ");
+  Serial.print(gy);
+  Serial.print(" °/s, Z: ");
+  Serial.print(gz);
+  Serial.println(" °/s");
+
+  // Imprimir los ángulos de Roll y Pitch
+  Serial.print("Roll: ");
+  Serial.print(roll);
+  Serial.print(" °, Pitch: ");
+  Serial.print(pitch);
+  Serial.println(" °");
+
+  delay(1000);
+}
+# calibración ya hecha

@@ -1,0 +1,88 @@
+.contenedor{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+}
+
+.boton{
+    display: block;
+    width: 200px; 
+    height: 60px; 
+    font-size: 20px; 
+    margin-bottom: 20px;
+    margin-left: 20px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+    background-color: #fafafa; 
+}
+
+.link{
+    text-decoration: none;
+}
+
+.botoncito{
+    display: block;
+    width: 200px; 
+    height: 50px; 
+    font-size: 20px; 
+    margin-left: 650px;
+    cursor: pointer; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+    background-color: #fafafa; 
+}
+
+.contenedorcito{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+    font-size: xx-large;
+
+}
+
+select {
+    font-size: 16px; 
+    margin-left: 20px;
+    padding: 9px;
+}
+
+.formulario-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center; 
+    font-size: large;
+}
+
+.formulario {
+    margin-bottom: 20px; 
+}
+
+.botoncitoss {
+    margin-top: 10px; 
+    font-size: 15px; 
+    cursor: pointer; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+.carousel-inner img {
+    max-height: 300px; /* Altura máxima de las imágenes */
+    object-fit: contain; /* Ajustar la imagen dentro del contenedor */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    opacity: 0.5; /* Ajusta la opacidad según sea necesario (0.5 es semi-transparente) */
+    filter: alpha(opacity=50); /* Para versiones antiguas de IE */
+}

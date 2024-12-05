@@ -1,0 +1,50 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: #333;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+.menuLateral{
+    font-size: larger;
+    color: #FFFF;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.cajaCyan{
+    padding: 3%;
+    color: white;
+    background-color: #00beb5; 
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.cajaAmarilla{
+    padding: 3%;
+    color: white;
+    background-color: #aab601;
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}
+
+.cajaNaranja{
+    padding: 3%;
+    color: white;
+    background-color: #ca7900;
+    min-height: 25%;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+}

@@ -1,0 +1,49 @@
+/*
+Guia 5
+Funciones de estadisticas       
+
+*/
+--caso 1
+SELECT 
+carreraid as "IDENTIFICACION DE LA CARRERA",
+COUNT(alumnoid) as "TOTAL ALUMNOS MATRICULADOS" ,
+'Le corresponden ' || to_char(COUNT(alumnoid)*&MONTO,'$999g999')|| ' del prespuesto total asignado para publicidad' AS "MONTO POR PUBLICIDAD"
+FROM alumno
+group by carreraid
+having COUNT(alumnoid)>4
+order by 2 DESC,1;
+
+--caso 4
+SELECT 
+    es.id_escolaridad as ESCOLARIDAD,
+    es.desc_escolaridad as "DESCRIPCIÓN DE ESCOLARIDAD",
+    count(em.run_emp) as "TOTAL DE EMPLEADOS",
+    nvl(to_char(max(em.salario),'$9g999g999'),'$0') as "SALARIO MAXIMO",
+    nvl(to_char(min(em.salario),'$9g999g999'),'$0') as "SALARIO MINIMO",
+    nvl(to_char(sum(em.salario),'$9g999g999'),'$0') as "SALARIO TOTAL",
+    nvl(to_char(TRUNC(AVG(em.salario)),'$9g999g999'),'$0') as "SALARIO PROMEDIO"
+FROM empleado em right outer join escolaridad_emp es
+on (em.id_escolaridad = es.id_escolaridad) -- condicion de union es fk=pk de id escolaridad
+GROUP BY es.id_escolaridad, es.desc_escolaridad
+ORDER BY 3 desc;
+
+--CASO 5
+select 
+    t.tituloid as "CODIGO DEL LIBRO",
+    t.titulo as NOMBRE,
+    a.nombre ||' '||a.apellidos as AUTOR,
+    e.descripcion as EDITORIAL,
+    count(prestamoid) AS "TOTAL DE VECES SOLICITADO",
+    case
+        when count(prestamoid) = 1 then 'No se requiere comprar '
+        when count(prestamoid) in(2,3) then 'Se requiere comprar 1 '
+        when count(prestamoid) in(4,5) then 'Se requiere comprar 2 '
+        when count(prestamoid) > 5 then 'Se requiere comprar 4 '
+        else 'No se requiere comprar '
+    end || 'nuevo(s) ejemplar(es)' as SUGERENCIA
+from prestamo P right outer join titulo T on (p.tituloid = t.tituloid and --iguala id (pk=fk)
+                                              extract(year from fecha_ini_prestamo) = extract(year from sysdate)-1) --solo toma en cuenta los prestamos que ocurrieron el año pasado, en este caso el 2020, pero de aca al otro año sera el 2021
+                            join autor A on (a.tituloid=t.tituloid)
+                            join editorial E on (e.editorialid=t.editorialid)
+group by t.tituloid ,t.titulo,a.nombre,a.apellidos,e.descripcion
+order by 5 desc,1;

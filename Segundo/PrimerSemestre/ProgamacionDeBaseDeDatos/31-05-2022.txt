@@ -1,0 +1,51 @@
+create or replace package pk_1 as 
+    vp_nom_depto departments.department_name%type;
+    vp_nom_cargo jobs.job_title%type;
+    
+    
+    function fn_buscar_nom_Depto (p_id_depto number) return varchar2;
+    procedure proc_principal (p_id_cargo varchar2);
+end;
+
+
+create or replace package body pk_1 as 
+    function fn_buscar_nom_depto (p_id_depto number) return varchar2 is
+        begin
+            select department_name
+            into pk_1.vp_nom_depto
+            from departments
+            where department_id = p_id_depto;
+            RETURN vp_nom_depto;
+            DBMS_OUTPUT.PUT_LINE(pk_1.vp_nom_depto);
+        exception
+            when no_data_found then
+                return 'No se encuentran datos';
+        end;
+        
+        procedure proc_principal (p_id_cargo varchar2) is
+            cursor cur_emp is
+                select first_name,salary,department_id
+                from employees
+                where  job_id = p_id_cargo;
+            begin
+                for v_reg in cur_emp loop
+                vp_nom_depto:=fn_buscar_nom_depto(v_reg.department_id);
+                    begin
+                        select job_title
+                        into pk_1.vp_nom_cargo
+                        from jobs
+                        where job_id = p_id_cargo;
+                    exception
+                        when no_data_found then
+                            vp_nom_cargo:='No se encuentra cargo';
+                    end;
+                    DBMS_OUTPUT.PUT_LINE(v_reg.first_name ||' '||v_reg.salary||' '||vp_nom_depto||' '||vp_nom_cargo);
+                end loop;
+            end;
+        end;
+begin
+    pk_1.proc_principal('IT_PROG');
+end;
+
+    
+    

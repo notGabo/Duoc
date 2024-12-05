@@ -1,0 +1,76 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Inicio{% endblock title %}
+
+{% block style %}
+<style>
+#clock{
+    line-height: 4.4rem;
+    font-family: 'PT Serif', serif;
+    font-size: 4rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
+
+    box-shadow:  -4px 4px 15px #c2c2c2,
+             4px -4px 7px #f3f3f3;
+
+    border: 1px solid #dddddd;
+    margin-bottom: 5rem;
+}
+#start-button{
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding: 0;
+    width: 6rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 3px solid #e0e0e0;
+    background: hsl(0, 0%, 13%);
+
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff;
+    
+    transition-property: background-color,box-shadow, font-size;
+    transition-duration: 100ms;
+}
+
+#start-button:active, #start-button:focus{
+    background: hsl(0, 0%, 10%);
+
+
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px #ffffff,
+                inset -5px -5px 10px -3px #4d4d4d,
+                inset 5px 5px 10px -3px #000000;
+    font-size: 2.5rem;
+}
+
+</style>
+{% endblock style %}
+
+{% block content %}
+<div class="d-flex justify-content-center flex-column align-items-center h-100 text-center">
+    <span id="clock">12:00</span>
+
+    <p class="mx-3 fs-4">Presiona el automovil para contratar un <strong>transfer</strong></p>
+    
+    <form method="POST">
+        <button id="start-button" type="submit">
+            <i class="bi bi-taxi-front-fill text-light"></i>
+        </button>
+    </form>
+</div>
+{% endblock content %}
+
+{% block script %}
+<script>
+    window.onload = time();
+
+    function time(){
+        const clock = document.getElementById("clock");
+        var date = new Date();
+        clock.innerText = ("00" + date.getHours()).slice(-2) + ":" + ("00" + date.getMinutes()).slice(-2);
+        setTimeout(time, 1000);
+    }
+
+</script>
+{% endblock script %}

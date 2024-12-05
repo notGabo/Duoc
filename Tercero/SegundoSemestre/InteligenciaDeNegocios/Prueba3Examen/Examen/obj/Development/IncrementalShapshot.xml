@@ -1,0 +1,82 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Examen</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>6DytWPYwiqeylZPb6QMpxPUhcgo=24/11/2023 6:37:14 pm24/11/2023 6:37:14 pm</TimeStamp>
+        <ID>
+          <String>Albarran Dw</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>rvYHaaJMfE4M7uKcKl1PT+Wuyyc=24/11/2023 6:37:24 pm24/11/2023 6:37:23 pm</TimeStamp>
+        <ID>
+          <String>Albarran Dw</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>zc9z+f9b8nLtdiRSXPSQC+m0DoY=24/11/2023 6:44:47 pm24/11/2023 6:37:42 pm</TimeStamp>
+        <ID>
+          <String>Dim SUCURSAL</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>L+DtEWm3ihecYVR750ZHiu+5PdQ=24/11/2023 6:37:43 pm24/11/2023 6:37:42 pm</TimeStamp>
+        <ID>
+          <String>Dim VENTA</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>dajqIGnyS5Z5aoPRD1n4lApauq8=24/11/2023 6:40:34 pm24/11/2023 6:37:42 pm</TimeStamp>
+        <ID>
+          <String>Dim CLIENTE</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>l6GysruZsWz6HYGBQl3USZ+VKuA=24/11/2023 6:38:03 pm24/11/2023 6:37:42 pm</TimeStamp>
+        <ID>
+          <String>Dim VENDEDOR</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>jMxK09iSTXzwphnTSJl8lJ8pJAQ=24/11/2023 6:44:47 pm24/11/2023 6:37:42 pm1rZRFItABkm2Ni6DVm5mQ3LKiFw=24/11/2023 6:37:43 pm24/11/2023 6:37:42 pm</TimeStamp>
+        <ID>
+          <String>Albarran Dw</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>JFDULhT90yGK40r6z+jRDymS6ak=22/11/2023 12:49:36 pm22/11/2023 12:31:19 pm</TimeStamp>
+      <ID>
+        <String>Examen</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>false</ProcessingComplete>
+  <LastDeployed>2023-11-24T22:04:49.836667Z</LastDeployed>
+</DeploymentSnapshot>

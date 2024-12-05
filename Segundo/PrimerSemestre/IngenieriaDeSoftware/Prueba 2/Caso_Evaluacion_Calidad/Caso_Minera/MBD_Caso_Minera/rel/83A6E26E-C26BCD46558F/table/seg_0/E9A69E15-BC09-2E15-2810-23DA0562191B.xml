@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E9A69E15-BC09-2E15-2810-23DA0562191B" name="intervencion">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>90991B6F-4092-34BB-5823-4F58EA1A729F</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Shift_nroturno" id="EA4C3612-C9AC-2B76-F64B-35C61281607D">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<comment><![CDATA[El número de turno que corresponde. Están
+codificados y son solo 3.]]></comment>
+<generatorID>5F72DF1E-3510-E72D-BBAE-084B59AD7999</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="835403A8-A4CC-14A9-FFAA-D12A8F46633D" referredColumn="7DCF8BC0-92A8-0F2D-08E4-02A84F7B873E"/>
+</associations>
+</Column>
+<Column name="Zona_codigozona" id="D312EF4F-2383-9BA6-E7A9-73481CEBBDC7">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<comment><![CDATA[Número único asignado a cada zona]]></comment>
+<generatorID>3B9E134E-1E56-FFF0-862B-BD1B1DB9BACD</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="526F5CEF-8507-9C65-98B5-C8C19C192CCA" referredColumn="4A3A23D1-3C56-74ED-7457-377C6D4CF783"/>
+</associations>
+</Column>
+<Column name="Maquinaria_codigomaq" id="D7905D93-2F35-9BB5-8C74-5414176F2984">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>EA59393B-2A3E-CB17-EFF7-A9B437553CC8</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03F7879B-0BC9-165D-9F18-B96E8D9FCEA2" referredColumn="65BAC3F1-7801-4BE9-53B1-458BAAD984FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8053B907-0B7D-2586-9DDF-DB3CC6B18F43" name="intervencion_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>F275782C-4A5F-0784-C746-7DC98D59537F</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA4C3612-C9AC-2B76-F64B-35C61281607D"/>
+<colUsage columnID="D312EF4F-2383-9BA6-E7A9-73481CEBBDC7"/>
+<colUsage columnID="D7905D93-2F35-9BB5-8C74-5414176F2984"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39DE08E6-5056-1C38-3E0F-04ED876BF261" name="intervencion_Empleados_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>845BB7DE-0C60-2FCE-0121-D0019FCDDE2E</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="B8A0FB29-92C5-0381-952F-0EF5DB151FB4" name="intervencion_Shift_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>F4710DDA-D4D4-2033-3B94-979A0148B1F7</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA4C3612-C9AC-2B76-F64B-35C61281607D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="482652A0-C535-1FB8-07B0-E30367856E7D" name="intervencion_Zona_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>AB022090-B803-ABFD-26C8-5D7D5831488B</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D312EF4F-2383-9BA6-E7A9-73481CEBBDC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D056CF9C-0BE9-6323-D409-1A2A798DBDAF" name="intervencion_Maquinaria_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>7EA8021A-1D8A-2304-B1D0-FB70771ECD04</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7905D93-2F35-9BB5-8C74-5414176F2984"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

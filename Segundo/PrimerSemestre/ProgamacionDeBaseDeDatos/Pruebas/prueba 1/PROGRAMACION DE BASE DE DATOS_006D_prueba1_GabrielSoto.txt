@@ -1,0 +1,175 @@
+set serveroutput on;
+
+--variables bind
+var vb_mes number;
+exec :vb_mes:=6;
+var vb_fecha varchar2;
+exec :vb_fecha:='06/2021';
+var vb_porcentaje_1 number;
+exec :vb_porcentaje_1:=35;
+var vb_porcentaje_2 number;
+exec :vb_porcentaje_2:=30;
+var vb_porcentaje_3 number;
+exec :vb_porcentaje_3:=25;
+var vb_porcentaje_4 number;
+exec :vb_porcentaje_4:=20;
+var vb_porcentaje_5 number;
+exec :vb_porcentaje_5:=15;
+
+declare
+v_id_empleado empleado.id_empleado%type;
+v_max_empleado number;
+v_cant_boleta number;
+v_cant_venta_neta number;
+v_porcentaje_trabajador number;
+v_calculo_asignacion number;
+v_porcentaje_categorizacion number;
+v_nombre_emp empleado.nombres%type;
+v_nom_equipo equipo.nom_equipo%type;
+v_calculo_categorizacion number;
+v_porcentaje_equipo number;
+v_bono_equipo number;
+v_annios_trabajados number;
+v_asignacion_antigua number;
+v_totales_mes number;
+v_descuentos number;
+v_comision number;
+v_fecha date;
+v_mes number;
+v_annio number;
+v_por_com number;
+
+begin
+EXECUTE IMMEDIATE 'TRUNCATE TABLE detalle_venta_empleado';     
+EXECUTE IMMEDIATE 'TRUNCATE TABLE comision_venta_empleado';
+v_fecha:= to_date(:vb_fecha, 'MM/YYYY');
+v_mes:= extract(month from v_fecha);
+v_annio:= extract(year from v_fecha);
+
+v_id_empleado:=2;
+
+select max(id_empleado) 
+into v_max_empleado
+from empleado;
+
+while v_id_empleado<=v_max_empleado loop
+
+--Parte A
+SELECT count(d.id_boleta),
+       sum(d.cantidad*p.precio) 
+INTO v_cant_boleta, v_cant_venta_neta
+FROM detalleboleta d
+join boleta b on (d.id_boleta = b.id_boleta) 
+join producto p on (d.id_producto = p.id_producto)
+WHERE b.id_empleado = v_id_empleado
+      and extract(month from b.fecha_boleta)=:vb_mes;
+      
+--Parte B
+v_porcentaje_trabajador:=
+case 
+    when v_cant_boleta>10 then :vb_porcentaje_1 --35
+    when v_cant_boleta between 9 and 10 then :vb_porcentaje_2 --30
+    when v_cant_boleta between 6 and 8 then :vb_porcentaje_3 --25
+    when v_cant_boleta between 3 and 5 then :vb_porcentaje_4 --20
+    when v_cant_boleta between 1 and 2 then :vb_porcentaje_5 --15
+    else 0
+end;
+
+v_calculo_asignacion:=round((v_porcentaje_trabajador*v_cant_venta_neta)/100,0); 
+
+--Parte C y D
+select c.porcentaje,
+       e.apellidos||' '|| e.nombres,
+       eq.nom_equipo,
+       eq.porc --adicion d
+into v_porcentaje_categorizacion, v_nombre_emp, v_nom_equipo, v_porcentaje_equipo
+from empleado e join equipo eq on (e.id_equipo = eq.id_equipo)
+                join categorizacion c on (e.id_categorizacion = c.id_categorizacion)
+where id_empleado = v_id_empleado ;
+
+v_calculo_categorizacion:=ROUND((v_cant_venta_neta*v_porcentaje_categorizacion)/100,0); --calculo c
+v_bono_equipo:=ROUND((v_cant_venta_neta*v_porcentaje_equipo)/100); -- calculo d
+
+
+select trunc(months_between('31/12/2021',feccontrato)/12)
+into v_annios_trabajados
+from empleado
+where id_empleado = v_id_empleado;
+
+v_asignacion_antigua:=
+case 
+    when v_annios_trabajados >15 then ROUND(v_cant_venta_neta*(27/100),0) 
+    when v_annios_trabajados between 8 and 15 then ROUND(v_cant_venta_neta*(14/100),0) 
+    when v_annios_trabajados between 3 and 7 then ROUND(v_cant_venta_neta*(4/100),0) 
+    else 0 
+end;
+
+v_descuentos:=0;
+v_totales_mes:=ROUND(v_cant_venta_neta+v_bono_equipo+v_calculo_asignacion+v_calculo_categorizacion+v_asignacion_antigua-v_descuentos);
+
+
+DBMS_OUTPUT.PUT_LINE(v_cant_boleta ||' '|| v_cant_venta_neta ||' '|| v_porcentaje_trabajador||' '||v_calculo_asignacion||' '||v_calculo_categorizacion
+                     ||' '||v_bono_equipo||' '||v_asignacion_antigua||' '||v_totales_mes);
+                     
+insert into detalle_venta_empleado values (v_annio, v_mes, v_id_empleado, v_nombre_emp, v_nom_equipo, v_cant_boleta, v_cant_venta_neta, v_bono_equipo,
+                                           v_calculo_categorizacion,v_calculo_asignacion,v_asignacion_antigua, v_descuentos, v_totales_mes);
+
+
+SELECT comision
+        INTO v_por_com
+        FROM empleado e JOIN comisionempleado c
+        ON (v_cant_venta_neta BETWEEN c.ventaminima AND c.ventamaxima)
+        WHERE (e.id_empleado=v_id_empleado);
+
+
+v_comision:=ROUND((v_cant_venta_neta*v_por_com)/100,0);
+
+
+
+
+
+.------
+
+actualizado
+
+--Fecha del proceso por efectuar 
+VAR vb_fecha VARCHAR2;
+EXEC :vb_fecha := '2021-06';
+
+
+DECLAR
+    v_nro_venta detalle_venta_empleado.nro_ventas%TYPE;
+    TYPE t_varray_porc IS VARRAY(5) OF NUMBER;
+    v_varray_porc t_varray_porc := t_varray_porc(35, 30, 25, 20, 15);
+
+
+    CURSOR cur_emp IS
+        SELECT * FROM empleado
+    
+    CURSOR cur_ventas (p_id_empleado NUMBER, p_fecha_proceso VARCHAR2)IS
+        SELECT COUNT(a.id_boleta) AS nro_ventas, SUM(c.precio * b.cantidad) AS ventas_netas
+        FROM boleta a JOIN detalleboleta b
+            ON(a.id_boleta = b.id_boleta)
+            JOIN producto c
+            ON(b.id_producto = c.id_producto)
+        WHERE a.id_empleado = p_id_empleado AND TO_CHAR(a.fecha_boleta, 'YYYY-MM') = p_fecha_proceso;
+
+    
+BEGIN
+    EXECUTE IMMEDIATE 'TRUNCATE TABLE detalle_venta_empleado';
+    EXECUTE IMMEDIATE 'TRUNCATE TABLE comision_venta_empleado';
+
+    FOR i_emp IN cur_emp LOOP
+        dbms_output.put_line(i_emp.id_empleado);
+        FOR i_ventas IN cur_ventas (i_emp.id_empleado, :vb_fecha) LOOP
+            dbms_output.put_line('-------'|| i_ventas.nro_ventas ||'-------'|| i_ventas.ventas_netas);
+        END LOOP;
+
+    END LOOP;
+END
+
+
+insert into comision_venta_empleado values(v_annio, v_mes,v_id_empleado, v_totales_mes, v_comision);
+v_id_empleado:=v_id_empleado+2;
+end loop;
+end;

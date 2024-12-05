@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC4DB0C0-5CA4-D4A0-8F16-D6665BBB30A7" name="especialidad_persalud">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>CBE225F2-70D5-C035-CA9E-9CE8F6F32995</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_especialidad" id="8241ECF8-FCCB-4664-0547-02AB22858134">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>3F505CAB-D400-35FC-371E-FF0F716DA01F</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_especialidad" id="02D1766A-8CBF-FFBA-4AEB-659CD938353F">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>CD9764B0-B485-D7BA-BB87-9CB721185A84</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5F8994D8-DEDC-60D5-4AEE-6F32C16459A4" name="especialidad_persalud_PK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>699B614F-F51D-3F35-8831-60B573C7EB51</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8241ECF8-FCCB-4664-0547-02AB22858134"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

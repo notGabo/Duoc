@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>modificador formulario</h1>
+    <div class="row">
+        <form method="post" action="" id="formulario">
+            {% csrf_token %}
+            <div class="form-group">
+            {{ form.as_table }}
+            </div>
+
+            <input type="submit" class="btn btn-danger" id="enviar" value="Modificar">
+            <input type="reset" class="btn btn-primary" id="limpiar" value="Limpiar">
+            <div id="error" class="alert alert-danger" role="alert"> {{mensaje}}</div>
+        </form>
+        <a href="/127.0.0.1:8000/">volver al inicio</a>
+    </div>
+        
+</body>
+</html>

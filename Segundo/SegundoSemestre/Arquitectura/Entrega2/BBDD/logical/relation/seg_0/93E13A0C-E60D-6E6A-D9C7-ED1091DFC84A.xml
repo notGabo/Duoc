@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_7" directorySegmentName="seg_0" id="93E13A0C-E60D-6E6A-D9C7-ED1091DFC84A">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:25:14 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<sourcePk>1547FFBD-B268-7BEF-E44D-6CF768A94928</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D54B9546-7322-019C-8AEE-E8D511E7BA18</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1604F796-E8EA-282A-2838-BACEB50713B9</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

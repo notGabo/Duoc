@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:37:41",
+    "Id": "PI419",
+    "Nombre": "Parada 10 / (M) Plaza de Maip\u00fa",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "PFYS-39, PGPT-38, PFVK-90, PFYG-88, PFBG-12, PFVK-81, PGPT-37, PGPS-92, PFYR-77, PFVG-42",
+    "ContadorBusesActivos": 10,
+    "ServiciosActivos": "106, 401, 405, 423, 481",
+    "ServiciosInactivos": "599, 413C, 431C",
+    "ContadorServiciosActivos": 5,
+    "ContadorServiciosInactivos": 3,
+    "ServiciosTotales": 8
+}

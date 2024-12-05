@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:38:22",
+    "Id": "PJ108",
+    "Nombre": "Av. Am\u00e9rico Vespucio / esq. Papa San P\u00edo",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "SHXD-73, SJPF-96, SKPK-42, SKPL-33",
+    "ContadorBusesActivos": 4,
+    "ServiciosActivos": "428, 444",
+    "ServiciosInactivos": "J08, 424",
+    "ContadorServiciosActivos": 2,
+    "ContadorServiciosInactivos": 2,
+    "ServiciosTotales": 4
+}

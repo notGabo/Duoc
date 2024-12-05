@@ -1,0 +1,269 @@
+-- CASO 1.
+
+	-- LOOP.
+DECLARE
+   -- Cursor que recupera los viñateros o productores
+   CURSOR c1 IS
+   SELECT *
+   FROM productor
+   WHERE id_productor IN (SELECT id_productor
+                                      FROM producto);
+
+   CURSOR c2 (n NUMBER) IS
+   SELECT *
+   FROM producto
+   WHERE id_productor = n;
+   counter number := 0;
+
+   reg_productor c1%rowtype;
+   reg_productos c2%rowtype;
+
+BEGIN
+     open c1;
+     loop
+          fetch c1 into reg_productor;
+          exit when c1%NOTFOUND;
+          dbms_output.put_line('####### LISTA DE VINOS DE LA VIÑA ' || '"' || UPPER(reg_productor.nom_productor || '"'));
+          dbms_output.put_line(CHR(13));
+          dbms_output.put_line('  ID  NOMBRE PRODUCTO   STOCK  PRECIO ACTUAL   NUEVO PRECIO');
+          dbms_output.put_line(CHR(13));
+          counter := 0;
+          OPEN c2 (reg_productor.id_productor);
+          LOOP
+               FETCH c2 INTO reg_productos;
+               EXIT WHEN c2%NOTFOUND;
+               counter := counter + 1;  
+               dbms_output.put_line(reg_productos.id_producto
+               || ' ' || RPAD(reg_productos.nom_producto, 23,' ')
+               || ' ' || TO_CHAR(reg_productos.stock,'999')
+               || ' ' || RPAD(TO_CHAR(reg_productos.precio, '$9G999G999'),15, ' ')
+               || ' ' || TO_CHAR(reg_productos.precio * 1.07, '$9G999G999'));
+               
+          END LOOP;
+          CLOSE c2;
+          dbms_output.put_line(CHR(13));     
+          dbms_output.put_line('Total de productos en tienda: ' || counter);
+          dbms_output.put_line(CHR(13));
+          dbms_output.put_line(CHR(13));
+     END LOOP;
+     CLOSE c1;
+END;
+
+	-- WHILE.
+/*
+de
+     -- Cursor que recupera los viñateros o productores
+     CURSOR c1 IS
+     SELECT *
+     FROM productor
+     WHERE id_productor IN (SELECT id_productor
+                                      FROM producto);
+
+     -- Cursor que recupera productos de cada viñatero
+     -- Recibe como parámetro la id del productor
+     CURSOR c2 (n NUMBER) IS
+     SELECT id_producto, nom_producto, stock, precio
+     FROM producto
+     WHERE id_productor = n;
+     counter NUMBER := 0;
+
+     -- REGISTROS
+     reg_productor c1%ROWTYPE;
+     
+     --TYPE def_productor IS RECORD
+     --(id_number productor.id_productor%TYPE,
+     -- names productor.nom_productor%TYPE);
+     --reg_productor def_productor;
+    
+    
+     TYPE def_productos IS RECORD
+     (id_numero producto.id_producto%TYPE,
+     nombres producto.nom_producto%TYPE,
+     stock producto.stock%TYPE,
+     precio producto.precio%TYPE);
+     reg_productos def_productos;
+
+BEGIN
+     OPEN c1;
+     FETCH c1 INTO reg_productor;
+     WHILE c1%FOUND LOOP
+          dbms_output.put_line('####### LISTA DE VINOS DE LA VIÑA ' || '"' || UPPER(reg_productor.nom_productor || '"'));
+          dbms_output.put_line(CHR(13));
+          dbms_output.put_line('  ID  NOMBRE PRODUCTO   STOCK  PRECIO ACTUAL   NUEVO PRECIO');
+          dbms_output.put_line(CHR(13));
+          counter := 0;
+          OPEN c2 (reg_productor.id_productor);
+          FETCH c2 INTO reg_productos;
+          WHILE c2%FOUND LOOP
+               counter := counter + 1;  
+               dbms_output.put_line(reg_productos.id_numero
+               || ' ' || RPAD(reg_productos.nombres, 23,' ')
+               || ' ' || TO_CHAR(reg_productos.stock,'999')
+               || ' ' || RPAD(TO_CHAR(reg_productos.precio, '$9G999G999'),15, ' ')
+               || ' ' || TO_CHAR(reg_productos.precio * 1.07, '$9G999G999'));
+               FETCH c2 INTO reg_productos;
+          END LOOP;
+          CLOSE c2;
+          dbms_output.put_line(CHR(13));     
+          dbms_output.put_line('Total de productos en tienda: ' || counter);
+          dbms_output.put_line(CHR(13));
+          dbms_output.put_line(CHR(13));
+          FETCH c1 INTO reg_productor;
+     END LOOP;
+     CLOSE c1;
+END;
+*/
+
+
+-- caso2
+
+var vb_periodo varchar2;
+execute :vb_periodo:='Jun/2021';
+var vb_valor_limite number;
+execute :vb_valor_limite:='50000';
+
+declare
+    v_periodo                   date;
+    v_contador_pedido           number;
+    v_monto_pedido              number;
+    v_total_gravamen            number;
+    v_total_descuento_cepa      number;
+    v_total_descuento_delivery  number;
+    v_total_descuentos          number;
+    v_total_recaudacion         number;
+    type v_tipos_errores is varray(6) of number;
+    v_varray_valores            v_tipos_errores:=v_tipos_errores(23,21,19,17,15,1800);    
+    registro_ventas_cepa        resumen_ventas_cepa%rowtype;
+    
+
+cursor c1 IS
+    select *
+    from cepa
+    order by nom_cepa;
+   
+cursor c2 (p_id number) is
+        select             
+            pe.fec_pedido  AS fecha_pedido,
+            count(*) AS cantidad,
+            sum(pro.precio * de.cantidad )  AS monto_pedido         
+        from pedido pe
+            join detalle_pedido de on (pe.id_pedido = de.id_pedido)
+            join producto pro ON (pro.id_producto = de.id_producto)
+        where 
+            extract(year from fec_pedido) = extract(year from v_periodo) 
+            and extract(month from fec_pedido) = extract (month from v_periodo)             
+            and pro.id_cepa = p_id
+        group by pe.fec_pedido; 
+
+v_reg resumen_ventas_cepa%rowtype;
+
+begin
+execute immediate 'truncate table resumen_ventas_cepa';
+execute immediate 'truncate table errores_proceso_recaudacion';
+execute immediate 'drop sequence sq_error'; 
+execute immediate 'create sequence sq_error';
+v_periodo:=to_date(:vb_periodo,'MM-YYYY');
+--Se abre el primer ciclo para el cursor 1 (ciclo principal)
+for i in c1 loop
+    v_contador_pedido:=0;
+    v_monto_pedido:=0;
+    v_total_gravamen:=0;          
+    v_total_descuento_cepa:=0;   
+    v_total_descuento_delivery:=0;  
+    v_total_descuentos:=0;          
+    v_total_recaudacion:=0;
+    
+    --Se abre el segundo ciclo para el cursor 2 (para contar pedidos)
+    for e in c2(i.id_cepa) loop
+        v_contador_pedido:=v_contador_pedido+e.cantidad;
+        
+        --subbloque Calcular valor de gravamen
+        declare
+            v_mensaje_error varchar2(250);
+            v_pct_gravamen  gravamen.pctgravamen%type;
+            v_gravamen      number;
+        begin
+            select
+                pctgravamen
+            into    
+                v_pct_gravamen
+            from 
+                gravamen
+            where
+                e.monto_pedido between mto_venta_inf and mto_venta_sup;
+            v_gravamen:=round(e.monto_pedido*(nvl(v_pct_gravamen,0)/100));
+            v_total_gravamen:=v_total_gravamen+v_gravamen;
+        exception
+            when too_many_rows then v_mensaje_error:=SQLERRM;
+            insert into errores_proceso_recaudacion
+            values (SQ_ERROR.nextval, v_mensaje_error, 
+                    'Se encontro mas de un porcentaje de gravamen para el monto de los pedidos en el dia' ||
+                    to_char(e.fecha_pedido,'DD/MM/YYYY'));
+            when no_data_found then v_mensaje_error:=SQLERRM;
+            insert into errores_proceso_recaudacion
+            values (SQ_ERROR.nextval, v_mensaje_error, 
+                    'No se encontro porcentaje de gravamen para el monto de los pedidos en el dia' ||
+                    to_char(e.fecha_pedido,'DD/MM/YYYY'));
+        end;
+        
+        --subbloque calculo descuento por cepa
+        declare
+            v_porcentaje_descuento_cepa     number;
+            v_descuento_cepa                number;
+            v_monto_superior_limite         exception;
+            v_mensaje_error                 varchar2(250);
+            PRAGMA EXCEPTION_INIT(v_monto_superior_limite, -20001);
+        begin
+            v_porcentaje_descuento_cepa:=v_varray_valores (case
+                                                                i.nom_cepa
+                                                                when 'Carmenere' then 1
+                                                                when 'Merlot' then 2
+                                                                when 'Cabernet Sauvignon' then 3
+                                                                when 'Syrah' then 4
+                                                                else 5 end);
+            v_descuento_cepa:=round(e.monto_pedido*(nvl(v_porcentaje_descuento_cepa,0)/100));
+            if (v_descuento_cepa>:vb_valor_limite) then
+                RAISE_APPLICATION_ERROR (-20001,'El monto de descuento sobrepasa el limite permitido');
+                RAISE v_monto_superior_limite;
+            else 
+                v_total_descuento_cepa:=v_total_descuento_cepa+v_descuento_cepa;
+            end if;
+            
+        exception
+            when v_monto_superior_limite then v_mensaje_error:=SQLERRM;
+            insert into errores_procesos_recaudacion 
+            values (SQ_ERROR.nextval, v_mensaje_error, 
+                    'Se reemplaza el monto de descuento calculado de ' ||to_char(v_descuento_cepa,'$99G9999') ||
+                    ' por el monto limite de '||to_char(:vb_valor_limite,'$99G999'));
+            v_descuento_cepa:=:vb_valor_limite;
+            v_total_descuento_cepa:=v_total_descuento_cepa+v_descuento_cepa;
+        end;
+        
+        --subbloque calculo descuento por delivery
+        declare
+            v_descuento_delivery    number;
+        begin
+            v_descuento_delivery:=v_varray_valores(6);
+            v_total_descuento_delivery:=v_total_descuento_delivery+v_descuento_delivery*e.cantidad;
+        end;
+        
+        --subbloque calculo descuento total recaudacion
+        begin
+            v_total_descuentos:=v_total_gravamen+v_total_descuento_cepa+v_total_descuento_delivery;
+            v_monto_pedido:=v_monto_pedido+e.monto_pedido;
+            v_total_recaudacion:=v_monto_pedido-v_total_descuentos;
+        end;
+    end loop;
+    
+    registro_ventas_cepa.cepa:=i.nom_cepa;
+    registro_ventas_cepa.num_pedidos:=v_contador_pedido;
+    registro_ventas_cepa.monto_pedidos:=v_monto_pedido;
+    registro_ventas_cepa.gravamenes:=v_total_gravamen;
+    registro_ventas_cepa.desctos_cepa:=v_total_descuento_cepa;
+    registro_ventas_cepa.monto_delivery:=v_total_descuento_delivery;
+    registro_ventas_cepa.monto_descuentos:=v_total_descuentos;
+    registro_ventas_cepa.total_recaudacion:=v_total_recaudacion;
+    insert into resumen_ventas_cepa values registro_ventas_cepa;
+end loop;
+end;
+

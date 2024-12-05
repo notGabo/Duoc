@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F753156-9BF0-CE96-CCC4-0266BB0C610C" name="per_salud">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>D54B9546-7322-019C-8AEE-E8D511E7BA18</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut_perSalud" id="43BC4873-02D7-EF31-58FD-63840B324C76">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>921A1569-6467-C883-F268-531804881CF9</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombres" id="A3596CC7-9E59-D350-C999-32DAEE0777D9">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>5AD16FA1-1A31-A331-1E18-5EA67D48BB48</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="apellidos" id="D2553A29-92A9-ED6B-D3C0-A4B941191AF0">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>FC551F70-36FD-3078-2433-20F0F6803A0A</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cargo" id="732A81C5-3886-5144-B910-7ECCD24F62DF">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>991B3DEE-EBD4-2948-8D64-7CA88B0F64CB</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unidad_id_unidad" id="A4F998A6-5521-D632-8926-378CE3E9AF13">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>D5611BBD-33B2-938F-93B2-4A1C181D3B99</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="009ED901-692F-B439-75E5-9AFCAA7E8C6E" referredColumn="18C9B22D-394D-7B36-B060-85A0C004BA85"/>
+</associations>
+</Column>
+<Column name="esp_perSalud_cod_esp" id="C07CFDAC-4CD6-4B26-1F2D-3A92075409CB">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>5CD205C3-4A0D-0037-EBD9-3CC398385F0E</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04A66326-EDCF-3BA1-8B0C-0130797D2E1D" referredColumn="8241ECF8-FCCB-4664-0547-02AB22858134"/>
+</associations>
+</Column>
+<Column name="seccion_id_seccion" id="7EF3B1D6-3C99-F72B-BEB3-D138E2037741">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>06987331-5167-79BC-DA2A-9FF64F73F42D</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB9DBA00-29F4-9D4D-D266-C40336660872" referredColumn="C8ABB1EB-DCA0-3270-54BB-06719A011C80"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2B4EA2B2-9B16-6670-738C-D6678ED7E042" name="per_salud_PK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>1547FFBD-B268-7BEF-E44D-6CF768A94928</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43BC4873-02D7-EF31-58FD-63840B324C76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E6FC1500-7B3D-CC46-49A7-F166D16A4B3F" name="perSalud_esp_perSalud_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>974AAD91-BCBD-17C7-D50F-845242B1DDF5</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C07CFDAC-4CD6-4B26-1F2D-3A92075409CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9BC5E79D-D985-1D3B-CE98-4CEBAF44AD64" name="perSalud_unidad_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>96324E1A-7123-608F-5956-F35DCA1A48B7</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4F998A6-5521-D632-8926-378CE3E9AF13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7BA8281B-3AAF-D215-E806-5C5027A8C66B" name="perSalud_seccion_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>5FE6DFEB-5221-0A09-8A53-019C1C946650</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7EF3B1D6-3C99-F72B-BEB3-D138E2037741"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

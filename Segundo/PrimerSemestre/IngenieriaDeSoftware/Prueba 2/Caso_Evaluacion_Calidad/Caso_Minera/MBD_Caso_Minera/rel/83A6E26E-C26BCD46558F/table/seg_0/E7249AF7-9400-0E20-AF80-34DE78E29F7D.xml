@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7249AF7-9400-0E20-AF80-34DE78E29F7D" name="Zona">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>0150FC65-0936-8D77-D9CB-7977131BA6FD</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigozona" id="4A3A23D1-3C56-74ED-7457-377C6D4CF783">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<comment><![CDATA[Número único asignado a cada zona]]></comment>
+<generatorID>4A1E6B2A-0F6B-837D-D537-4E09E21C10DE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="9FF1A0F4-F1DD-607B-B269-9E878BE79094">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<comment><![CDATA[Descripción de la zona
+]]></comment>
+<generatorID>F69A260D-CCF0-A57C-B7AF-65EDB11F67FC</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivelriesgo" id="F73B6603-BC94-4E3D-548D-BF156A866ACF">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<comment><![CDATA[Nivel de riesgo que puede de ser 1, 2 ó 3
+]]></comment>
+<generatorID>B20CFCDF-670C-2567-78FF-C3C3AFB3CBCE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A30EEC0B-6D60-F6EA-0CF7-5285C56DA611" name="Zona_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>F7D13DF3-B04F-5DC9-9748-E16F7B306B64</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A3A23D1-3C56-74ED-7457-377C6D4CF783"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

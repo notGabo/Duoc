@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:38:29",
+    "Id": "PA279",
+    "Nombre": "San Alfonso / esq. Lincoln",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "BJFX-20, GCBC-61, TBFW-71",
+    "ContadorBusesActivos": 3,
+    "ServiciosActivos": "119, 511",
+    "ServiciosInactivos": "I18",
+    "ContadorServiciosActivos": 2,
+    "ContadorServiciosInactivos": 1,
+    "ServiciosTotales": 3
+}

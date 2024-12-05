@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F304D58D-61CA-871A-7861-1F7B5930CC1E" containerWithKeyObject="22B0187E-0B21-2285-204C-5E382A564BAD" localFKIndex="44EBDBB8-8D9F-ACD3-D5BE-C866F48B335B" name="Toxicidad_Relaves_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>754D8D07-7B32-ACAD-B10A-7128CCF7F8AE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<referredTableLongName>Relaves</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>534C458A-4896-ACC0-07C7-ED68889FB3C1</referredTableID>
+<keyObject>C8B2415F-44F1-00EA-7918-0D5A2E829DBA</keyObject>
+<referredKeyID>C8B2415F-44F1-00EA-7918-0D5A2E829DBA</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>numero,codigotiporelave</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

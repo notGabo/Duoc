@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C69A4A7-3A74-F8C2-246C-F7D083C5E8D9" name="ficha_paciente">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>21E6D229-82FE-51ED-60B8-D38B617699A4</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ficha" id="9E0D03AD-8976-BDBE-0431-2D4888F7AF08">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>6A5CE923-DBB9-5BAC-28E6-7456F3276B72</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diagnostico_paciente" id="E89AAC7A-3FC0-5B5D-F745-9709ADA01232">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>43C3BC12-F8A4-232B-896A-F6FC6E2F37BB</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operaciones" id="29FFFF89-96DF-686B-4833-DD1F57A01002">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>EA97FCCD-2045-F970-BE10-8DC928A690BA</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="riesgo_salud" id="20ADB773-D4C7-6EE4-0ADE-DB06B41C3586">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>14187E07-68AC-E2C3-C046-4D785F7DB58D</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D2A88A5-B03D-FE91-5892-444D331726A5" name="ficha_paciente_PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>81AF64A7-E4BE-ABF3-F599-93AB078989DD</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9E0D03AD-8976-BDBE-0431-2D4888F7AF08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

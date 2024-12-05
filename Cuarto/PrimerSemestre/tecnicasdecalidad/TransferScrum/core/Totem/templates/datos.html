@@ -1,0 +1,72 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Datos{% endblock title %}
+
+{% block style %}
+<style>
+#in-submit{
+    border-radius: 15px;
+    font-size: 1rem;
+    border: 2px solid var(--background-color);
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px white;
+    color: var(--bs-light);
+    background: hsl(0, 0%, 13%);
+    aspect-ratio: 21 / 7;
+    width: 8rem;
+
+    transition-property: font-size, box-shadow, color, background;
+    transition-duration: 100ms;
+}
+#in-submit:active, #in-submit:focus{
+    font-size: 0.9rem;
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px white,
+                inset -5px -5px 10px -3px #3d3d3d,
+                inset 5px 5px 10px -3px #000000;
+    color: var(--bs-gray-400);
+    background: hsl(0, 0%, 10%);
+}
+#input-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+#input-container>input{
+    width: calc(var(--max-width) - 5rem);
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px 0;
+
+    background-color: var(--background-color);
+    outline: none;
+    border: 2px solid var(--bs-gray-400);
+
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px hsl(0, 0%, 95%);
+
+}
+
+</style>
+{% endblock style %}
+
+{% block content %}
+<div class="d-flex justify-content-center flex-wrap h-100 text-center">
+    <h2 class="text-center mt-5 align-self-start">INGRESE SUS DATOS</h1>
+    <form method="post" class="w-100 d-flex justify-content-between align-items-center flex-column flex-wrap">
+        <div id="input-container">
+            <input type="text"  name="nombres" placeholder="NOMBRES" required/>
+            <input type="text"  name="apellidos" placeholder="APELLIDOS" required/>
+            <input type="text"  name="documento" placeholder="NUMERO DE DOCUMENTO" required/>
+            <input type="email" name="email" placeholder="CORREO ELECTRONICO" required/>
+            <input type="tel"   name="telefono" placeholder="TELEFONO (OPCIONAL)"/>
+        </div>
+
+        <input id="in-submit" type="submit" value="CONTINUAR"/>
+    </form>
+    {% include "blueprints/navigator.html" %}
+</div>
+{% endblock content %}

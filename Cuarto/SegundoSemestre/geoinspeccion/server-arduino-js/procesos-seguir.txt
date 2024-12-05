@@ -1,0 +1,33 @@
+mkdir arduino-server
+cd arduino-server
+npm init -y
+npm install express body-parser
+
+#para instalade de forma local se deben seguir estos procedimientos
+
+#Crea un archivo server.js con el siguiente contenido:
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.json());
+
+app.post('/data', (req, res) => {
+  console.log('Datos recibidos del Arduino:', req.body);
+  res.status(200).send('Datos recibidos');
+});
+
+app.listen(port, () => {
+  console.log(`Servidor escuchando en http://localhost:${port}`);
+});
+
+#inciar el servidor con:
+
+node server.js
+
+#Pruebas de sistema:
+
+Enciende el servidor Node.js: Asegúrate de que el servidor esté corriendo y escuchando en el puerto 3000.
+Carga el código en el microprocesador: Asegúrate de que el prototipo esté conectado a la red WiFi y cargue el sketch.
+Observa los datos: Verifica que los datos enviados por el Arduino aparezcan en la consola del servidor Node.js.

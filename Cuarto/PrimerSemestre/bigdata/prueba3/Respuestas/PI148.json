@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:37:34",
+    "Id": "PI148",
+    "Nombre": "Parada 3 / (M) Plaza de Maip\u00fa",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "FLXF-42, FLXL-38, RWRP-39, FLXZ-44, FLXW-67, GCBC-49, PFXB-24, BJFJ-29, BJFH-62, PGPT-37, PGPS-92, PFYR-77, PFVG-42, FLXY-12, FLXZ-80, PGPT-52, PFYS-21, FLXF-99, FLXR-33",
+    "ContadorBusesActivos": 19,
+    "ServiciosActivos": "I10, I11, I12, 109, 118, 423, 481, I24, 108, I03",
+    "ServiciosInactivos": "I10N, 109N, 599, F90",
+    "ContadorServiciosActivos": 10,
+    "ContadorServiciosInactivos": 4,
+    "ServiciosTotales": 14
+}

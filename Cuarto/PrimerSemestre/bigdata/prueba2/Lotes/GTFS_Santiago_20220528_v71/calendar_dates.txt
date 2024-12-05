@@ -1,0 +1,5 @@
+service_id,date,exception_type
+D,20220621,1
+L,20220621,2
+D,20220627,1
+L,20220627,2

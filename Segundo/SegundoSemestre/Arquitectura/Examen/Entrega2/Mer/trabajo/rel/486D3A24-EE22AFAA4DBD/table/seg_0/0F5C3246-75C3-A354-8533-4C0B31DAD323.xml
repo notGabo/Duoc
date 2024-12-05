@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0F5C3246-75C3-A354-8533-4C0B31DAD323" name="evaluacion">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>3606056A-8A22-6A0D-0F15-B0F7BB8649F1</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_evalu" id="35AC3D6A-54FA-0ECE-4F8C-CB19677886AE">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>390199F6-D14F-B76B-352D-105A72BE9A7D</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_hora" id="82C2F574-E9E7-BA5E-744C-074E848CF916">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>C1E19763-1BAE-3F0B-E8F9-DE530E7A38BC</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nivel_riesgo" id="2EA32366-66BB-64FD-E181-3B19548A1D56">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>D2614815-419A-40E5-0BA3-867C0270CDD2</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<listOfValues>
+<valueDef value="0" description="bajo"/>
+<valueDef value="1" description="intermedio"/>
+<valueDef value="2" description="alto"/>
+</listOfValues>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diag_eva" id="E7D1FD65-ED7A-5C83-9536-299BC79E24FF">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>13212413-8311-8AEF-BCEF-CDEEF219EE8D</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A660E7D-BA72-8ADB-21C0-1200F4B77805" name="evaluacion_PK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>704010E2-FBE1-7606-F6CF-CD1C109EED3B</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35AC3D6A-54FA-0ECE-4F8C-CB19677886AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

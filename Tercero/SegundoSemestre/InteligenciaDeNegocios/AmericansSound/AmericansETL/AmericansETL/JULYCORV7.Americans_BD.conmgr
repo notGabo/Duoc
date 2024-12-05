@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="JULYCORV7.Americans_BD"
+  DTS:DTSID="{17C9BCAB-13C9-4AE5-A9D3-EB7B6E492B37}"
+  DTS:CreationName="ADO">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=Americans;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-{17C9BCAB-13C9-4AE5-A9D3-EB7B6E492B37}JULYCORV7.Americans_BD;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

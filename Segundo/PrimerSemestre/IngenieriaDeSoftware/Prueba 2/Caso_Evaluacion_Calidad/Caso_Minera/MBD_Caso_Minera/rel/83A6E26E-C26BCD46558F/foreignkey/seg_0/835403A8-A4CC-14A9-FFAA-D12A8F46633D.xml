@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="835403A8-A4CC-14A9-FFAA-D12A8F46633D" containerWithKeyObject="E9A69E15-BC09-2E15-2810-23DA0562191B" localFKIndex="B8A0FB29-92C5-0381-952F-0EF5DB151FB4" name="intervencion_Shift_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>F4710DDA-D4D4-2033-3B94-979A0148B1F7</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<referredTableLongName>Shift</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A54AAA15-3875-F37A-9477-0593A5CE965A</referredTableID>
+<keyObject>9C4BFA5C-C00E-4111-C6B9-1B2A5A9CA8FF</keyObject>
+<referredKeyID>9C4BFA5C-C00E-4111-C6B9-1B2A5A9CA8FF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>nroturno</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

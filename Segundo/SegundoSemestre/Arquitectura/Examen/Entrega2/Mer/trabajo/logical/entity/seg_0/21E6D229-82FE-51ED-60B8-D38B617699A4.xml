@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="21E6D229-82FE-51ED-60B8-D38B617699A4" name="ficha_paciente">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:27:16 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_ficha" id="6A5CE923-DBB9-5BAC-28E6-7456F3276B72">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:27:22 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="diagnostico_paciente" id="43C3BC12-F8A4-232B-896A-F6FC6E2F37BB">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:47:32 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="operaciones" id="EA97FCCD-2045-F970-BE10-8DC928A690BA">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:43:42 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="riesgo_salud" id="14187E07-68AC-E2C3-C046-4D785F7DB58D">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:44:10 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_evalu" id="B301F842-3ABF-E503-8D7A-0822D292982D">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:36:46 UTC</createdTime>
+<generatorID>3DD5918A-BA10-FAF9-4733-6522059BCFF0</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<referedAttribute>390199F6-D14F-B76B-352D-105A72BE9A7D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_paciente" id="A5B14131-ADD8-9A57-DBBE-B883E3BE7868">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:37:19 UTC</createdTime>
+<generatorID>F083694F-FFE7-47E3-65B0-9D21C9B06E3E</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<referedAttribute>05DDE6DD-CE89-E40C-115C-7705E77C982F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="81AF64A7-E4BE-ABF3-F599-93AB078989DD" name="ficha_paciente PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:27:33 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6A5CE923-DBB9-5BAC-28E6-7456F3276B72</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

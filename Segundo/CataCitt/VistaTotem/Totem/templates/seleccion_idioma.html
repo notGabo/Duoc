@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion de idioma</title>
+    <link rel="preload" href="{% static 'css/Style_index.css' %}" as="style">
+    <link href="{% static 'css/Style_index.css' %}" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <a href="#" class="logo">
+                <img src="{% static 'imagenes/logo.png' %}" width="150px" height="150px" style="margin-left: 20px;" >
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="contenedorcito">
+            <label for:"Lenguaje">Eliga un idioma</label> 
+            <select name="Lenguaje" id="Lenguaje">
+                <option value="espannol">Español</option>
+                <option value="ingles">Ingles </option>
+                <option value="Frances">Frances</option>
+            </select>
+        </div>
+        <a href="{% url 'Index' %}" class="link">
+            <input type="button" value="aceptar" class="botoncito">
+        </a>
+    </main>
+</body>
+</html>

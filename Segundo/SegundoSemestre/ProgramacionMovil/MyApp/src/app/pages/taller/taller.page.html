@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Back" color="primary" mode="ios">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Taller</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content class="background">
+  <ion-card class="background">
+    <img src="" alt="">
+    <ion-card-header>  
+      <ion-card-title class="tituloCarta">Gifs de gatos</ion-card-title>
+      <ion-card-subtitle class="subtituloCarta">🐱🐱🐱🐱🐱 holi</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>  
+    <p class="descripcionCarta">
+      Gifs de gatos que me dan risa que me encuentro por ahi cuando estoy aburrido, hablando con amigos o haciendo cualquier cosa menos hacer la tarea. Hola, no se que mas poner, asi que esto es de relleno
+    </p>
+    <img src="/assets/gatotruco.gif" alt="">
+    </ion-card-content>
+  </ion-card>
+  <ion-item>
+    <ion-icon slot="start" name="alert-circle-outline" color="danger"></ion-icon>
+    <ion-label class="labelItem">CUIDADO!</ion-label>
+    <ion-button fill="outline" slot="end">
+      <a href="https://c.tenor.com/FIKyVDot5TAAAAAd/cat-jumpscare.gif">⚠</a>
+    </ion-button>  
+  </ion-item>
+  <ion-button (click)="notCatForm()">
+    Adopta un minino!!!
+  </ion-button>
+</ion-content>
+
+

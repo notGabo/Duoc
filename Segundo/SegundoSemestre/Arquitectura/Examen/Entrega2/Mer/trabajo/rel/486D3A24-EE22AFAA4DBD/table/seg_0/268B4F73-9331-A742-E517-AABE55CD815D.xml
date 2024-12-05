@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="268B4F73-9331-A742-E517-AABE55CD815D" name="interconsulta">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>1604F796-E8EA-282A-2838-BACEB50713B9</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_interconsulta" id="040231F9-636A-3DA4-8413-8D0CFD95273D">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>B5428212-9CEC-7025-2A67-A6A144918A90</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="C5694520-9D01-5294-FEC2-C3A629DE2E5C">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>5080D54D-ED26-1459-4309-F4BDF4AB4F6F</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obse_pacient" id="51F4F948-DB80-AF57-DADE-AA8933631ECE">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>EDB4804E-CD6D-C4EE-5F6F-C0CAF00E57DA</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="per_salud_rut_perSalud" id="C9FE7263-6DEF-6C57-8324-4F060BD8D6C8">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>CA9B8200-6451-B89A-220D-0205A24AAEA5</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B14952A7-C0AC-EF0E-8C07-C5C39336DDDE" referredColumn="43BC4873-02D7-EF31-58FD-63840B324C76"/>
+</associations>
+</Column>
+<Column name="paciente_rut_paciente" id="5B3B82B3-FF8A-D2C1-F342-781568C15922">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>BD9C90A9-FCD4-9B26-7296-6BA659374EE8</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3BC04708-6626-7DEE-21F6-FBC710B5545E" referredColumn="EBAA7C6D-A7C4-FF67-A53B-025667D879F5"/>
+</associations>
+</Column>
+<Column name="ficha_paciente_id_ficha" id="BCF67B3C-4FB7-93AA-8D40-B05BFF487D48">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>F6606A48-65FF-6A1E-28AA-73ABB548A2BF</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D768A8B-D87E-C987-3D53-2AC7AC99E280" referredColumn="03F432AD-4F77-0E55-2E98-C81893C9D8AA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="33231231-FDF6-8C11-3C32-A846D4BC6E69" name="interconsulta_PK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>06671529-81E6-44BF-DE6E-6FCA3388D66C</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="040231F9-636A-3DA4-8413-8D0CFD95273D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8F376578-AF38-473F-2160-EC272FF4FE52" name="ic_per_salud_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>93E13A0C-E60D-6E6A-D9C7-ED1091DFC84A</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9FE7263-6DEF-6C57-8324-4F060BD8D6C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7D108CF-9F82-95FD-02FF-EEC26E097898" name="ic_paciente_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>8F5952EE-E1FC-3A3C-962A-CA0AF56675EB</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B3B82B3-FF8A-D2C1-F342-781568C15922"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59F95605-C466-0726-0709-B1E78CA3C308" name="ic_ficha_paciente_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>61351C06-501B-FD76-78F2-52CF637B3D65</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BCF67B3C-4FB7-93AA-8D40-B05BFF487D48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

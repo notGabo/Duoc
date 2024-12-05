@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1604F796-E8EA-282A-2838-BACEB50713B9" name="interconsulta">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:22:35 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_interconsulta" id="B5428212-9CEC-7025-2A67-A6A144918A90">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:23:22 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha" id="5080D54D-ED26-1459-4309-F4BDF4AB4F6F">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:23:35 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="obs_pacient" id="EDB4804E-CD6D-C4EE-5F6F-C0CAF00E57DA">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:23:42 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_perSalud" id="CA9B8200-6451-B89A-220D-0205A24AAEA5">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:25:14 UTC</createdTime>
+<generatorID>93E13A0C-E60D-6E6A-D9C7-ED1091DFC84A</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<referedAttribute>921A1569-6467-C883-F268-531804881CF9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_paciente" id="BD9C90A9-FCD4-9B26-7296-6BA659374EE8">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:26:08 UTC</createdTime>
+<generatorID>8F5952EE-E1FC-3A3C-962A-CA0AF56675EB</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<referedAttribute>05DDE6DD-CE89-E40C-115C-7705E77C982F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ficha" id="F6606A48-65FF-6A1E-28AA-73ABB548A2BF">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:48:30 UTC</createdTime>
+<generatorID>61351C06-501B-FD76-78F2-52CF637B3D65</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<referedAttribute>6A5CE923-DBB9-5BAC-28E6-7456F3276B72</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="06671529-81E6-44BF-DE6E-6FCA3388D66C" name="interconsulta PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:23:33 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B5428212-9CEC-7025-2A67-A6A144918A90</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

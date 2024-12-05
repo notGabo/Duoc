@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="48F8B87B-3071-0B0C-7850-98A06B41B03B">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:27:18 UTC</createdTime>
+<ownerDesignName>MBD_Caso_Minera</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

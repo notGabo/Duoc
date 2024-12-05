@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CA1288F-C725-27B6-7359-C58F34B9EE86" name="unidad">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:41:15 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_unidad" id="5E7A9FB1-911C-AA19-CBF9-6E242D5AC5D0">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:41:22 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_unidad" id="0CF593A0-2927-EA05-33C2-017CDD80BE35">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:41:40 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6F4229D6-5429-1699-E595-7853323B2353" name="unidad PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:41:34 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E7A9FB1-911C-AA19-CBF9-6E242D5AC5D0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

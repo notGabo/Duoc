@@ -1,0 +1,547 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="72a24848-3719-484f-8b36-bac7c2aec7bb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim SUCURSAL</ID>
+  <Name>Dim SUCURSAL</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="14" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="4600" scrolltop="-4077" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="12779" y="16589" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCOMUNASUCURSAL" left="20" top="5337" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="4604" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fc11000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCOMUNASUCURSAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCALLESUCURSAL" left="15165" top="7477" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4233" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008910000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCALLESUCURSAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimSUCURSAL" left="7844" top="10674" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="4921" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e000039130000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimSUCURSAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimREGIONSUCURSAL" left="1713" top="10674" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3731" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000930e000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimREGIONSUCURSAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimDIRECCIONSUCURSAL" left="7024" top="4279" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="5741" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00006d1600009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimDIRECCIONSUCURSAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCODIGOPOSTALSUCURSAL" left="15165" top="3198" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="4048" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d00f000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCODIGOPOSTALSUCURSAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimCIUDADSUCURSAL" left="7195" top="0" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="5398" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00001615000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimCIUDADSUCURSAL" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="4324" top="5877" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_COMUNA_SUCURSAL_DIRECCION_SUCURSAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="21" destattachpoint="28" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4624" y="6276" />
+              <point x="7024" y="6276" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12465" top="6526" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3000" height="2290" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_CALLE_SUCURSAL_DIRECCION_SUCURSAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="5" sourceattachpoint="16" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15165" y="8416" />
+              <point x="13965" y="8416" />
+              <point x="13965" y="6826" />
+              <point x="12765" y="6826" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="10004" top="7775" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="840" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_DIRECCION_SUCURSAL_SUCURSAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="3" sourceattachpoint="13" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="10444" y="8274" />
+              <point x="10444" y="9474" />
+              <point x="10304" y="9474" />
+              <point x="10304" y="10674" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3179" top="7974" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="5915" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_REGION_SUCURSAL_DIRECCION_SUCURSAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="5" sourceattachpoint="6" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3578" y="10674" />
+              <point x="3578" y="9474" />
+              <point x="8794" y="9474" />
+              <point x="8794" y="8274" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12465" top="3738" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="1738" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_CODIGO_POSTAL_SUCURSAL_DIRECCION_SUCURSAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="5" sourceattachpoint="16" destattachpoint="25" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15165" y="4137" />
+              <point x="13965" y="4137" />
+              <point x="13965" y="5176" />
+              <point x="12765" y="5176" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9495" top="1380" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_CIUDAD_SUCURSAL_DIRECCION_SUCURSAL]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="5" sourceattachpoint="9" destattachpoint="10" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9894" y="1879" />
+              <point x="9894" y="4279" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>4600</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4077</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="0a023c28-30a3-497f-96db-005f36813c9c">
+    <DataSourceViewID>Albarran Dw</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="4fc787c3-619b-41e0-ac9c-f4a430325758">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="77df57ef-4412-44f1-9bd8-bea58d3e80b3">
+      <ID>ID SUCURSAL</ID>
+      <Name>ID SUCURSAL</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="80d2e08c-6f9a-48ca-8314-3b42005b03e0">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ae551399-8b17-49b8-a56b-12f0a6e10fb6">
+            <TableID>dbo_DimSUCURSAL</TableID>
+            <ColumnID>ID_SUCURSAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="9269d772-f09e-4908-9eee-b19378c4e414">
+          <AttributeID>ID DIRECCION SUCURSAL</AttributeID>
+          <Name>ID DIRECCION SUCURSAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c7afa7d4-f742-4435-bad4-9333ad4db72b">
+          <AttributeID>NOMBRE REGION</AttributeID>
+          <Name>NOMBRE REGION</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c18374b2-8516-400b-9feb-2b8e2ce367bb">
+          <AttributeID>NOMBRE CIUDAD SUCURSAL</AttributeID>
+          <Name>NOMBRE CIUDAD SUCURSAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c81f72d6-954c-4082-a8ea-4bab85a7cc8e">
+          <AttributeID>NOMBRE COMUNA</AttributeID>
+          <Name>NOMBRE COMUNA</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e1cf5f06-524d-4d72-8d3f-52a4dbf82609">
+          <AttributeID>NOMBRE CALLE</AttributeID>
+          <Name>NOMBRE CALLE</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="df0c511c-03a3-4e5c-aec0-be2059fef811">
+          <AttributeID>NOMBRE</AttributeID>
+          <Name>NOMBRE</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="399e274c-7d07-4dfd-9086-5f13ef7f52ab">
+      <ID>ID DIRECCION SUCURSAL</ID>
+      <Name>ID DIRECCION SUCURSAL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cf02f4b2-4f96-4d0d-9527-9e631dad672b">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b49f605c-a1a6-4f65-abf3-ecce0699f594">
+            <TableID>dbo_DimDIRECCIONSUCURSAL</TableID>
+            <ColumnID>ID_DIRECCION_SUCURSAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="3dca5651-cdf6-46ab-b9ca-19c510d1aba0">
+          <AttributeID>ID CALLE SUCURSAL</AttributeID>
+          <Name>ID CALLE SUCURSAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="a0775fb9-f2c1-46ed-b023-f9a3815d8358">
+          <AttributeID>ID COMUNA SUCURSAL</AttributeID>
+          <Name>ID COMUNA SUCURSAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2933f9c4-7b49-4abb-93a8-72d687ece9fe">
+          <AttributeID>ID CODIGO POSTAL</AttributeID>
+          <Name>ID CODIGO POSTAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7e75e21a-9958-49f4-a45b-2e2e4c499da9">
+          <AttributeID>ID CIUDAD SUCURSAL</AttributeID>
+          <Name>ID CIUDAD SUCURSAL</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2061b49b-1ba6-42d9-9773-2a623e8297ab">
+          <AttributeID>ID REGION</AttributeID>
+          <Name>ID REGION</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="de44015a-0134-43ef-b950-ba59784ffebf">
+      <ID>ID CALLE SUCURSAL</ID>
+      <Name>ID CALLE SUCURSAL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="75cc8f26-7afb-43a3-9686-5d052f8aff77">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e40e9d03-82ae-438f-bcc6-377719d61be5">
+            <TableID>dbo_DimCALLESUCURSAL</TableID>
+            <ColumnID>ID_CALLE_SUCURSAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4f6db56f-3923-4cd0-824a-87f6ac78a893">
+      <ID>ID COMUNA SUCURSAL</ID>
+      <Name>ID COMUNA SUCURSAL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="274fcf04-e7d8-432e-945c-d33459888afb">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5b34f966-e700-410b-a456-154a8b0e6468">
+            <TableID>dbo_DimCOMUNASUCURSAL</TableID>
+            <ColumnID>ID_COMUNA_SUCURSAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="926ba7e0-495b-4365-8e32-7a969ebb4ca9">
+      <ID>ID CODIGO POSTAL</ID>
+      <Name>ID CODIGO POSTAL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="31b6cd5d-8b02-4fcb-ba56-1d3a06217acf">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="86fc3f56-ffa0-41b2-8cbe-749017ddeae1">
+            <TableID>dbo_DimCODIGOPOSTALSUCURSAL</TableID>
+            <ColumnID>ID_CODIGO_POSTAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="89dc4599-06b0-45d5-9855-c96e9a1d7287">
+      <ID>ID CIUDAD SUCURSAL</ID>
+      <Name>ID CIUDAD SUCURSAL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="32618126-9ce8-4cf6-95c9-89fa3bd71cc1">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a5533f48-6659-4a8c-bc26-89de5aff7b03">
+            <TableID>dbo_DimCIUDADSUCURSAL</TableID>
+            <ColumnID>ID_CIUDAD_SUCURSAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e9660b0a-ab0e-4806-be38-a4eed616f7df">
+      <ID>ID REGION</ID>
+      <Name>ID REGION</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e6f282cd-f41e-4670-b01b-93a5ff7a0b6b">
+          <DataType>Double</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0d519a90-3c95-4082-9e61-955da6195831">
+            <TableID>dbo_DimREGIONSUCURSAL</TableID>
+            <ColumnID>ID_REGION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9b1ac871-9409-4ffc-a81a-859a90bf4171">
+      <ID>NOMBRE REGION</ID>
+      <Name>NOMBRE REGION</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0f6a7372-ac29-4d20-8740-763364001328">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="aec71f8a-a1db-497e-8d28-e17729d000bc">
+            <TableID>dbo_DimREGIONSUCURSAL</TableID>
+            <ColumnID>NOMBRE_REGION</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ecc72319-8dc7-4172-bcd9-1f1ed47a1c25">
+      <ID>NOMBRE CIUDAD SUCURSAL</ID>
+      <Name>NOMBRE CIUDAD SUCURSAL</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b107ded8-c705-4377-9935-324951a4ce5f">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="925bc3fc-fed9-43e0-8b83-32e7438249b4">
+            <TableID>dbo_DimCIUDADSUCURSAL</TableID>
+            <ColumnID>NOMBRE_CIUDAD_SUCURSAL</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="9e6855e6-4189-45c1-b2a9-09474af5c116">
+      <ID>NOMBRE COMUNA</ID>
+      <Name>NOMBRE COMUNA</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="729461cf-ca45-43f7-879b-75402886537d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e21b2585-cf38-4d5a-b9f1-c0f87b8dc59e">
+            <TableID>dbo_DimCOMUNASUCURSAL</TableID>
+            <ColumnID>NOMBRE_COMUNA</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="492c3b71-3a5c-47d9-820b-1f8ab88cc64e">
+      <ID>NOMBRE CALLE</ID>
+      <Name>NOMBRE CALLE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c3c02de7-c330-4359-a053-04bc17b79553">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5075a401-143c-4a2e-acc0-61118b32a436">
+            <TableID>dbo_DimCALLESUCURSAL</TableID>
+            <ColumnID>NOMBRE_CALLE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6b641c25-7568-41f8-8914-6d0f37dceb4e">
+      <ID>NOMBRE</ID>
+      <Name>NOMBRE</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="31cf4718-262e-49b3-a32a-319d1c181db7">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="40c2f106-1d70-4020-bf37-3b89066a2f52">
+            <TableID>dbo_DimSUCURSAL</TableID>
+            <ColumnID>NOMBRE</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="eff54c9e-70bb-46c6-add7-cacef5903146">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="b7b923ae-b01e-4e40-a2be-ada14bc282c5">
+          <ID>NOMBRE REGION</ID>
+          <Name>NOMBRE REGION</Name>
+          <SourceAttributeID>NOMBRE REGION</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="298758bc-2e58-4c77-a89c-a27ce1f33c75">
+          <ID>NOMBRE CIUDAD SUCURSAL</ID>
+          <Name>NOMBRE CIUDAD SUCURSAL</Name>
+          <SourceAttributeID>NOMBRE CIUDAD SUCURSAL</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f403ca66-68cd-4c1a-b2dc-a21272863ca2">
+          <ID>NOMBRE COMUNA</ID>
+          <Name>NOMBRE COMUNA</Name>
+          <SourceAttributeID>NOMBRE COMUNA</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="558b4567-6390-49d6-9148-e83404ce00ab">
+          <ID>NOMBRE CALLE</ID>
+          <Name>NOMBRE CALLE</Name>
+          <SourceAttributeID>NOMBRE CALLE</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="6a45ae7d-0c1f-49dd-976a-08077cbab91f">
+          <ID>NOMBRE</ID>
+          <Name>NOMBRE</Name>
+          <SourceAttributeID>NOMBRE</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

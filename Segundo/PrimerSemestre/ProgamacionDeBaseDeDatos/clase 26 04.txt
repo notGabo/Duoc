@@ -1,0 +1,67 @@
+     /* genererar una sentencia select
+     que permota mostrar los años trabajados de todos
+     los empleados */
+     
+    select 
+        id_empleado as "ID de empleado",
+        nombres as "Nombre de empleado",
+    extract(year from sysdate)-extract(year from feccontrato) as "Años trabajados"
+    from empleado;
+    
+    select 
+        id_empleado as "Id de empleado",
+        nombres||' '||apellidos as "Nombre completo del empleado",
+    '$'||sueldo as Sueldo
+    from empleado;
+    
+    select 
+        id_empleado as "Id de empleado",
+        nombres||' '||apellidos as "Nombre completo del empleado",
+        '$'||trunc(sueldo*1.15) as "Sueldo aumentado en 15%"
+    from empleado
+    where id_empleado=2;
+    
+    declare
+        v_sueldo            empleado.sueldo%type;
+        v_nombres           empleado.nombres%type;
+        v_aumento           number;
+        v_sueldo_aumentado  number;
+        v_feccontrato       empleado.feccontrato%type;
+        v_sysdate           date;
+        v_annios_trabajados number;
+        contador            number:=2;
+    begin
+        while contador <= 30 loop
+        select
+            nombres,
+            sueldo,
+            feccontrato,
+            sysdate
+        into
+            v_nombres,
+            v_sueldo,
+            v_feccontrato,
+            v_sysdate
+        from empleado
+        where id_empleado=contador;
+        v_aumento:=round(v_sueldo*15/100);
+        v_sueldo_aumentado:=v_sueldo+v_aumento;
+        v_annios_trabajados:=extract(year from v_sysdate)-extract(year from v_feccontrato);
+        DBMS_OUTPUT.PUT_LINE(contador||' '||v_nombres||' '||v_sueldo||' '||v_aumento||' '||v_sueldo_aumentado||' '||v_annios_trabajados);
+        contador:=contador + 2;
+        end loop;
+    end;
+    
+declare 
+    cursor cur_emp is select rut_empleado, nombres, sueldo from empleado;
+    type def_registro is record
+        (v_rut       empleado.rut_empleado%type,
+        v_nombre    empleado.nombres%type,
+        v_sueldo    empleado.sueldos%type); 
+    v_reg def_registro;
+begin
+    open cur_emp;
+    fetch cur_emp into v_reg;
+end;
+    
+     g

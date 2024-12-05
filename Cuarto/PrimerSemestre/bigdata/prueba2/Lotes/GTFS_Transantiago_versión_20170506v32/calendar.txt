@@ -1,0 +1,4 @@
+service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
+L_V32,1,1,1,1,1,0,0,20170509,20170930
+S_V32,0,0,0,0,0,1,0,20170509,20170930
+D_V32,0,0,0,0,0,0,1,20170509,20170930

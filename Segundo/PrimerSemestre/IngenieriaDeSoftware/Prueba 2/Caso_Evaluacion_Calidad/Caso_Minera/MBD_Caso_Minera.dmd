@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="lolito" id="210CCC2E-8BBD-F18E-0F8B-E0D2F5065DC2" version="3.5">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:27:18 UTC</createdTime>
+<ownerDesignName>MBD_Caso_Minera</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>210CCC2E-8BBD-F18E-0F8B-E0D2F5065DC2</designId>
+</OSDM_Design>

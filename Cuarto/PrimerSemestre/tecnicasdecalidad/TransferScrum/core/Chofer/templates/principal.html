@@ -1,0 +1,168 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Principal{% endblock title %}
+
+{% block head %}
+    {# TomTom Map API #}
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps.css'>
+{% endblock head %}
+
+{% block style %}
+<style>
+#map{
+    height: calc(var(--max-height) - 86px);
+    width: var(--max-width);
+}
+
+#topbar{
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    clip-path: fill-box;
+}
+#status-text{
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 2;
+    letter-spacing: 3px;
+    font-size: 1.25rem;
+}
+
+#offline-message{
+    display: flex;
+    align-items: center;
+    
+    position: fixed;
+    padding: 15px 10px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    width: calc(var(--max-width) - 2rem);
+    height: 78px;
+
+    border-radius: 10px;
+    line-height: 1rem;
+    background-color: var(--bs-orange);
+    box-shadow: 0 2px 10px 0px rgba(255, 115, 0, 0.5);
+
+    transition: top 300ms ease-in-out, visibility 0s step-end;
+    z-index: 10;
+
+}
+#offline-message[data-active="true"]{
+    top: calc(var(--max-height) - 78px - 1rem);
+    visibility: visible;
+    transition-delay: 0s;
+
+}
+#offline-message[data-active="false"]{
+    top: calc(var(--max-height) + 1.3rem);
+    visibility: hidden;
+    transition-delay: 0s, 300ms;
+}
+
+#offline-message>i{
+    width: 3rem;
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    margin-right: 20px;
+}
+#menu-button{
+    font-size: 1.8rem;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    transition: background-color, font-size 100ms ease;
+
+}
+#menu-button:active{
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 1.5rem;
+
+}
+
+</style>
+{% endblock style %}
+
+{% block topbar %}
+<button id="menu-button" type="button" onclick="sidemenu_control(event)">
+    <i class="bi bi-grid-fill"></i>
+</button>
+
+<span id="status-text">ONLINE</span>
+
+<switch value="true" onclick="changeStatus(event)" disabled="false">
+    <switch-lane>
+        <switch-circle></switch-circle>
+    </switch-lane>
+</switch>
+{% endblock topbar %}
+
+{% block content %}
+<div>
+    <div id="map" class="map"></div>
+    <div id="offline-message" data-active="false">
+        <i class="bi bi-moon-fill"></i>
+        <span>
+            <b>¡Estas offline!</b><br>
+            <sub>Vuelve a modo <b>Online</b> para aceptar nuevas reservas.</sub>
+        </span>
+    </div>
+    
+    {% include "blueprints/reserva_card.html" %}
+
+    {# SIDEMENU #}
+    {% include "blueprints/sidemenu.html" %}
+
+</div>
+{% endblock content %}
+
+{% block script %}
+<script src='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.23.0/maps/maps-web.min.js'></script>
+<script>
+    let map = tt.map({
+
+        key: "FjiYm2OcMMfV2yq71bJE1ycq1xESbZqn",
+        container: "map",
+        stylesVisibility:{
+            trafficFlow:true,
+            trafficIncidents:true,
+        },
+        center: {lon: -70.793368, lat:-33.399116},
+        zoom: 18,
+        pitch: 60,
+        bearing: 45
+    })
+
+    const id_transfer = {{ session.user.transfer_id }};
+
+    window.addEventListener("DOMContentLoaded", ()=> map.setCenter({lon: -70.79368897518818, lat:-33.39715902634981}));
+
+    window.addEventListener("DOMContentLoaded", ()=>{
+        
+        fetch("http://localhost:8002/chofer/obtener-status-transfer?id_transfer="+id_transfer, {method:"GET"})
+        .then(response => response.json())
+        .then(result =>{
+
+            if(result.status !== "online" && result.status !== "offline") return;
+
+            const value = result.status === "online";
+
+            document.querySelector("switch").setAttribute("value", value);
+            document.getElementById("status-text").textContent = result.status.toUpperCase();
+            document.getElementById("offline-message").dataset.active = !value;
+            
+        })
+        .catch(error => console.log('error', error));
+        
+        checkIncomingReservas();
+    });
+
+</script>
+
+<script src="{{url_for('static', filename='js/principal.js')}}"></script>
+<script src="{{url_for('static', filename='js/components.js')}}"></script>
+{% endblock script %}

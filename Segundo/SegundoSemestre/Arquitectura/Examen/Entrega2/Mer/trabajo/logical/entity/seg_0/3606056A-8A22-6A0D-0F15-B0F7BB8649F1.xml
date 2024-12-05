@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3606056A-8A22-6A0D-0F15-B0F7BB8649F1" name="evaluacion">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:27:04 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_evalu" id="390199F6-D14F-B76B-352D-105A72BE9A7D">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:27:08 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_hora" id="C1E19763-1BAE-3F0B-E8F9-DE530E7A38BC">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:27:50 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel_riesgo" id="D2614815-419A-40E5-0BA3-867C0270CDD2">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:29:11 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<listOfValues>
+<valueDef value="0" description="bajo"/>
+<valueDef value="1" description="intermedio"/>
+<valueDef value="2" description="alto"/>
+</listOfValues>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="diag_eva" id="13212413-8311-8AEF-BCEF-CDEEF219EE8D">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:32:29 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250 CHAR</dataTypeSize>
+<ownDataTypeParameters>250 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="704010E2-FBE1-7606-F6CF-CD1C109EED3B" name="Entity_8 PK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:27:44 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>390199F6-D14F-B76B-352D-105A72BE9A7D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

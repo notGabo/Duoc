@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BDA29647-E1FD-A1A2-98C7-C84A61E54E79" name="paciente">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>2D1D8CF9-B2DE-0105-1A33-AB02FC47E7C5</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="rut_paciente" id="B658AC41-3B34-1FF0-5ED2-FC0F14B1BE2F">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>05DDE6DD-CE89-E40C-115C-7705E77C982F</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_paciente" id="F4C35EFE-BAE4-FFE1-A7E1-C20252C8F504">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>3632566B-8651-EC8B-F044-4A7D5911DF01</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ape_paciente" id="E8350C7C-F760-6005-1D1C-CE6ABDC16E3F">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>90546DFD-7D1E-9F15-A016-4B4BF0E996A0</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_nac" id="232F50B3-9E50-57DF-A46E-6483BF5ABAC5">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>4575F1AA-6408-A629-22DD-9455D3DDADC4</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="peso_kg" id="1D89B606-76FE-CA02-AE52-35D8086B3548">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>720F98D7-C498-8B9A-9256-A09D69FDFD5C</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estatura_cm" id="EC19508C-DC3F-847F-C7B1-1E80D88C6561">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[100]]></commentInRDBMS>
+<generatorID>59DE91CE-98A2-E1A8-F747-964A574CDA7D</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo" id="15553DF9-906C-1AF2-15CE-0D3F9829D67A">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[F o M]]></commentInRDBMS>
+<generatorID>61E4E144-D51E-CA5F-207C-63EB383A100A</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<constraintName>sexo_nacimiento</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="femenino"/>
+<valueDef value="M" description="masculino"/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo" id="F34192FC-03EA-9988-5007-B6339C2B78CC">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>69681ECC-AF72-A688-85AE-CBDEE9C8FFB4</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="direc_paciente" id="DE77C5E5-3500-C8F4-0C31-E25807D9FA38">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>DF40F471-3FEA-3A5E-3D3F-D0621AAE8DA7</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_emergencia" id="065DBC23-9B3F-83BF-716B-6031E0E2E3F2">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[56 999 999 99]]></commentInRDBMS>
+<generatorID>3034E19E-AFD2-FED2-E904-2B131860B71C</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_paciente" id="D88933A2-AC8C-FE68-BFC3-B61D9E52F482">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[56 999 999 99]]></commentInRDBMS>
+<generatorID>617380FB-8D1A-2435-093B-37D0FEAE262D</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CA56285E-FB81-0FB9-04DD-217950238B78" name="paciente_PK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 00:12:22 UTC</createdTime>
+<generatorID>E9522CDB-381F-4267-2016-856881A55C61</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B658AC41-3B34-1FF0-5ED2-FC0F14B1BE2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,27 @@
+BEGIN;
+--
+-- Create model boleta
+--
+CREATE TABLE "CommunityPlant_boleta" ("idBoleta" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "precioTotal" integer NOT NULL, "fecha" date NOT NULL);
+--
+-- Create model CategoriaPlanta
+--
+CREATE TABLE "CommunityPlant_categoriaplanta" ("idCategoria" integer NOT NULL PRIMARY KEY, "nombreCategoria" varchar(40) NOT NULL UNIQUE);
+--
+-- Create model Descuento
+--
+CREATE TABLE "CommunityPlant_descuento" ("IdCodigo" varchar(30) NOT NULL PRIMARY KEY, "Porcentaje" integer NOT NULL);
+--
+-- Create model FormSolicitud
+--
+CREATE TABLE "CommunityPlant_formsolicitud" ("idSolicitud" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "nombreCompleto" varchar(60) NOT NULL, "mailSolicitante" varchar(60) NOT NULL, "descripcion" varchar(1000) NOT NULL);
+--
+-- Create model Usuarios
+--
+CREATE TABLE "CommunityPlant_usuarios" ("username" varchar(30) NOT NULL PRIMARY KEY, "mail" varchar(60) NOT NULL UNIQUE, "password" varchar(60) NOT NULL, "suscripcion" bool NOT NULL);
+--
+-- Create model CatalogoPlantas
+--
+CREATE TABLE "CommunityPlant_catalogoplantas" ("idPlanta" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "nombrePlanta" varchar(30) NOT NULL UNIQUE, "descripcionPlanta" varchar(500) NOT NULL, "precioPlanta" integer NOT NULL, "imagenPlanta" varchar(2000) NOT NULL, "stockPlanta" integer NOT NULL, "categoria_id" integer NOT NULL REFERENCES "CommunityPlant_categoriaplanta" ("idCategoria") DEFERRABLE INITIALLY DEFERRED);
+CREATE INDEX "CommunityPlant_catalogoplantas_categoria_id_beaeb544" ON "CommunityPlant_catalogoplantas" ("categoria_id");
+COMMIT;

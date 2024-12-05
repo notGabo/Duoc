@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:37:48",
+    "Id": "PI230",
+    "Nombre": "Parada 2 / (M) Plaza de Maip\u00fa",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "SFGY-21, SDSW-94, TBFX-28, TBFS-50, GCBC-76, GCBC-36",
+    "ContadorBusesActivos": 6,
+    "ServiciosActivos": "I35, 506, 506V",
+    "ServiciosInactivos": "506E, 546E",
+    "ContadorServiciosActivos": 3,
+    "ContadorServiciosInactivos": 2,
+    "ServiciosTotales": 5
+}

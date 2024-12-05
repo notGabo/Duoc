@@ -1,0 +1,94 @@
+.frame-login{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-content: center;
+    /* justify-content: space-around; */
+    /* padding: 1rem 0; */
+
+    width: 60%;
+    margin: 3rem auto 3rem auto;
+    
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.login-side{
+    width: 50%;
+}
+
+.login-side.left{
+    margin: 0 0 0 5%;
+}
+
+.login-side.left>p{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.container-text{
+    margin-top: calc(42% - 0.8rem);
+}
+
+.chile-block{
+    width: 30%;
+    height: 0.8rem;
+    background: linear-gradient(90deg, #0F69B4 40.86%, #EB3646 40.86%);
+}
+
+.login-side.right{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 2% 0 2% 0;
+    padding: 9% 2.5% 9% 2.5%;
+    border-left: 1px solid #D7D7D7;
+    
+}
+
+.login-side.right h3{
+    margin: 0 0 15% 0;
+}
+
+.login-input{
+    width: 75%;
+
+    padding: 0.5rem 0 0.5rem 0;
+    margin: 0 0 0.5rem 0;
+    text-indent: 7%;
+
+    border-radius: 5px;
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+}
+
+.login-input:focus{
+    border-color: #8f8f8f;
+}
+
+.login-forgot{
+    color: #0F69B4;
+    background: local;
+    border: 0;
+    width: 50%;
+    margin: 0.5rem 25% 3rem 25%;
+}
+
+.login-forgot:hover{
+    color: #09416e;
+}
+
+.login-ingresar{
+    color: white;
+
+    border: 0;
+    width: 50%;
+    height: 2rem;
+
+    border-radius: 5px;
+    background: #0F69B4;
+
+}
+.login-ingresar:hover{
+    background: #09416e;
+}

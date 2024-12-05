@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Prueba3GestionDeRiesgos" company="" webLink="http://" view-date="2024-03-04" view-index="0" gantt-divider-location="256" resource-divider-location="300" version="3.3.3309" locale="en_US">
+    <description/>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Name" width="145" order="0"/>
+        <field id="tpd4" name="Begin date" width="55" order="1"/>
+        <field id="tpd5" name="End date" width="55" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="0" mon="1" tue="1" wed="1" thu="1" fri="1" sat="0"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="0ed9ecfead044dc5bf7ea413f3229d91" name="Colegio genios traviesos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true">
+            <task id="1" uid="147c14b5e74345ceb791b2111f5ca338" name="Instalación infraestructura" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+            <task id="2" uid="91224df33f6e41ab8dc62c7a6a31761c" name="Instalación redes" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+            <task id="3" uid="6729d10d8ea44e5e9cc1e00180b35c05" name="Cotizaciones y presupuesto" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+            <task id="4" uid="03c0abc84e724daab1331483be8eb314" name="Creación plan de riesgos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+            <task id="5" uid="8571df0866464dc48a4737a3fd040a53" name="Proyecto controles de acceso" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true">
+                <task id="6" uid="2bc5d2e7967d450da96b482a22a3e9ba" name="Toma de requerimientos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="7" uid="285f705c24ab4e4ebb718fb2fb4ad353" name="Planificaciones" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="8" uid="e3c946dfb2c64be8a509d35d596cc33b" name="Desarrollo proyecto" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="9" uid="a8fd193fb3e043be9c147c476fc59e15" name="Control de calidad y qa" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true">
+                    <task id="10" uid="c7f125e6427d482781482f2c2e81388e" name="Pruebas de electricidad" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                    <task id="11" uid="e7bcf569575d4e4c9e92911fb23ae80f" name="Pruebas de seguridad a los servidores" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                    <task id="12" uid="7e4b43ef257f489e884359133805eb55" name="Pruebas de estres" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                    <task id="13" uid="f24ebaa29a9a4e83b40b572e3f443683" name="Escritura documentos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="14" uid="36e2aa0e3bbc48b082e9580e19f915b7" name="Mantenimiento y pruebas a sistemas" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="15" uid="19b84fd7137d400abd956876eebf18f0" name="Proyecto compras en casino" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true">
+                <task id="16" uid="79062ddfa0d046ad9218964e23314a03" name="Toma de requerimientos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="17" uid="ea8219e904f4493cb20b520ced32ddd3" name="Planificaciones" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="18" uid="415dd64b4cff45d7a71c107ae4248ca3" name="Desarrollo proyecto" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="19" uid="12ccdf577b18430f8c0e9603afc20bfb" name="Control calidad y qa" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true">
+                    <task id="20" uid="91a3110b2fa8495095e9f19c8d25b52a" name="Pruebas de transacciones monetarias" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                    <task id="21" uid="39ddea58a94446c6854804f59b4298e2" name="Pruebas de seguridad a servidores" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                    <task id="22" uid="b6ab990a000045749f71d1bd0f4a472c" name="Escritura de documentos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="23" uid="b70d0e7f0833495a8cd27c543f418217" name="Mantenimiento y pruebas a sistemas" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="24" uid="1be32d7de6bb4591901a9b771406bcb4" name="Proyecto drop off" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true">
+                <task id="25" uid="bc46bfaffeec46d99f739aa7b1dbbca3" name="Toma de requerimientos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="26" uid="fb100990ecf64ed08ab1999d4d7cb33e" name="Planificaciones" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="27" uid="2e4230b0abe24e1e94ecccb4da2109a2" name="Desarrollo proyecto" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                <task id="28" uid="602f8a6e108d40b4880620bd9a112164" name="Control calidad y qa" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true">
+                    <task id="29" uid="3f49adb77b7441a5be33a0086d1c4fa0" name="Pruebas a camaras" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                    <task id="30" uid="3b9b35c6833e454caacfa06cd7c5c9a6" name="Escritura de documentos" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="32" uid="50c87785178247a2b560a169c5ca5751" name="Mantenimiento y pruebas a sistemas" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="31" uid="2d197f65b21d4173904a578a01698c56" name="Entrego proyecto" meeting="false" start="2024-03-10" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

@@ -1,0 +1,11 @@
+FechaDeEjecucion;Id;Nombre;CodigoEstado;DescripcionStatus;BusesActivos;ContadorBusesActivos;ServiciosActivos;ServiciosInactivos;ContadorServiciosActivos;ContadorServiciosInactivos;ServiciosTotales
+26/06/2024 19:39:04;PI148;Parada 3 / (M) Plaza de Maipú;0;Itinerario obtenido satisfactoriamente;PFTW-79, PGPT-33, FLXY-61, FLXL-19, FLXZ-26, RWRP-73, FLXW-88, FLXX-99, BJFB-68, LZPH-37, PGPT-19, PFVD-57, PGPT-54, PFYS-52, FLXG-58, FLXK-93, FLXL-52, FLXL-46, FLXW-21, CJRZ-80;20;481, I24, I11, I12, 118, 108, 423, I03, I10, 109;I10N, 109N, 599, F90;10;4;14
+26/06/2024 19:39:12;PI419;Parada 10 / (M) Plaza de Maipú;0;Itinerario obtenido satisfactoriamente;PFVK-96, PDZT-12, PFYG-96, PFVL-16, PFVJ-11, PFVJ-20, PFYS-52, PFVC-55, PGPT-25, PFTW-79, PGPS-98, PFYR-61, PFYS-41, PFVJ-28;14;401, 405, 413C, 423, 481, 431C, 106;599;7;1;8
+26/06/2024 19:39:18;PI230;Parada 2 / (M) Plaza de Maipú;0;Itinerario obtenido satisfactoriamente;SHXG-68, SHXB-12, TBFX-36, TBFT-96, TBFT-79, FLXW-42;6;I35, 506, 506V;506E, 546E;3;2;5
+26/06/2024 19:39:26;PA95;Parada 9 / (M) Matta;0;Itinerario obtenido satisfactoriamente;SDGY-15, LZPS-13, GCBF-42, TBZB-20, FLXF-79, FLXF-84;6;203, 206, 385;203N, 203E;3;2;5
+26/06/2024 19:39:32;PJ1731;Parada 7 / (M) Gruta de Lourdes;0;Itinerario obtenido satisfactoriamente;CJRZ-66, CJRW-73, PFXC-45, GCBF-18;4;J16, 407;;2;0;2
+26/06/2024 19:39:40;PF101;Parada / (M) Protectora de la Infancia;0;Itinerario obtenido satisfactoriamente;LZPW-18, LZPG-17, LZPG-14, LZRB-96, SXKV-98, LCPG-37, LBTT-18, SRVL-15, SRVF-79, SPVV-26, SPVV-63, SRPK-28, SRRZ-26;13;205, 205C, 210, F15, 213E, F01, F13;F30N;7;1;8
+26/06/2024 19:39:47;PB1921;Parada 1 / (M) Plaza Quilicura;0;Itinerario obtenido satisfactoriamente;SLPC-36, SLPC-14, SLLZ-51, SLLZ-40, SPCG-35, SKDH-59, SKDH-73, SKDF-98, SGPW-47, SHCY-20, SLPC-48, SLPB-94, SLGT-31, SLGS-98;14;430, 435, B06, B21, 425, 429, 429C;;7;0;7
+26/06/2024 19:39:53;PJ108;Av. Américo Vespucio / esq. Papa San Pío;0;Itinerario obtenido satisfactoriamente;SLLZ-46, SLLY-91, SKPL-36, SKPK-37, FDJX-79;5;428, 444, 424;J08;3;1;4
+26/06/2024 19:40:00;PA279;San Alfonso / esq. Lincoln;0;Itinerario obtenido satisfactoriamente;CJRZ-68, BJFZ-65, FLXL-44, TBFR-51, GCBC-94;5;119, I18, 511;;3;0;3
+26/06/2024 19:40:07;PD10;Parada 5 / (M) Est.Nacional;0;Itinerario obtenido satisfactoriamente;LDSV-89, PGLD-66, PGRZ-78;3;114, 117;1090, 103, 1290;2;3;5

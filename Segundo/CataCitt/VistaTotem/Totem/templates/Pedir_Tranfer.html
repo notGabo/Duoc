@@ -1,0 +1,105 @@
+<!-- tu_template.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Autos</title>
+    <!-- Cargar tus estilos CSS -->
+    <link href="{% static 'css/Style_index.css' %}" rel="stylesheet">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .empresa-container {
+            display: inline-block;
+            margin: 20px;
+            cursor: pointer;
+        }
+        .empresa-logo {
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .autos-container {
+            display: none;
+            margin-top: 20px;
+        }
+        .auto {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .boton-reservar {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <a href="#" class="logo">
+                <img src="{% static 'imagenes/logo.png' %}" width="150px" height="150px" style="margin-left: 20px;" alt="Logo de la empresa">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            {% for empresa in empresas %}
+            <div class="empresa-container" data-empresa="{{ empresa.id }}">
+                <img src="{% static empresa.logo.url %}" class="empresa-logo" alt="{{ empresa.nombreEmpresa }}">
+                <p>{{ empresa.nombreEmpresa }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% for empresa in empresas %}
+        <div id="autos-{{ empresa.id }}" class="autos-container">
+            {% for auto in empresa.autos.all %}
+            <div class="auto">
+                <h3>{{ auto.marca }} {{ auto.modelo }}</h3>
+                <p>Color: {{ auto.color }}</p>
+                <p>Año: {{ auto.anno }}</p>
+                <p>Asientos: {{ auto.cantidadAsientos }}</p>
+                <button class="boton-reservar">Reservar</button>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var empresas = document.querySelectorAll('.empresa-container');
+    
+                empresas.forEach(function(empresa) {
+                    empresa.addEventListener('click', function() {
+                        var idEmpresa = empresa.getAttribute('data-empresa');
+                        toggleVisibility('autos-' + idEmpresa);
+                    });
+                });
+    
+                function toggleVisibility(id) {
+                    var autosContainer = document.getElementById(id);
+                    autosContainer.style.display = (autosContainer.style.display === 'block') ? 'none' : 'block';
+                }
+                var botonesReserva = document.querySelectorAll('.boton-reservar');
+                botonesReserva.forEach(function(boton) {
+                    boton.addEventListener('click', function() {
+                        alert('Auto reservado');
+                    });
+                });
+            });
+        </script>
+        <a href="{% url 'Index' %}" class="link">
+            <input type="button" value="Cancelar" class="botoncito">
+        </a>
+    </main>
+    
+    <!-- Cargar tus scripts JavaScript -->
+    <script src="{% static 'Java_Script/Java_Login.js' %}"></script>
+</body>
+</html>

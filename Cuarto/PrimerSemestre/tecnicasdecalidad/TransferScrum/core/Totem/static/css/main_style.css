@@ -1,0 +1,29 @@
+/* Importar Fuentes: PT Serif , Jost */
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Serif&display=swap');
+
+:root{
+    --background-color: #e0e0e0;
+    --max-width: 340px;
+}
+
+*{
+    font-family: 'Jost', sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+body{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+main{
+    aspect-ratio: 9 / 16;
+    width: var(--max-width);
+    background-color: var(--background-color);
+    clip-path: fill-box;
+}

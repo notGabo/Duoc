@@ -1,0 +1,157 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Vehiculo{% endblock title %}
+
+<!-- Aqui van los CSS -->
+{% block style %}
+<style>
+h1{
+    font-size: 2rem;
+    line-height: 2rem;
+    
+}
+#tarjetas-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+    height: 27rem;
+    width: 100%;
+    padding: 1rem 0;
+}
+.tarjeta-vehiculo{
+    background-color: var(--background-color);
+    min-height: 7rem;
+    height: 7rem;
+    width: calc(100% - 1rem);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 5px 7px;
+    padding-top: 0;
+
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px hsl(0, 0%, 95%);
+    border: 3px solid var(--background-color);
+
+    transition-property: box-shadow, background-color;
+    transition-duration: 100ms;
+}
+.parent-img{
+    display: flex;
+    align-items: center;
+    width: 35%;
+}
+.img-vehiculo{
+    aspect-ratio: auto;
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+.info-vehiculo{
+    background-color: black;
+    color: var(--bs-light);
+    padding: 0 4px;
+    border-radius: 5px;
+}
+.tarjeta-vehiculo>div>ul{
+    padding: 0;
+    list-style: none;
+    width: 60%;
+    margin-bottom: 0;
+    height: 100%;
+}
+.tarjeta-vehiculo:active{
+    background-color: hsl(0, 0%, 85%);
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px hsl(0, 0%, 98%),
+                inset -8px -8px 15px -15px white,
+                inset 5px 5px 15px -13px #000000;
+}
+
+</style>
+{% endblock style %}
+
+{% block content %}
+<div class="d-flex justify-content-center flex-wrap h-100">
+    <h1 class="text-center mt-3 align-self-start"><span class="fw-light">SELECCIONE UN </span> <br>VEHICULO</h1>
+    <form id="tarjetas-container" method="post">
+        <input type="hidden" id="id-vehiculo" name="id-vehiculo"/>
+
+        {% for vehiculo in vehiculos %}
+
+        <button class="tarjeta-vehiculo" data-vehiculo="{{ vehiculo.id }}" type="button">
+            <span class="text-center fw-medium my-auto">{{ vehiculo.marca }} {{ vehiculo.modelo }}</span>
+            <div class="d-flex justify-content-between ">
+                <div class="parent-img">
+                    <img class="img-vehiculo" src="static/img/vehiculos/{{ vehiculo.marca }} {{ vehiculo.modelo }}.jpg" draggable="false"/>
+                </div>
+                <ul class="d-flex justify-content-between flex-column ">
+                    <li class="d-flex justify-content-between">
+                        <span>{{vehiculo.tipo}}</span>
+                        <div>
+                            <span class="info-vehiculo" ><i class="bi bi-person-fill"></i> {{vehiculo.capacidad}}</span>
+                            <span class="info-vehiculo" ><i class="bi bi-briefcase-fill"></i> {{vehiculo.equipaje}}</span>
+                        </div>
+                    </li>
+                    <li class="d-flex justify-content-between">
+                        <span>VALOR</span>
+                        <span class="fw-semibold vehiculo-value">{{vehiculo.precio}}</span>
+                    </li>
+                </ul>
+            </div>
+        </button>
+
+        {% endfor %}
+        
+    </form>
+    {% include "blueprints/navigator.html" %}
+</div>
+{% endblock content %}
+
+<!-- aqui va JS--->
+
+{% block script %}
+<script>
+
+let isScrolling = false;
+const tarjetas_container = document.getElementById("tarjetas-container");
+
+tarjetas_container.addEventListener("mousedown", ()=> isScrolling = true);
+tarjetas_container.addEventListener("mouseup", ()=> isScrolling = false);
+tarjetas_container.addEventListener("mouseleave", ()=> isScrolling = false);
+
+tarjetas_container.addEventListener("mousemove", (e)=>{
+    if (!isScrolling) return;
+
+    tarjetas_container.scrollBy(0, -e.movementY);
+});
+
+// SELECCION
+const id_vehiculo = document.getElementById("id-vehiculo");
+const form = document.getElementById("tarjetas-container");
+
+const vehiculos_value = document.getElementsByClassName("vehiculo-value");
+for(element of vehiculos_value){
+
+    const precio_formated = parseInt(element.innerText).toLocaleString("es-CL");
+    element.innerText = `$${precio_formated} CLP`;
+}
+
+const vehiculos = document.getElementsByClassName("tarjeta-vehiculo");
+for(element of vehiculos){
+    element.onclick = (e)=> {
+        console.log(Math.abs(e.movementX) + Math.abs(e.movementY));
+        if(Math.abs(e.movementX) + Math.abs(e.movementY) !== 0) return;
+
+        const data = e.currentTarget.dataset.vehiculo;
+        id_vehiculo.value = data;
+        form.submit();
+    }
+}
+
+</script>
+{% endblock script %}

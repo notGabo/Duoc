@@ -1,0 +1,134 @@
+#include <Wire.h>
+#include <MPU6050_tockn.h>
+#include <WiFiNINA.h>
+#include <ArduinoHttpClient.h>
+#include <Arduino.h>
+
+MPU6050 mpu(Wire);
+
+// Variables para almacenar los offsets
+float ax_offset = 0;
+float ay_offset = 0;
+float az_offset = 0;
+float gx_offset = 0;
+float gy_offset = 0;
+float gz_offset = 0;
+
+// Configuración de la red WiFi
+char ssid[] = "TU_SSID";        // Reemplaza con tu SSID
+char pass[] = "TU_PASSWORD";    // Reemplaza con tu contraseña
+
+// Configuración del servidor
+char serverAddress[] = "192.168.0.100";  // Reemplaza con la IP de tu servidor
+int port = 3000;
+
+WiFiClient wifiClient;
+HttpClient client = HttpClient(wifiClient, serverAddress, port);
+
+void setup() {
+  Serial.begin(9600);
+  Wire.begin();
+
+  Serial.println("Iniciando el MPU6050...");
+
+  mpu.begin();
+  mpu.calcGyroOffsets(true);
+
+  Serial.println("Calibrando el sensor...");
+
+  // Calibración inicial para determinar los offsets
+  const int numReadings = 100;
+  for (int i = 0; i < numReadings; i++) {
+    mpu.update();
+
+    ax_offset += mpu.getAccX();
+    ay_offset += mpu.getAccY();
+    az_offset += mpu.getAccZ();
+    gx_offset += mpu.getGyroX();
+    gy_offset += mpu.getGyroY();
+    gz_offset += mpu.getGyroZ();
+
+    delay(50);
+  }
+
+  ax_offset /= numReadings;
+  ay_offset /= numReadings;
+  az_offset /= numReadings;
+  gx_offset /= numReadings;
+  gy_offset /= numReadings;
+  gz_offset /= numReadings;
+
+  Serial.println("Calibración completada");
+  Serial.print("Offsets - Aceleración: X=");
+  Serial.print(ax_offset);
+  Serial.print(", Y=");
+  Serial.print(ay_offset);
+  Serial.print(", Z=");
+  Serial.println(az_offset);
+  Serial.print("Offsets - Giroscopio: X=");
+  Serial.print(gx_offset);
+  Serial.print(", Y=");
+  Serial.print(gy_offset);
+  Serial.print(", Z=");
+  Serial.println(gz_offset);
+
+  // Conectar a la red WiFi
+  Serial.print("Conectando a ");
+  Serial.println(ssid);
+  while (WiFi.begin(ssid, pass) != WL_CONNECTED) {
+    delay(5000);
+    Serial.print(".");
+  }
+  Serial.println("Conectado a WiFi");
+}
+
+void loop() {
+  mpu.update();
+
+  // Leer los valores del acelerómetro y restar los offsets
+  float ax = mpu.getAccX() - ax_offset;
+  float ay = mpu.getAccY() - ay_offset;
+  float az = mpu.getAccZ() - az_offset;
+
+  // Leer los valores del giroscopio y restar los offsets
+  float gx = mpu.getGyroX() - gx_offset;
+  float gy = mpu.getGyroY() - gy_offset;
+  float gz = mpu.getGyroZ() - gz_offset;
+
+  // Calcular los ángulos de Roll y Pitch
+  float roll = atan2(ay, sqrt(ax * ax + az * az)) * 180.0 / PI;
+  float pitch = atan2(-ax, sqrt(ay * ay + az * az)) * 180.0 / PI;
+
+  // Crear el payload JSON
+  String payload = "{";
+  payload += "\"ax\":" + String(ax) + ",";
+  payload += "\"ay\":" + String(ay) + ",";
+  payload += "\"az\":" + String(az) + ",";
+  payload += "\"gx\":" + String(gx) + ",";
+  payload += "\"gy\":" + String(gy) + ",";
+  payload += "\"gz\":" + String(gz) + ",";
+  payload += "\"roll\":" + String(roll) + ",";
+  payload += "\"pitch\":" + String(pitch);
+  payload += "}";
+
+  // Enviar los datos al servidor
+  client.beginRequest();
+  client.post("/data");  // Ruta del endpoint en el servidor
+  client.sendHeader("Content-Type", "application/json");
+  client.sendHeader("Content-Length", payload.length());
+  client.beginBody();
+  client.print(payload);
+  client.endRequest();
+
+  // Esperar la respuesta del servidor
+  int statusCode = client.responseStatusCode();
+  String response = client.responseBody();
+
+  Serial.print("Estado: ");
+  Serial.println(statusCode);
+  Serial.print("Respuesta: ");
+  Serial.println(response);
+
+  delay(1000);
+}
+#cambiar las credenciales del sevirdor y red wifi

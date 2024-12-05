@@ -1,0 +1,72 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Login{% endblock title %}
+
+{% block style %}
+<style>
+#topbar{
+    border: none;
+}
+.toast{
+    position: fixed;
+    top: calc(var(--max-height) - 78px - 1rem);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 18rem;
+    border-radius: 15px;
+}
+@keyframes aparecer{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+#content{
+    animation: aparecer 500ms ease 500ms forwards;
+    opacity: 0;
+}
+</style>
+{% endblock style %}
+
+{% block content %}
+<div id="content">
+    <form method="post" class="p-4 pt-0 d-flex justify-content-center align-items-center flex-wrap">
+        <img src="static/img/logo.jpg" draggable="false" />
+        <h3 class="w-100 text-center my-4 fw-bold" >LOGIN</h3>
+        
+        <div class="form-floating mb-3">
+            <input class="form-control form-control-lg" type="email" id="input-usuario" name="usuario" required/>
+            <label for="input-usuario" class="form-label">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control form-control-lg" type="password" id="input-password" name="password" required/>
+            <label for="input-password" class="form-label">Contrase&ntilde;a</label>
+        </div>
+
+        <input class="btn btn-warning btn-lg round" type="submit" value="Ingresar"/>
+
+    </form>
+
+    {% with error = get_flashed_messages(category_filter=["error"]) %}
+    {% if error %}
+    <div class="toast align-items-center text-bg-danger show" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body w-100 text-center px-0">
+                <i class="bi bi-exclamation-circle"></i>
+                {{ error[0] }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endwith %}
+
+</div>
+
+
+</div>
+{% endblock content %}
+
+
+{% block script %}
+<script>
+
+</script>
+{% endblock script %}

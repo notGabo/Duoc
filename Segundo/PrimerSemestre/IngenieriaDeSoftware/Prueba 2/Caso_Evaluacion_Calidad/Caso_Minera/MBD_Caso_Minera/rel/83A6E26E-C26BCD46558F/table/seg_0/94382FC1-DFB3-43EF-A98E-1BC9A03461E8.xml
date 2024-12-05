@@ -1,0 +1,57 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="94382FC1-DFB3-43EF-A98E-1BC9A03461E8" name="Relation_3">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Equipo_nroequipo" id="0AFCD44A-7B1E-263F-8986-CD74D6D2A505">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B91A59B2-9884-0850-B3E6-63DD383C0405" referredColumn="0135AAC4-ED86-6F45-9C8A-A289126DED9F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23A55EF1-D9AF-DAA4-B175-511BA4BA0AC7" name="Relation_3_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AFCD44A-7B1E-263F-8986-CD74D6D2A505"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="82C0840F-4B85-35F8-A428-18ED7E972DE1" name="Relation_3_Empleados_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>3826048A-FD6C-0045-A530-BA9BB9F20D14</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="EC2B8120-91E5-EAB7-1C74-52E4460DBA53" name="Relation_3_Equipo_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>3826048A-FD6C-0045-A530-BA9BB9F20D14</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0AFCD44A-7B1E-263F-8986-CD74D6D2A505"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

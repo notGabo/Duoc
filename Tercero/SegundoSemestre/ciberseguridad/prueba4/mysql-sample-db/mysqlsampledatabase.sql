@@ -1,0 +1,2 @@
+ffmpeg -y -i waos.mp4 -c:v libx264 -preset medium -b:v 3413 -pass 1 -c:a libfdk_aac -b:a 128k -f mp4 NUL && ^
+ffmpeg -i waos.mp4 -c:v libx264 -preset medium -b:v 3413 -pass 2 -c:a libfdk_aac -b:a 128k waosoutput.mp4

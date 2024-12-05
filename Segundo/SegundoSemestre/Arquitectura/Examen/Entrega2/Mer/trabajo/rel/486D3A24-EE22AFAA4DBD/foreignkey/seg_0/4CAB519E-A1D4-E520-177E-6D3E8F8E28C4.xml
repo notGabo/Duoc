@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4CAB519E-A1D4-E520-177E-6D3E8F8E28C4" containerWithKeyObject="B46C8516-C0D2-9D83-B2FF-CFAA6276B5B8" localFKIndex="1773C4F6-A18C-51B2-B3C9-BE3D1151F966" name="ficha_pac_pac_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>F083694F-FFE7-47E3-65B0-9D21C9B06E3E</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<referredTableLongName>paciente</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>887FA20F-F20B-3289-3001-088F2A4E4996</referredTableID>
+<keyObject>E223F708-83A8-D5A1-525D-E806F0AEF601</keyObject>
+<referredKeyID>E223F708-83A8-D5A1-525D-E806F0AEF601</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rut_paciente</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

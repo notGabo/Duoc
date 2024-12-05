@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7599891A-58C0-05E4-94F8-CAACFA2C5C49" containerWithKeyObject="C50E8FC3-44B4-B085-6865-0569836FE6E7" localFKIndex="AAC202C3-1F6F-E840-102E-05119814651C" name="Empleados_Minera_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>A68D4619-4335-0E1A-F35D-2316508F2209</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<referredTableLongName>Minera</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E2B88D87-C063-317D-AA82-CECD58A3B99F</referredTableID>
+<keyObject>8858B925-E67B-5785-07F2-B992ADFDBE30</keyObject>
+<referredKeyID>8858B925-E67B-5785-07F2-B992ADFDBE30</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>rutminera</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

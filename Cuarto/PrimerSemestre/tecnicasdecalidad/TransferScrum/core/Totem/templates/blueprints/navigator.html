@@ -1,0 +1,22 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/navigator.css') }}" />
+<nav id="navigator" class="p-1 w-100 align-self-end">
+    <button type="button" class="navigator-btn cancel">
+        <i class="bi bi-x"></i>
+    </button>
+    <button type="button" class="navigator-btn" disabled>
+        <i class="bi bi-geo-alt-fill"></i>
+    </button>
+    <button type="button" class="navigator-btn" disabled>
+        <i class="bi bi-briefcase-fill"></i>
+    </button>
+    <button type="button" class="navigator-btn" disabled>
+        <i class="bi bi-taxi-front-fill"></i>
+    </button>
+    <button type="button" class="navigator-btn" disabled>
+        <i class="bi bi-clipboard2-fill"></i>
+    </button>
+    <button type="button" class="navigator-btn" disabled>
+        <i class="bi bi-person-lines-fill"></i>
+    </button>
+</nav>
+<script src="{{url_for('static', filename='js/navigator.js')}}"></script>

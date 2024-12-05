@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B0997B0-E21E-DEB7-C4CA-2353F7ED6D43" name="interconsulta">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>1604F796-E8EA-282A-2838-BACEB50713B9</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_interconsulta" id="6A8E33DF-45F9-4582-142B-430EEF638101">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>B5428212-9CEC-7025-2A67-A6A144918A90</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha" id="9C7E7C04-1E11-6615-14C2-F0B6568A32A1">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>5080D54D-ED26-1459-4309-F4BDF4AB4F6F</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obs_pacient" id="3E84AF57-B1C2-6B90-EDBF-7B1192A0922C">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>EDB4804E-CD6D-C4EE-5F6F-C0CAF00E57DA</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>55</dataTypeSize>
+<ownDataTypeParameters>55,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="seccion_rut_perSalud" id="13149D1F-EF12-825A-8BDC-DE9D14E842DB">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>CA9B8200-6451-B89A-220D-0205A24AAEA5</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14D53602-B9DA-5E4A-DB92-295BD6FB8FD6" referredColumn="DDAFDCC4-ECEF-ABBF-A7E7-83176461C0E9"/>
+</associations>
+</Column>
+<Column name="paciente_rut_paciente" id="5D0A8BE9-B68D-1763-0184-F58C147ADAA6">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>BD9C90A9-FCD4-9B26-7296-6BA659374EE8</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A5AD530-7192-3195-C5F0-6022915C4E2C" referredColumn="132E0F03-1314-5F7A-650E-258B8979B6FB"/>
+</associations>
+</Column>
+<Column name="ficha_paciente_id_ficha" id="A7F7E34F-340A-170D-11B8-34A363866F47">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>F6606A48-65FF-6A1E-28AA-73ABB548A2BF</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CDE1C31E-F231-3BC3-0CA0-C62DC99FFBAA" referredColumn="9E0D03AD-8976-BDBE-0431-2D4888F7AF08"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AB5E57FA-5D4A-8FCC-9654-F03ED6B60FEF" name="interconsulta_PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>06671529-81E6-44BF-DE6E-6FCA3388D66C</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A8E33DF-45F9-4582-142B-430EEF638101"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="785D1F24-DDE0-BE33-CF38-46326D25FCBE" name="ic_seccion_FK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>93E13A0C-E60D-6E6A-D9C7-ED1091DFC84A</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13149D1F-EF12-825A-8BDC-DE9D14E842DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="28CB52D6-8D6E-6E0F-5313-4D2EB1BE801E" name="ic_paciente_FK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>8F5952EE-E1FC-3A3C-962A-CA0AF56675EB</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5D0A8BE9-B68D-1763-0184-F58C147ADAA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E75ADA14-A27D-F1D1-B267-3C5C1CCE6C69" name="ic_ficha_pac_FK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>61351C06-501B-FD76-78F2-52CF637B3D65</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A7F7E34F-340A-170D-11B8-34A363866F47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

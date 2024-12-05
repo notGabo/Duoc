@@ -1,0 +1,137 @@
+--proceso  1
+CREATE OR REPLACE TRIGGER tr_actualizacionInteresProducto
+AFTER UPDATE ON producto
+    FOR EACH ROW
+    BEGIN
+        IF :NEW.tasaint_producto > NVL(:OLD.tasaint_producto, 0) THEN
+            UPDATE tipo_transaccion_tarjeta
+                SET tasaint_tptran_tarjeta = tasaint_tptran_tarjeta + 0.01
+                WHERE cod_producto = :OLD.cod_producto;
+        ELSIF :NEW.tasaint_producto = :OLD.tasaint_producto OR :OLD.tasaint_producto > :NEW.tasaint_producto THEN
+            UPDATE tipo_transaccion_tarjeta 
+                SET nro_maximo_cuotas_tran = nro_maximo_cuotas_tran - 12
+                WHERE cod_producto = :OLD.cod_producto;
+        END IF;
+    END tr_actualizacionInteresProducto;
+
+UPDATE producto 
+    SET tasaint_producto = 0.5 
+    WHERE cod_producto = 4; --Credito de emergencia
+UPDATE producto 
+    SET tasaint_producto = 0.1
+    WHERE cod_producto = 2; --Credito de consumo
+UPDATE producto 
+    SET tasaint_producto = 0.05 
+    WHERE cod_producto = 1; --Tarjeta premier
+SELECT * FROM tipo_transaccion_tarjeta;
+ROLLBACK;
+COMMIT;
+
+--Proceso 2 
+/*
+BEGIN
+ DBMS_CLOUD.CREATE_CREDENTIAL(
+ credential_name => 'ExamenFotos',
+ username => 'ga.soto@duocuc.cl',
+ password => '(#0i(zy72pRCCg+-VH(W'
+ );
+END;
+
+SELECT * FROM DBMS_CLOUD.LIST_OBJECTS ('ExamenFotos', 
+                                       'https://objectstorage.sa-santiago-1.oraclecloud.com/n/axwbrohy7aok/b/fotosExamen/');
+DECLARE
+    l_blob BLOB := NULL;
+BEGIN
+    l_blob := DBMS_CLOUD.GET_OBJECT(
+        credential_name => 'ExamenFotos',
+        object_uri => 'https://objectstorage.sa-santiago-1.oraclecloud.com/n/axwbrohy7aok/b/fotosExamen/o/12084102.jpg');
+    INSERT INTO CLIENTE VALUES(1,'testPacien', l_blob);
+         directory_name=>'D:\Duoc\segundoAño\PrimerSemestre\ProgamacionDeBaseDeDatos\Examen\Anexos Forma A\ANEXO B');
+END;
+*/
+
+--No entendi bien como hacer la conexion de fotos con buckets de oracle cloud y al mismo tiempo hacerlo,
+--Asi que hice solamente la conexion a cloud como pude
+
+--GRANT EXECUTE ON DBMS_CLOUD TO ETMDY_FA; (ADMIN)
+select * from cliente;
+CREATE OR REPLACE PROCEDURE sp_procesoFotos (p_rut NUMBER) IS
+    v_numrun NUMBER;
+    v_foto BLOB := NULL;
+    v_credentialName CHAR;
+    v_username CHAR;
+    v_password CHAR;
+    v_uri VARCHAR2(300);    
+    DECLARE
+        CURSOR cur_fotos IS
+            SELECT numrun ,foto FROM cliente WHERE numrun = SUBTR(DBMS_CLOUD.LIST_OBJECTS('ExamenFotos','https://objectstorage.sa-santiago-1.oraclecloud.com/n/axwbrohy7aok/b/fotosExamen/o/').object_name,
+                                                                 0,LENGTH(DBMS_CLOUD.LIST_OBJECTS('ExamenFotos','https://objectstorage.sa-santiago-1.oraclecloud.com/n/axwbrohy7aok/b/fotosExamen/o/').object_name)-4);
+    BEGIN
+        BEGIN
+            DBMS_CLOUD.CREATE_CREDENTIAL(
+            credential_name => 'ExamenFotos',
+            username => 'ga.soto@duocuc.cl',
+            password => '(#0i(zy72pRCCg+-VH(W'
+            );
+            v_uri := 'https://objectstorage.sa-santiago-1.oraclecloud.com/n/axwbrohy7aok/b/fotosExamen'||TO_CHAR(p_rut)||'.jpg';
+        END;
+        BEGIN
+            v_foto := DBMS_CLOUD.GET_OBJECT(
+            credential_name => 'ExamenFotos',
+            )
+        END;
+    END;
+    
+--Proceso 3
+-- 3.2 a)
+CREATE OR REPLACE PACKAGE pkg_calculoCaso3 IS
+    FUNCTION fn_calculoCupo(p_ant NUMBER)
+        RETURN NUMBER;
+    PROCEDURE proc_controlErrores;
+    vp_mensajeError VARCHAR2(300);
+    vp_codigoError NUMBER;
+    vp_aumentoCupo NUMBER;
+END;
+CREATE OR REPLACE PACKAGE BODY pkg_calculoCaso3 IS
+    FUNCTION fn_calculoCupo(p_antiguedadAnnos NUMBER) 
+    RETURN NUMBER IS
+        BEGIN
+            SELECT 
+                porc_aumento 
+            INTO 
+                pkg_calculoCaso3.vp_aumentoCupo
+            FROM 
+                rango_aumento_cupocompra
+            WHERE 
+                BETWEEN ant_min AND ant_max;
+        RETURN pkg_calculo.vp_aumentoCupo;
+        EXCEPTION
+            WHEN too_many_rows THEN
+                pkg_calculoCaso3.vp_codigoError := SQLCODE;
+                pkg_calculoCaso3.vp_mensajeError := SQLERRM;
+                RETURN 0;
+            WHEN no_data_found THEN
+                pkg_calculoCaso3.vp_codigoError := SQLCODE;
+                pkg_calculoCaso3.vp_err_msg := SQLERRM;
+                RETURN 0;
+            WHEN others THEN
+                pkg_calculoCaso3.vp_codigoError := SQLCODE;
+                pkg_calculoCaso3.vp_mensajeError := SQLERRM;
+                RETURN 0;
+        END;
+    PROCEDURE proc_controlErrores IS
+        v_sql VARCHAR2(700);
+        v_rutina VARCHAR2;
+        v_sequencia VARCHAR2 := 'SQ_ERROR';
+        v_tabla VARCHAR2 := 'ERROR_PROCESOS_MENSUALES'; 
+    BEGIN
+        v_sql := 'INSERT INTO '||v_tabla||' VALUES ('||v_sequencia||'.nextval, '||v_rutina||','||pkg_calculo.vp_mensajeError||')';
+        EXECUTE IMMEDIATE v_sql;
+    END;
+END;
+
+--3.2 b)
+--Disculpe profe, llegue tarde a mi casa y hice la prueba con poco tiempo. Intente completarla pero no pude😿
+
+
+

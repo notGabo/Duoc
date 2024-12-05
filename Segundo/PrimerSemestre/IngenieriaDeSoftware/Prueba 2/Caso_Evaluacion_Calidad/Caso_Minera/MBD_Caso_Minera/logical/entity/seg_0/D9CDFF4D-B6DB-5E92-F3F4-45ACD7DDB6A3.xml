@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D9CDFF4D-B6DB-5E92-F3F4-45ACD7DDB6A3" name="Equipo">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:32:06 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nroequipo" id="CC109DB0-3D71-C710-52B4-BDC4F7AAC307">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:32:14 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nomequipo" id="D7E73531-BCD8-FC40-8DE9-A90F9F9CDC32">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:32:24 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B94E8E72-C77B-FB58-D61E-7F8E3233C151" name="Cliente PK">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:32:23 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CC109DB0-3D71-C710-52B4-BDC4F7AAC307</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

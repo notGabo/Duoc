@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:38:36",
+    "Id": "PD10",
+    "Nombre": "Parada 5 / (M) Est.Nacional",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "SKWD-75, PGBY-89, PGRZ-64",
+    "ContadorBusesActivos": 3,
+    "ServiciosActivos": "114, 117",
+    "ServiciosInactivos": "1090, 103, 1290",
+    "ContadorServiciosActivos": 2,
+    "ContadorServiciosInactivos": 3,
+    "ServiciosTotales": 5
+}

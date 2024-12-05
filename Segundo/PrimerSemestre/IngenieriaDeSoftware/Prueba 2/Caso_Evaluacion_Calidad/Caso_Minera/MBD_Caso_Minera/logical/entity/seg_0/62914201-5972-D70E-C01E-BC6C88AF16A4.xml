@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="62914201-5972-D70E-C01E-BC6C88AF16A4" name="Mantencion_maquinaria">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 19:37:19 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigomantencion" id="898F0E78-31B8-6424-671C-FD75C64E8559">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 19:37:58 UTC</createdTime>
+<generatorID>B72EC257-AB71-0C15-85F4-B03141F63D7D</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<referedAttribute>F2116018-A539-11DA-A25D-DACFCE2056D8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigomaq" id="1BDC3A76-782E-6D77-9624-F581EB3B26A8">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 19:38:03 UTC</createdTime>
+<generatorID>DD5D1FB7-B6FE-3AB9-CE0D-A61097E3B64F</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<referedAttribute>204551AC-B783-E9CD-A2E4-FF83DA53CA8F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9CB30D43-9CA6-628F-45EB-00205F23D959" name="Mantencion_maquinaria PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 19:37:58 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>898F0E78-31B8-6424-671C-FD75C64E8559</attributeRef>
+<attributeRef>1BDC3A76-782E-6D77-9624-F581EB3B26A8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

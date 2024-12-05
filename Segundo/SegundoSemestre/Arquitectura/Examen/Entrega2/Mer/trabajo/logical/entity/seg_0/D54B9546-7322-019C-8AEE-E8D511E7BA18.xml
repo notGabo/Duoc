@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D54B9546-7322-019C-8AEE-E8D511E7BA18" name="per_salud">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:26:09 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_perSalud" id="921A1569-6467-C883-F268-531804881CF9">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:27:06 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombres" id="5AD16FA1-1A31-A331-1E18-5EA67D48BB48">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:29:07 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellidos" id="FC551F70-36FD-3078-2433-20F0F6803A0A">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:32:03 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cargo" id="991B3DEE-EBD4-2948-8D64-7CA88B0F64CB">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:39:26 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_unidad" id="D5611BBD-33B2-938F-93B2-4A1C181D3B99">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:45:17 UTC</createdTime>
+<generatorID>96324E1A-7123-608F-5956-F35DCA1A48B7</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<referedAttribute>5E7A9FB1-911C-AA19-CBF9-6E242D5AC5D0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cod_especialidad" id="5CD205C3-4A0D-0037-EBD9-3CC398385F0E">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:48:10 UTC</createdTime>
+<generatorID>974AAD91-BCBD-17C7-D50F-845242B1DDF5</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<referedAttribute>3F505CAB-D400-35FC-371E-FF0F716DA01F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_seccion" id="06987331-5167-79BC-DA2A-9FF64F73F42D">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-09 23:56:52 UTC</createdTime>
+<generatorID>5FE6DFEB-5221-0A09-8A53-019C1C946650</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<referedAttribute>9E275617-E6E6-BF83-9573-CA90D27FDF62</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1547FFBD-B268-7BEF-E44D-6CF768A94928" name="per_salud PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:27:17 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>921A1569-6467-C883-F268-531804881CF9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

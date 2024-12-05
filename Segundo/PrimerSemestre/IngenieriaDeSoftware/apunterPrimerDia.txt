@@ -1,0 +1,44 @@
+francisco madrid p
+f.madridp@profesor.duoc.cl
+----------------------------
+*Gestion de proyectos informaticos:
+	-Ingenieria de software
+
+*Siempre existe el reisgo de que un proyeto pueda fracasar
+
+ej gestion de proyecto:
+
+	Agenda:
+		introduccion:
+		Creacion del proyecto:
+		Estimacion del costo:				**esto suele ser un problema alser un mundo tan poco estable dentro de un periodo (sean por cambios en leyes o normas nuevas)
+		Seleccion de motodos y herramientas:
+		Plan del proyecto:
+		Ejecucion del proyecto:
+		Gestion de las personas:
+
+La ingenieria en software:
+	Persigue garantizar que el desarrollo de software sea existoso.
+	Exito: Cumplir con la fecha pactada, implementar lo requerido y ajustarse al presupuesto
+	
+	La gestion de proyectos informaticos es algo difiicl ¿Por que?:
+		Compuesto por varias actividades complejas
+		Participa un gran numero de personas
+		Supone el desarrollo de un producto complejo
+
+---------------------------------------
+
+Matriz de reisgos
+
+puntuacion = Probabilidad * impacto
+
+probabilidad pueden ser 1-2-3
+y impacto es 2-3-4
+
+mientras mas alta sea el resultado de la puntuacion, es mas peligroso el riesgo del problema/objetivo
+---------------------------------------
+
+Matriz de asignacion de responsabilidades (RAM)
+
+ej:
+

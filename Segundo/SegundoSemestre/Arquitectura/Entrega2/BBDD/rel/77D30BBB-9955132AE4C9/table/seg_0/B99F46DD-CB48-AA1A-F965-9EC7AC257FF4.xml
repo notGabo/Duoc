@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B99F46DD-CB48-AA1A-F965-9EC7AC257FF4" name="unidad">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>6CA1288F-C725-27B6-7359-C58F34B9EE86</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_unidad" id="EEB961AD-8D06-5FD1-4A23-417899140A96">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>5E7A9FB1-911C-AA19-CBF9-6E242D5AC5D0</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="desp_unidad" id="F68A3148-FBD7-D44D-DCAD-FBFDDD8E1245">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>0CF593A0-2927-EA05-33C2-017CDD80BE35</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C8BE014-73EA-1BB1-B59E-3453629467F9" name="unidad_PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>6F4229D6-5429-1699-E595-7853323B2353</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEB961AD-8D06-5FD1-4A23-417899140A96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

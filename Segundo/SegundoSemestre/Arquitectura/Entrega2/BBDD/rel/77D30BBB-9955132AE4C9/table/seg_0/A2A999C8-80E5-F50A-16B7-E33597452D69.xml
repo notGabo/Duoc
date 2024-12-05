@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A2A999C8-80E5-F50A-16B7-E33597452D69" name="especialidad_persalud">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>CBE225F2-70D5-C035-CA9E-9CE8F6F32995</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cod_especialidad" id="3B75ECDE-9532-07AC-C2EF-B972EDC475AB">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>3F505CAB-D400-35FC-371E-FF0F716DA01F</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_especialidad" id="B416559A-3D8B-EBB3-69CF-5C463200D9D6">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>CD9764B0-B485-D7BA-BB87-9CB721185A84</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5E34506-F451-CD0C-3841-AE8893346276" name="especialidad_persalud_PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>699B614F-F51D-3F35-8831-60B573C7EB51</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B75ECDE-9532-07AC-C2EF-B972EDC475AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

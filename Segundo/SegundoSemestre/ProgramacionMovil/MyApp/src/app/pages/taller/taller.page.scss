@@ -1,0 +1,29 @@
+.background{
+    --background: url('/assets/gatoparty.gif') 0 0/100% 100% no-repeat;
+}
+.tituloCarta{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(52, 78, 175);
+    margin-bottom: 0.5rem;
+}
+
+.subtituloCarta{
+    font-size: .9rem;
+    color: rgb(175, 142, 52);
+    margin-bottom: 0.5rem;
+}
+
+.descripcionCarta{
+    font-size: 1.2rem;
+    color: rgb(19, 193, 56);
+    margin-bottom: 0.5rem;
+    text-align: justify;
+}
+
+.labelItem{
+    font-size: .7rem;
+    font-weight: underline;
+    color: rgb(19, 193, 56);
+    text-align: start;
+}

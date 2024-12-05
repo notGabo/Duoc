@@ -1,0 +1,5 @@
+Los diagramas con extension .uxf se abren desde la pagina umletino.
+https://www.umletino.com/umletino.html, sin embargo se han exportado a pdf para que este procedimiento sea necesario solo con motivos de edicion.
+
+La carpeta "AssetsDiagramas" solamente contiene fotos para el diagrama topologico.
+

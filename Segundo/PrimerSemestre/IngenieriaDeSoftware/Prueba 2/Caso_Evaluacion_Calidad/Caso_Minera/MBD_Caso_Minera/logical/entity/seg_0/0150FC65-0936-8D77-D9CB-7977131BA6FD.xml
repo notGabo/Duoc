@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0150FC65-0936-8D77-D9CB-7977131BA6FD" name="Zona">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:34:04 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigozona" id="4A1E6B2A-0F6B-837D-D537-4E09E21C10DE">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:34:11 UTC</createdTime>
+<comment><![CDATA[Número único asignado a cada zona]]></comment>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="F69A260D-CCF0-A57C-B7AF-65EDB11F67FC">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:34:22 UTC</createdTime>
+<comment><![CDATA[Descripción de la zona
+]]></comment>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivelriesgo" id="B20CFCDF-670C-2567-78FF-C3C3AFB3CBCE">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 22:14:27 UTC</createdTime>
+<comment><![CDATA[Nivel de riesgo que puede de ser 1, 2 ó 3
+]]></comment>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LogDes-1768A872-F385-FDBA-D95E-0CB63F5908E2@LOGDT10045</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F7D13DF3-B04F-5DC9-9748-E16F7B306B64" name="Preparacion PK">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:34:21 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A1E6B2A-0F6B-837D-D537-4E09E21C10DE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

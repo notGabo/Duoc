@@ -1,0 +1,82 @@
+[
+    {
+        "transfer_id": 1,
+        "status": "reservado"
+    },
+    {
+        "transfer_id": 2,
+        "status": "online"
+    },
+    {
+        "transfer_id": 3,
+        "status": "reservado"
+    },
+    {
+        "transfer_id": 4,
+        "status": "offline"
+    },
+    {
+        "transfer_id": 5,
+        "status": "online"
+    },
+    {
+        "transfer_id": 6,
+        "status": "online"
+    },
+    {
+        "transfer_id": 7,
+        "status": "offline"
+    },
+    {
+        "transfer_id": 8,
+        "status": "online"
+    },
+    {
+        "transfer_id": 9,
+        "status": "online"
+    },
+    {
+        "transfer_id": 10,
+        "status": "online"
+    },
+    {
+        "transfer_id": 11,
+        "status": "online"
+    },
+    {
+        "transfer_id": 12,
+        "status": "online"
+    },
+    {
+        "transfer_id": 13,
+        "status": "online"
+    },
+    {
+        "transfer_id": 14,
+        "status": "offline"
+    },
+    {
+        "transfer_id": 15,
+        "status": "offline"
+    },
+    {
+        "transfer_id": 16,
+        "status": "online"
+    },
+    {
+        "transfer_id": 17,
+        "status": "offline"
+    },
+    {
+        "transfer_id": 18,
+        "status": "online"
+    },
+    {
+        "transfer_id": 19,
+        "status": "online"
+    },
+    {
+        "transfer_id": 20,
+        "status": "online"
+    }
+]

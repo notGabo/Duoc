@@ -1,0 +1,5 @@
+git add . 
+git add -a
+git add {nombre del archivo}
+//area de espera
+

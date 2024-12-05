@@ -1,0 +1,15 @@
+import numpy as np
+
+print("\nMatriz T")
+T = np.fromfunction(lambda i , j :  70*(i+1)*(j+1), (2,3) )
+print(T)
+
+print("\nMatriz U")
+U = np.fromfunction(lambda i , j :  (2*(i+1))*(4*(j+1)), (3,4) )
+print(U)
+
+print("\nMatriz A")
+A=T.dot(U)
+print(A)
+
+print("\n a21 = la cantidad de unidades producidas en la planta 2 en el mes 1 es de 15680")   

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="14D53602-B9DA-5E4A-DB92-295BD6FB8FD6" containerWithKeyObject="7B0997B0-E21E-DEB7-C4CA-2353F7ED6D43" localFKIndex="785D1F24-DDE0-BE33-CF38-46326D25FCBE" name="ic_seccion_FK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>93E13A0C-E60D-6E6A-D9C7-ED1091DFC84A</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<referredTableLongName>seccion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6F83836D-4135-0556-D453-C902B615A918</referredTableID>
+<keyObject>FCB29BE4-4492-3C87-C540-E72C6E8F9DF5</keyObject>
+<referredKeyID>FCB29BE4-4492-3C87-C540-E72C6E8F9DF5</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>rut_perSalud</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

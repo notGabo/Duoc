@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:38:08",
+    "Id": "PF101",
+    "Nombre": "Parada / (M) Protectora de la Infancia",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "SRRW-69, SRRW-61, LZRB-89, LZPT-40, SRVL-72, SRVL-21, SPVV-63, SRPJ-78",
+    "ContadorBusesActivos": 8,
+    "ServiciosActivos": "F13, 205, 210, F15, F01",
+    "ServiciosInactivos": "205C, F30N, 213E",
+    "ContadorServiciosActivos": 5,
+    "ContadorServiciosInactivos": 3,
+    "ServiciosTotales": 8
+}

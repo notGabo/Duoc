@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2D1D8CF9-B2DE-0105-1A33-AB02FC47E7C5" name="paciente">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:49:19 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="rut_paciente" id="05DDE6DD-CE89-E40C-115C-7705E77C982F">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:49:25 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_paciente" id="3632566B-8651-EC8B-F044-4A7D5911DF01">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:49:39 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="apellido_paciente" id="90546DFD-7D1E-9F15-A016-4B4BF0E996A0">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:49:56 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_nacimiento" id="4575F1AA-6408-A629-22DD-9455D3DDADC4">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:50:08 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="peso_kg" id="720F98D7-C498-8B9A-9256-A09D69FDFD5C">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:54:40 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estatura_cm" id="59DE91CE-98A2-E1A8-F747-964A574CDA7D">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:57:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[100]]></commentInRDBMS>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sexo" id="61E4E144-D51E-CA5F-207C-63EB383A100A">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:58:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[F o M]]></commentInRDBMS>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<constraintName>sexo_nacimiento</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="femenino"/>
+<valueDef value="M" description="masculino"/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="correo" id="69681ECC-AF72-A688-85AE-CBDEE9C8FFB4">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:00:46 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direc_paciente" id="DF40F471-3FEA-3A5E-3D3F-D0621AAE8DA7">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:00:59 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>35 CHAR</dataTypeSize>
+<ownDataTypeParameters>35 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_emergencia" id="3034E19E-AFD2-FED2-E904-2B131860B71C">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:01:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[56 999 999 99]]></commentInRDBMS>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_paciente" id="617380FB-8D1A-2435-093B-37D0FEAE262D">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:05:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[56 999 999 99]]></commentInRDBMS>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_ficha" id="D577E6D8-999E-9636-184B-C1504A3EDF63">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:28:34 UTC</createdTime>
+<generatorID>61351C06-501B-FD76-78F2-52CF637B3D65</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<referedAttribute>6A5CE923-DBB9-5BAC-28E6-7456F3276B72</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9522CDB-381F-4267-2016-856881A55C61" name="paciente PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:49:37 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>05DDE6DD-CE89-E40C-115C-7705E77C982F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

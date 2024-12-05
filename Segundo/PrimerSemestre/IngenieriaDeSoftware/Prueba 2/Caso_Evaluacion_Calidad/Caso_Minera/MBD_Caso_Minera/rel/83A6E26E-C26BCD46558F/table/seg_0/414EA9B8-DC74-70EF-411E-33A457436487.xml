@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="414EA9B8-DC74-70EF-411E-33A457436487" name="Mantencion_maquinaria">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>62914201-5972-D70E-C01E-BC6C88AF16A4</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Mantencion_codigomantencion" id="09DF8D1F-25A0-A95C-A41B-F3781BB77623">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>898F0E78-31B8-6424-671C-FD75C64E8559</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="24695626-2B69-F1F5-F1D3-6C48489465FF" referredColumn="0DF4750C-DD49-5592-E03A-A141F3563756"/>
+</associations>
+</Column>
+<Column name="Maquinaria_codigomaq" id="309431A1-E29A-BA02-6E61-04FB76DF1997">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>1BDC3A76-782E-6D77-9624-F581EB3B26A8</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4FBA9CEE-58C6-ABBA-9769-CBE06F9F60AF" referredColumn="65BAC3F1-7801-4BE9-53B1-458BAAD984FB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02A60BF2-016C-FCD7-F522-08A610803A2D" name="Mantencion_maquinaria_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>9CB30D43-9CA6-628F-45EB-00205F23D959</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09DF8D1F-25A0-A95C-A41B-F3781BB77623"/>
+<colUsage columnID="309431A1-E29A-BA02-6E61-04FB76DF1997"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDFB2D35-1C64-364B-B9F8-5736A299D8F2" name="Mantencion_maquinaria_Mantencion_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>B72EC257-AB71-0C15-85F4-B03141F63D7D</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09DF8D1F-25A0-A95C-A41B-F3781BB77623"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DC1E702-28FF-3575-67EF-2F065BD9D72E" name="Mantencion_maquinaria_Maquinaria_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>DD5D1FB7-B6FE-3AB9-CE0D-A61097E3B64F</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="309431A1-E29A-BA02-6E61-04FB76DF1997"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="716C318C-DC31-7851-9F0C-16371476E26A" name="Toxicidad">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:02:03 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="A172A0AA-0584-9A52-DC5D-CA4508228C00">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:02:23 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="BDB30B88-E09F-FB60-3DDA-234A45F7541C">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:02:23 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="4C59FC1C-4CA9-1BAA-50C7-88C94533A6F8">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:03:04 UTC</createdTime>
+<generatorID>754D8D07-7B32-ACAD-B10A-7128CCF7F8AE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<referedAttribute>028CADBF-BC71-1A20-43F6-CF9E8DD764ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigotiporelave" id="6B411B9C-378A-A80B-6E5A-D4CFC1E39C84">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:03:04 UTC</createdTime>
+<generatorID>754D8D07-7B32-ACAD-B10A-7128CCF7F8AE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<referedAttribute>90783F72-5B73-08A1-B33F-DB8EE53C684E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="73071804-1D54-523F-9209-71BAE9D65886" name="Toxicidad PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:02:27 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A172A0AA-0584-9A52-DC5D-CA4508228C00</attributeRef>
+<attributeRef>4C59FC1C-4CA9-1BAA-50C7-88C94533A6F8</attributeRef>
+<attributeRef>6B411B9C-378A-A80B-6E5A-D4CFC1E39C84</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

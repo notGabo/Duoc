@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D4695DE7-887F-ECB6-BF6D-C3630565D645" containerWithKeyObject="6F83836D-4135-0556-D453-C902B615A918" localFKIndex="8AC162C6-63AE-AFF4-AB79-65617C90C6B3" name="sec_espec_ps_FK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 01:56:39 UTC</createdTime>
+<generatorID>974AAD91-BCBD-17C7-D50F-845242B1DDF5</generatorID>
+<ownerDesignName>merarquitec</ownerDesignName>
+<referredTableLongName>especialidad_persalud</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A2A999C8-80E5-F50A-16B7-E33597452D69</referredTableID>
+<keyObject>E5E34506-F451-CD0C-3841-AE8893346276</keyObject>
+<referredKeyID>E5E34506-F451-CD0C-3841-AE8893346276</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cod_especialidad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

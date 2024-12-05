@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="196ECF75-5C8C-3D20-2BAE-8CBBB2C0B86B" name="Piscina">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:01:24 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="codigo" id="3B2974C7-6F80-3833-0C1E-F7905214A16E">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:01:50 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="B1F514FA-845D-5037-5B04-EDD0426CDD81">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:01:50 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="numero" id="2F1D5B65-CE2F-5CC5-5769-C2436185DFB1">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:02:44 UTC</createdTime>
+<generatorID>4D804B06-EDB7-F56F-271C-FB08DBC6B6DE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<referedAttribute>028CADBF-BC71-1A20-43F6-CF9E8DD764ED</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="codigotiporelave" id="C004FD12-5F5E-9D7E-B3E0-8965D535D2D3">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:02:44 UTC</createdTime>
+<generatorID>4D804B06-EDB7-F56F-271C-FB08DBC6B6DE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<referedAttribute>90783F72-5B73-08A1-B33F-DB8EE53C684E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9278F265-DFAB-E411-EF93-6878CBA7F16A" name="Piscina PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:02:32 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3B2974C7-6F80-3833-0C1E-F7905214A16E</attributeRef>
+<attributeRef>2F1D5B65-CE2F-5CC5-5769-C2436185DFB1</attributeRef>
+<attributeRef>C004FD12-5F5E-9D7E-B3E0-8965D535D2D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

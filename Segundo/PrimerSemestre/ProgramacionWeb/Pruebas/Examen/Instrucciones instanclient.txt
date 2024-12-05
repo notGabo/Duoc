@@ -1,0 +1,2 @@
+Descomprimir instant client en la raiz del disco C
+Esto contiene el conector a la base de datos para oracle cloud

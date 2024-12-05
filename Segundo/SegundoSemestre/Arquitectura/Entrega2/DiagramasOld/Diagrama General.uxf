@@ -1,0 +1,124 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>5</zoom_level><help_text>Chequear Insumos
+específicos</help_text><element><id>UMLUseCase</id><coordinates><x>620</x><y>71</y><w>60</w><h>25</h></coordinates><panel_attributes>Gestionar
+Interconsulta
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>785</x><y>116</y><w>60</w><h>30</h></coordinates><panel_attributes>Evaluacion 
+prequirurgica
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>635</x><y>121</y><w>60</w><h>25</h></coordinates><panel_attributes>Registro datos 
+de paciente
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>675</x><y>76</y><w>140</w><h>50</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;20;260;20;260;80</additional_attributes></element><element><id>Relation</id><coordinates><x>690</x><y>121</y><w>105</w><h>20</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>190;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>261</y><w>320</w><h>390</h></coordinates><panel_attributes>lt=.
+Fase Quirurgica
+fontsize=15
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>651</y><w>320</w><h>220</h></coordinates><panel_attributes>lt=.
+Fase Postquirurgica
+fontsize=15
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>760</x><y>281</y><w>60</w><h>25</h></coordinates><panel_attributes>Preparacion 
+Paciente
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>610</x><y>286</y><w>60</w><h>25</h></coordinates><panel_attributes>Bitacora 
+pabellon</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>286</y><w>105</w><h>25</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extends&gt;&gt;</panel_attributes><additional_attributes>10;22;190;20</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>600</x><y>341</y><w>70</w><h>30</h></coordinates><panel_attributes>Realizar evaluacion
+pre anestesica</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>770</x><y>381</y><w>70</w><h>35</h></coordinates><panel_attributes>Confirmar
+condiciones del
+pabellón y paciente</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>770</x><y>456</y><w>60</w><h>20</h></coordinates><panel_attributes>Preparacion
+pabellon
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>590</x><y>456</y><w>60</w><h>25</h></coordinates><panel_attributes>Intervercion
+quirurgica
+
+
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>590</x><y>396</y><w>60</w><h>30</h></coordinates><panel_attributes>Bitacora 
+cirugia</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>675</x><y>566</y><w>65</w><h>25</h></coordinates><panel_attributes>Solicitar 
+traslado de paciente</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>750</x><y>691</y><w>60</w><h>25</h></coordinates><panel_attributes>Cuidados Post 
+Cirugia</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>600</x><y>686</y><w>45</w><h>35</h></coordinates><panel_attributes>Gestionar
+Evaluacion 
+paciente
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>755</x><y>746</y><w>70</w><h>25</h></coordinates><panel_attributes>Registro de 
+indicaciones</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>595</x><y>801</y><w>60</w><h>25</h></coordinates><panel_attributes>Coordinacion de 
+alta a paciente</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>760</x><y>801</y><w>50</w><h>30</h></coordinates><panel_attributes>Coordinacion 
+traslado</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>301</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>300;10;300;40;10;40;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>346</y><w>150</w><h>45</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;20;280;20;280;70</additional_attributes></element><element><id>Relation</id><coordinates><x>800</x><y>411</y><w>45</w><h>55</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>645</x><y>456</y><w>135</w><h>20</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>615</x><y>476</y><w>100</w><h>100</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;10;10;90;180;90;180;180</additional_attributes></element><element><id>Relation</id><coordinates><x>705</x><y>586</y><w>85</w><h>115</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;10;10;80;150;80;150;210</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>691</y><w>120</w><h>20</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>706</y><w>125</w><h>60</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;15;230;100</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>716</y><w>45</w><h>95</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;10;10;170</additional_attributes></element><element><id>Relation</id><coordinates><x>650</x><y>806</y><w>120</w><h>20</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;include&gt;&gt;</panel_attributes><additional_attributes>10;20;220;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>41</y><w>320</w><h>220</h></coordinates><panel_attributes>lt=.
+Fase PreQuirurgica
+fontsize=15
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>780</x><y>166</y><w>60</w><h>25</h></coordinates><panel_attributes>Programacion
+Cirugia
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>630</x><y>206</y><w>60</w><h>25</h></coordinates><panel_attributes>Programacion
+Pabellon
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>660</x><y>166</y><w>130</w><h>50</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;extend&gt;&gt;</panel_attributes><additional_attributes>10;80;10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>141</y><w>45</w><h>35</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>685</x><y>206</y><w>115</w><h>85</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;20;210;20;210;150</additional_attributes></element><element><id>Relation</id><coordinates><x>615</x><y>421</y><w>45</w><h>45</h></coordinates><panel_attributes>lt=.&gt;
+&lt;&lt;includes&gt;&gt;</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>UMLActor</id><coordinates><x>425</x><y>41</y><w>75</w><h>145</h></coordinates><panel_attributes>Actores Logistica
+************* 
+Enfermeros
+
+Medicos especialistas
+
+Anestesistas
+
+Quirofanos
+
+Estafeta auxiliar
+
+Jefes especialidad</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>71</y><w>95</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+fg=#C70039
+</panel_attributes><additional_attributes>170;20;10;20;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>86</y><w>120</w><h>85</h></coordinates><panel_attributes>lt=&lt;-
+fg=#FEF600</panel_attributes><additional_attributes>220;10;210;30;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>96</y><w>80</w><h>370</h></coordinates><panel_attributes>lt=&lt;-
+fg=#C70039
+</panel_attributes><additional_attributes>140;720;110;660;10;330;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>475</x><y>96</y><w>75</w><h>15</h></coordinates><panel_attributes>fg=#C70039</panel_attributes><additional_attributes>10;10;130;10</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>151</y><w>50</w><h>20</h></coordinates><panel_attributes>fg=#FEF600
+</panel_attributes><additional_attributes>10;20;80;20</additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>251</y><w>235</w><h>455</h></coordinates><panel_attributes>lt=&lt;-
+fg=#C70039</panel_attributes><additional_attributes>450;890;430;870;240;830;10;610;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>96</y><w>270</w><h>35</h></coordinates><panel_attributes>lt=&lt;-
+fg=#C70039</panel_attributes><additional_attributes>520;50;240;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>106</y><w>265</w><h>30</h></coordinates><panel_attributes>lt=&lt;-
+fg=#00FFEC
+</panel_attributes><additional_attributes>510;40;250;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>111</y><w>80</w><h>705</h></coordinates><panel_attributes>lt=&lt;-
+fg=#00FFEC
+</panel_attributes><additional_attributes>140;1390;140;1360;10;1060;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>475</x><y>121</y><w>65</w><h>20</h></coordinates><panel_attributes>fg=#FF5733
+</panel_attributes><additional_attributes>10;20;110;20</additional_attributes></element><element><id>Relation</id><coordinates><x>525</x><y>231</y><w>90</w><h>125</h></coordinates><panel_attributes>lt=&lt;-
+fg=#FF5733
+</panel_attributes><additional_attributes>160;230;160;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>525</x><y>126</y><w>100</w><h>175</h></coordinates><panel_attributes>lt=&lt;-
+fg=#FF5733
+</panel_attributes><additional_attributes>180;330;170;310;10;220;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>475</x><y>136</y><w>60</w><h>20</h></coordinates><panel_attributes>fg=#27AE60
+</panel_attributes><additional_attributes>10;20;100;20</additional_attributes></element><element><id>Relation</id><coordinates><x>520</x><y>141</y><w>80</w><h>335</h></coordinates><panel_attributes>lt=&lt;-
+fg=#27AE60</panel_attributes><additional_attributes>140;650;100;620;10;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>485</x><y>171</y><w>35</w><h>15</h></coordinates><panel_attributes>fg=#9B59B6</panel_attributes><additional_attributes>10;10;50;10</additional_attributes></element><element><id>Relation</id><coordinates><x>490</x><y>106</y><w>55</w><h>20</h></coordinates><panel_attributes>fg=#00FFEC
+</panel_attributes><additional_attributes>10;20;90;20</additional_attributes></element><element><id>Relation</id><coordinates><x>515</x><y>156</y><w>90</w><h>665</h></coordinates><panel_attributes>lt=&lt;-
+fg=#FEF600</panel_attributes><additional_attributes>160;1310;140;1310;10;1050;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>505</x><y>91</y><w>135</w><h>95</h></coordinates><panel_attributes>lt=&lt;-
+fg=#9B59B6</panel_attributes><additional_attributes>250;10;240;30;10;170</additional_attributes></element><element><id>UMLActor</id><coordinates><x>910</x><y>41</y><w>75</w><h>115</h></coordinates><panel_attributes>Actores Finales
+************* 
+Pacientes
+
+Enfermeros
+
+Anestesistas
+
+Medicos especialistas</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>96</y><w>130</w><h>200</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;380;10;360;240;10</additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>186</y><w>245</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+fg=#C70039
+</panel_attributes><additional_attributes>470;200;410;130;240;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>535</x><y>186</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+fg=#C70039
+</panel_attributes><additional_attributes>180;200;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>261</y><w>75</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+fg=#00FFEC
+</panel_attributes><additional_attributes>130;400;110;370;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>261</y><w>80</w><h>150</h></coordinates><panel_attributes>lt=&lt;-
+fg=#00FFEC
+</panel_attributes><additional_attributes>140;280;110;240;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>530</x><y>111</y><w>270</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+fg=#00FFEC
+</panel_attributes><additional_attributes>520;120;490;110;190;110;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>835</x><y>96</y><w>105</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;160;40;160;190;10</additional_attributes></element></diagram>

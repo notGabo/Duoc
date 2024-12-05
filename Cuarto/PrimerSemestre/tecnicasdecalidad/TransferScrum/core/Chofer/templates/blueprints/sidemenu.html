@@ -1,0 +1,15 @@
+<div id="sidemenu" data-open="false" onclick="sidemenu_control(event)">
+    {# content #}
+    <div>
+        <div id="menu-user">
+            <img src="static/img/user_picture_default.png"/>
+            <h4 class="fw-bold">{{ session.user.nombres }} {{ session.user.apellidos }}</h4>
+        </div>
+        <div id="menu-nav">
+            <a class="menu-item" href="#">Inicio <i class="bi bi-house-fill"></i></a>
+            <a class="menu-item" href="#">Perfil <i class="bi bi-person-lines-fill"></i></a>
+            <a class="menu-item" href="#">Ajustes <i class="bi bi-gear-fill"></i> </a>
+            <a class="menu-item" href="{{url_for('logout')}}">Logout <i class="bi bi-box-arrow-right"></i></a>
+        </div>
+    </div>
+</div>

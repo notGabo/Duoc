@@ -1,0 +1,93 @@
+'''#Esto va en el form.py 
+
+class RegisterForm(ModelForm):
+    class Meta:
+        model = Usuarios
+        fields = ['username', 'mail', 'password']
+        widgets = {
+            'mail':forms.EmailInput(attrs={'required':'required'}),
+            'password':forms.TextInput(attrs={'required':'required'}),
+        }
+
+
+
+esto va en el urls.py
+
+
+    path('Perfil.html', perfil, name='Perfil'),
+    path('BorrarPerfil/', borrarperfil, name='BorrarPerfil'),
+    path('ModPerfil.html', modperfil, name="Modificar Perfil"),
+
+
+
+
+ esto va en el views.py 
+
+
+
+def perfil(request):
+
+    contexto = {} 
+    contexto['esta_logueado'] = False
+    if request.method == 'GET':
+        if 'user' in request.session:
+            contexto['esta_logueado'] = True
+            contexto['Usuario'] = request.session['user']
+             
+    return render(request, 'Experiencia3MunozGaldamesSotoVenegas/perfil.html',contexto)
+    
+def borrarperfil(request):
+
+    contexto = {} 
+    contexto['esta_logueado'] = False
+    data = dict(request.POST)
+    print(request.method)
+    if request.method == 'POST':
+        if 'borroton' in data: 
+            print(data)
+            username = data['usernames'][0]
+            email = data['email'][0]
+            password = data['password'][0]
+            user = Usuarios(username,email,password)
+            if Usuarios(**request.session['user']) == user:
+                Usuarios(**request.session['user']).delete()
+                request.session.flush()
+                print("pase el delete")
+                return redirect(to="index")
+
+        else:
+            contexto['esta_logueado'] = True
+            contexto['Usuario'] = request.session['user']
+            print("error")
+        
+        
+    return render(request,'Experiencia3MunozGaldamesSotoVenegas/index.html')
+
+    
+def modperfil(request):
+
+    
+    
+    if request.method == 'GET':
+        context ={}
+        context['form'] = RegisterForm(instance=Usuarios(**request.session['user']))
+        user=Usuarios(**request.session['user'])
+        context['Usuario']=user
+
+
+
+    if request.method == 'POST':
+        print(request.POST)
+        context ={}
+        form = RegisterForm(data=request.POST)
+        context['form'] = form
+        user = Usuarios(username = request.session['user']['username'], mail = request.POST['mail'], password = request.POST['password'])
+        user.save()
+        context['Usuario']=user
+        request.session['user']=model_to_dict(user)
+
+    return render(request,'Experiencia3MunozGaldamesSotoVenegas/ModPerfil.html',context)
+
+#'''
+
+

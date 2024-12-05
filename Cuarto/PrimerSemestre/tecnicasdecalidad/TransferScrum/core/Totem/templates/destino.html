@@ -1,0 +1,165 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Destino{% endblock title %}
+
+{% block head %}
+    {# TomTom Map API #}
+    <link rel="stylesheet" type="text/css" href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps.css" />
+    <script src="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.18.0/maps/maps-web.min.js"></script>
+{% endblock head %}
+
+{% block style %}
+<style>
+#map{
+    aspect-ratio: 1 / 1;
+    width: calc(var(--max-width) - 1.7rem);
+    background-color: var(--background-color);
+    border-radius: 10px;
+
+    border: 3px solid var(--background-color);
+
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px hsl(0, 0%, 95%);
+}
+
+#in-destino{
+    height: 3rem;
+    width: calc(var(--max-width) - 1.7rem);
+    border-radius: 13px;
+    font-size: 1.25rem;
+    margin-top: 5px;
+    padding: 0.5rem 0;
+    text-align: center;
+    border: 3px solid var(--background-color);
+    outline: none;
+
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px hsl(0, 0%, 95%);
+    
+    background: var(--background-color);
+
+    transition-property: font-size, box-shadow, border-color;
+    transition-duration: 100ms;
+}
+
+#in-destino::placeholder{
+    opacity: 0.8;
+}
+
+#in-destino:focus::placeholder{
+    opacity: 0.5;
+}
+
+#in-destino:focus{
+    font-size: 1.25rem;
+    border-color: hsl(206, 51%, 81%);
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px hsl(0, 0%, 95%),
+                inset -8px -8px 15px -15px white,
+                inset 5px 5px 15px -13px #000000;
+}
+#in-submit{
+    border-radius: 15px;
+    font-size: 1rem;
+    border: 2px solid var(--background-color);
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px white;
+    color: var(--bs-light);
+    background: hsl(0, 0%, 13%);
+    aspect-ratio: 21 / 7;
+    width: 8rem;
+
+    transition-property: font-size, box-shadow, color, background;
+    transition-duration: 100ms;
+}
+#in-submit:active, #in-submit:focus{
+    font-size: 0.9rem;
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px white,
+                inset -5px -5px 10px -3px #3d3d3d,
+                inset 5px 5px 10px -3px #000000;
+    color: var(--bs-gray-400);
+    background: hsl(0, 0%, 10%);
+}
+
+#search-result{
+    opacity: 1;
+    position: absolute;
+    background-color: var(--background-color);
+    z-index: 100;
+    width: calc(var(--max-width) - 1.7rem);
+    height: 13rem;
+    border: 2px solid hsl(206, 51%, 81%);
+    text-align: start;
+    padding: 5px;
+    transform: translateY(5rem);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 10px -5px rgba(0, 0, 0, 1);
+}
+.item-result{
+    text-decoration: none;
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 0.85rem;
+    padding: 5px 0;
+}
+.item-result>strong{
+    font-size: 0.8rem;
+}
+.item-result:last-child{
+    border: none;
+}
+
+</style>
+{% endblock style %}
+
+{% block content %}
+<div class="d-flex justify-content-around align-items-center flex-wrap h-100">
+    
+    <div id="map" class="map"></div>
+
+    <form method="post" class="text-center d-flex justify-content-center align-items-center flex-wrap w-100 align-self-start">
+        <input id="in-destino" type="text" placeholder="Ingrese su destino" name="destino" onkeyup="buscarDestino(event)" value="" onkeypress="return event.keyCode!=13" required/>
+
+        <ul id="search-result" hidden></ul>
+
+        <span class="mt-2 mb-3 w-100 fs-5">
+            Duracion de viaje estimada
+            <br>
+            <span id="eta-text" class="fw-bold">-</span>
+        </span>
+        
+        <input type="hidden" id="eta" name="eta"/>
+        <input type="hidden" id="distance" name="distance"/>
+        <input type="hidden" id="address" name="address"/>
+        <input type="hidden" id="latitude" name="latitude"/>
+        <input type="hidden" id="longitude" name="longitude"/>
+
+        <input id="in-submit" type="submit" value="CONTINUAR"/>
+    </form>
+    
+    {% include "blueprints/navigator.html" %}
+</div>
+
+
+{% endblock content %}
+
+{% block script %}
+<script>
+    var map = tt.map({
+
+        key: "FjiYm2OcMMfV2yq71bJE1ycq1xESbZqn",
+        container: "map",
+    })
+
+    map.setCenter(new tt.LngLat(-70.79054124108268, -33.40327487412867));
+    map.setZoom(13);
+
+    map.addControl(new tt.NavigationControl(), 'bottom-right');
+
+    var marker = new tt.Marker().setLngLat([0, 0]).addTo(map);
+    
+</script>
+<script src="{{ url_for('static', filename='js/destino.js') }}"></script>
+{% endblock script %}

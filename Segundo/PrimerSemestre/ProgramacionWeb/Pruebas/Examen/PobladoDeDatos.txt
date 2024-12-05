@@ -1,0 +1,17 @@
+--Poblado Boleta
+INSERT INTO CommunityPlant_boleta VALUES (300 , 15000 , TO_DATE('21/08/19','DD/MM/RR') );
+
+--Poblado Categoria Planta
+INSERT INTO CommunityPlant_categoriaplanta VALUES(5, "test");
+
+--Poblado descuentos
+INSERT INTO CommunityPlant_descuento VALUES ("TestDescuento", 10);
+
+--Poblado FormSolicitud
+INSERT INTO CommunityPlant_formsolicitud VALUES(1, "Juanito Perez", "jaime@mail.com", "Hola esto es un test");
+
+--Poblado Usuarios
+INSERT INTO CommunityPlant_usuarios VALUES("Prueba", "prueba@mail.cl","123456789", FALSE);
+
+--Poblado CatalogoPlantas
+INSERT INTO CommunityPlant_catalogoplantas VALUES(50, "Planta bonita", "Es una planta muy bonita, nada mas que decir", 10, "https://image.shutterstock.com/image-vector/tropical-green-cactus-cute-smiling-260nw-2000427479.jpg",1, 5);

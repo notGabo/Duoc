@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="per_salud/especialidad" directorySegmentName="seg_0" id="974AAD91-BCBD-17C7-D50F-845242B1DDF5">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:47:37 UTC</createdTime>
+<ownerDesignName>merarquitec</ownerDesignName>
+<engineerTo>
+<item key="77D30BBB-0A6A-7E30-0DE5-9955132AE4C9" value="true"/>
+</engineerTo>
+<sourcePk>1547FFBD-B268-7BEF-E44D-6CF768A94928</sourcePk>
+<targetPk>699B614F-F51D-3F35-8831-60B573C7EB51</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>D54B9546-7322-019C-8AEE-E8D511E7BA18</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>CBE225F2-70D5-C035-CA9E-9CE8F6F32995</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

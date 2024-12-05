@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="3C314A32-7796-E575-2400-EAB9B9B63EB3" mainViewID="AACC254D-9DE4-AB70-FA65-894049980D88">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:27:18 UTC</createdTime>
+<ownerDesignName>MBD_Caso_Minera</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

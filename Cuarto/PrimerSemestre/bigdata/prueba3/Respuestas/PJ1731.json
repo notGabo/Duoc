@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:38:01",
+    "Id": "PJ1731",
+    "Nombre": "Parada 7 / (M) Gruta de Lourdes",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "CJRZ-66, CJRW-73, TBFV-23, TBFT-19",
+    "ContadorBusesActivos": 4,
+    "ServiciosActivos": "J16, 407",
+    "ServiciosInactivos": "",
+    "ContadorServiciosActivos": 2,
+    "ContadorServiciosInactivos": 0,
+    "ServiciosTotales": 2
+}

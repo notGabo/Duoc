@@ -1,0 +1,12 @@
+--CASO 5
+SELECT
+        to_number(to_char(sysdate,'YYYY')) as "AÑO TRIBUTARIO",
+        to_char(c.numrun,'09G999G999')||'-'||c.dvrun as "RUN CLIENTE",
+        initcap(trim(c.pnombre))||' '||initcap(trim(substr(c.snombre,1,1)))||'. '||initcap(c.appaterno)||' '||initcap(c.apmaterno) as "NOMBRE CLIENTE",
+        count(p.cod_prod_inv) as "TOTAL PROD. INV AFECTOS IMPTO",
+        to_char(sum(monto_total_ahorrado),'$99G999G999') AS "MONTO TOTAL AHORRADO"
+FROM CLIENTE C JOIN PRODUCTO_INVERSION_CLIENTE P ON (C.NRO_CLIENTE = P.NRO_CLIENTE)
+where --extract(year from p.fecha_solic_prod) = extract(year from sysdate) AND 
+      p.cod_prod_inv in (30, 35 , 40, 45, 50, 55)
+GROUP BY to_number(to_char(sysdate,'YYYY')),c.numrun, c.dvrun, c.pnombre, c.snombre, c.appaterno, c.apmaterno
+order by c.appaterno;

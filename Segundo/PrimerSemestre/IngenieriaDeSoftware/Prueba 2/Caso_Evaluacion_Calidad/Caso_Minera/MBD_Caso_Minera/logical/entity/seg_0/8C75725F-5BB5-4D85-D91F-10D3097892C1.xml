@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8C75725F-5BB5-4D85-D91F-10D3097892C1" name="Shift">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:35:51 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nroturno" id="F6E24743-A7AC-602E-3DD4-718A38BADBF1">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:35:59 UTC</createdTime>
+<comment><![CDATA[El número de turno que corresponde. Están
+codificados y son solo 3.]]></comment>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horadesde" id="E62E23F8-2FA2-80BD-1B1F-7CE0244154DE">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:36:13 UTC</createdTime>
+<comment><![CDATA[La hora de comienzo del turno]]></comment>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horahasta" id="1CC77523-1692-BBF3-79DF-CD390B183954">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:36:31 UTC</createdTime>
+<comment><![CDATA[La hora de término del turno
+]]></comment>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="16879F8C-9AD1-A3BC-C87B-C58423F11520" name="Turno PK">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:36:12 UTC</createdTime>
+<ownerDesignName>lolito</ownerDesignName>
+<engineerTo>
+<item key="83A6E26E-CBB0-7C90-91DB-C26BCD46558F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F6E24743-A7AC-602E-3DD4-718A38BADBF1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

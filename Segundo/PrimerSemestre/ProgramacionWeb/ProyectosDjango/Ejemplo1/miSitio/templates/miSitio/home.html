@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>caca poto pichi peo</h1>
+    <div class="row">
+        
+        <h1>Hola pagina de prueba (not hola mundo)</h1>
+        {% load static %}
+        <div class="row">
+            <img src="{% static 'miSitio/img/omnimanHuaso.jpg' %}" alt="">
+        </div>
+
+    </div>
+    <a href="./test.html">apreta aki para test</a>
+    
+    <a href="./form_mod_vehiculo.html">apreta aki para Modificar formulario</a>
+<div class="row">
+    <h1>Listado de vehiculos</h1>
+</div>
+<div class="row">
+    <table border=1>
+        <tr><th>Patente</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Opciones</th>
+        </tr>
+        {% for ve in vehiculos %}
+        <tr><td>{{ve.patente}}</td>
+            <td>{{ve.marca}}</td>
+            <td>{{ve.modelo}}</td>
+            <td><a href="{% url 'form_mod_vehiculo' ve.patente %}">Modificar</a>
+                <a href="{% url 'form_del_vehiculo' ve.patente %}">Eliminar</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'form_vehiculo' %}">apreta aki para añadir vehiculo</a>
+</div>
+
+</body>
+</html>

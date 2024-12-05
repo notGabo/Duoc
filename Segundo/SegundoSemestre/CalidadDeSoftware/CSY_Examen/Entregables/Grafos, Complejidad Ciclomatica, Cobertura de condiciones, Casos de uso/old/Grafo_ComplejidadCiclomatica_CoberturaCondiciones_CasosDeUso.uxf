@@ -1,0 +1,141 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>9</zoom_level><element><id>UMLSpecialState</id><coordinates><x>108</x><y>0</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+1
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>108</x><y>90</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+2
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>27</y><w>27</w><h>81</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>144</x><y>81</y><w>45</w><h>18</h></coordinates><panel_attributes>True
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>72</x><y>81</y><w>45</w><h>18</h></coordinates><panel_attributes>False
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>162</x><y>234</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+4
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>99</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;60;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>99</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10;50;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>216</x><y>297</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+5
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>189</x><y>243</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;60;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>198</x><y>225</y><w>45</w><h>18</h></coordinates><panel_attributes>True
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>126</x><y>225</y><w>45</w><h>18</h></coordinates><panel_attributes>False
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>243</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10;50;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>162</x><y>153</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+3
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>180</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>108</x><y>297</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+6
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>306</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;60;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>306</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10;50;10</additional_attributes></element><element><id>Text</id><coordinates><x>144</x><y>288</y><w>45</w><h>18</h></coordinates><panel_attributes>True
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>72</x><y>288</y><w>45</w><h>18</h></coordinates><panel_attributes>False
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>162</x><y>360</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+7
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>54</x><y>360</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+8
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>387</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>54</x><y>441</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+9
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>81</x><y>450</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;60;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>90</x><y>432</y><w>45</w><h>18</h></coordinates><panel_attributes>True
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>108</x><y>504</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+10
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>531</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>108</x><y>585</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+11
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>144</x><y>576</y><w>45</w><h>18</h></coordinates><panel_attributes>True
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>135</x><y>594</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;60;50;10;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>162</x><y>648</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+12
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>675</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>162</x><y>729</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+13
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>198</x><y>720</y><w>45</w><h>18</h></coordinates><panel_attributes>True
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>189</x><y>738</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;60;50;10;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>216</x><y>792</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+14
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>243</x><y>801</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;60;50;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>252</x><y>783</y><w>45</w><h>18</h></coordinates><panel_attributes>True
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>270</x><y>855</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+15
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>117</x><y>738</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10;50;10</additional_attributes></element><element><id>Text</id><coordinates><x>126</x><y>720</y><w>45</w><h>18</h></coordinates><panel_attributes>False
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>108</x><y>792</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+16
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>54</x><y>153</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+19
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>0</x><y>855</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+18
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>9</x><y>450</y><w>63</w><h>423</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;450;10;10;50;10</additional_attributes></element><element><id>Text</id><coordinates><x>18</x><y>432</y><w>45</w><h>18</h></coordinates><panel_attributes>False
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>63</x><y>594</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10;50;10</additional_attributes></element><element><id>Text</id><coordinates><x>72</x><y>576</y><w>45</w><h>18</h></coordinates><panel_attributes>False
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>54</x><y>648</y><w>36</w><h>36</h></coordinates><panel_attributes>type=initial
+17
+bg=white</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>54</x><y>612</y><w>90</w><h>216</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>80;10;80;110;10;110;10;220;60;220</additional_attributes></element><element><id>Relation</id><coordinates><x>27</x><y>468</y><w>63</w><h>216</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;10;50;60;10;60;10;220;30;220</additional_attributes></element><element><id>Relation</id><coordinates><x>171</x><y>756</y><w>63</w><h>72</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;10;10;60;50;60</additional_attributes></element><element><id>Text</id><coordinates><x>180</x><y>783</y><w>45</w><h>18</h></coordinates><panel_attributes>False
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>684</y><w>180</w><h>207</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;50;40;10;180;10;180;210;140;210</additional_attributes></element><element><id>Relation</id><coordinates><x>27</x><y>369</y><w>351</w><h>558</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;560;220;560;220;600;370;600;370;10;190;10</additional_attributes></element><element><id>Relation</id><coordinates><x>9</x><y>306</y><w>387</w><h>648</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;650;10;700;410;700;410;10;270;10</additional_attributes></element><element><id>UMLNote</id><coordinates><x>396</x><y>513</y><w>459</w><h>423</h></coordinates><panel_attributes>fontsize=17.9
+bg=green
+Cobertura de condiciones
+
+Camino	
+------------																																																																																													 
+Camino 1 = 1-2-19
+Camino 2 = 1-2-3-4-5-18 
+Camino 3 = 1-2-3-4-6-7-18
+Camino 8 = 1-2-3-4-6-8-9-10-11-12-13-14-15-13-16-11-17-9-18 
+
+Características
+--------------------
+Camino 1 : M != N  
+Camino 2 : M == N
+Camino 3 : M == N
+Camino 8 :  M== N
+
+Casos de prueba
+-----------------------
+Camino 1 : M = 1, N = 2 || N = 2 , M = 1 
+Camino 2 : M = 1 , N = 1
+Camino 3 : M=2 , N = 2
+Camino 8 : M &gt; 2 , N &gt; 2</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>396</x><y>189</y><w>459</w><h>324</h></coordinates><panel_attributes>fontsize=16.2
+bg=blue
+Caminos
+* * * * * * 
+Camino 1 = 1-2-19
+Camino 2 = 1-2 3-4-5-18 
+Camino 3 = 1-2-3-4-6-7-18 
+Camino 4 = 1-2-3-4-6-8-9-18
+Camino 5 = 1-2-3-4-6-8-9-10-11-17-9-18
+Camino 6 = 1-2-3-4-6-8-9-10-11-12-13-16-11-17-9-18
+Camino 7 = 1-2-3-4-6-8-9-10-11-12-13-14-13-16-11-17-9-18
+Camino 8 = 1-2-3-4-6-8-9-10-11-12-13-14-15-13-16-11-17-9-18
+Camino 9 = 1-2-3-4-6-8-9-10-11-12-13-14-15-13-14-13-16-11-17-9-18
+
+Caminos Independientes
+* * * * * * * * * * * * * *
+Camino 1 = 1-2-19
+Camino 2 = 1-2 3-4-5-18 
+Camino 3 = 1-2-3-4-6-7-18 
+Camino 8 = 1-2-3-4-6-8-9-10-11-12-13-14-15-13-16-11-17-9-18</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>396</x><y>0</y><w>459</w><h>81</h></coordinates><panel_attributes>Complejidad Ciclomática											Evaluación del Riesgo
+====================================================================================
+1-10																																															Programa Simple, sin mucho riesgo
+11-20																																													Más complejo, riesgo moderado
+21-50																																													Complejo, Programa de alto riesgo
+50																																																		Programa no testeable, Muy alto riesgo
+bg=orange
+fontsize=11
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>396</x><y>81</y><w>459</w><h>108</h></coordinates><panel_attributes>style=wordwrap
+fontsize=25
+bg=red
+halign=center
+24 aristas - 19 nodos + 2 = 7
+aristas - nodos + 2
+Complejidad ciclomatica = 7
+Programa simple, sin mucho riesgo
+
+
+
+	
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>

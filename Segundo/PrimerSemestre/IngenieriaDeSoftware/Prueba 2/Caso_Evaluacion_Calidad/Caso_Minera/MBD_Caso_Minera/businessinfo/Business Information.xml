@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="A30BCF7F-009C-3832-037D-2C36AF4DC3B8">
+<createdBy>tucan</createdBy>
+<createdTime>2022-04-23 21:27:19 UTC</createdTime>
+<ownerDesignName>MBD_Caso_Minera</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

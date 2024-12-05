@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DBC0C7D9-C364-D098-A520-C2952E4C8248" name="seccion">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:33:26 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_seccion" id="9E275617-E6E6-BF83-9573-CA90D27FDF62">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:33:49 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nom_seccion" id="EB831738-CEE0-8A95-B0C6-D97CDD2E88C5">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:35:46 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rut_jefe_sec" id="E4A48E18-F672-DE41-B34E-C3D78CAEE9DF">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:37:07 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>9 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="785727CB-1A46-04B9-894F-E21513F32B21" name="seccion PK">
+<createdBy>Monito</createdBy>
+<createdTime>2022-11-08 00:35:39 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<engineerTo>
+<item key="CC8E1330-642E-142D-2DD2-7108CB26A511" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9E275617-E6E6-BF83-9573-CA90D27FDF62</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

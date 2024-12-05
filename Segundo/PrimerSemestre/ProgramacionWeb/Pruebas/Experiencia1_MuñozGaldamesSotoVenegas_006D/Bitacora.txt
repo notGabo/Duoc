@@ -1,0 +1,4 @@
+Alfredo Galdames // Co-creacion de pagina de contacto, ayuda en pagina de quienes somos, ayuda revision y co-creacion de los css
+Fabian Muñoz // Creacion de las 3 paginas de galeria (Interiores, exteriores y arboles) y ayuda revision
+Gabriel Soto // Creacion el patron de diseño de pagina, creacion del index y revision principal
+Jean Venegas // Creacion de pagina quienes somos, co-creacion de los css, co-creacion de pagina de contacto y ayuda a revision

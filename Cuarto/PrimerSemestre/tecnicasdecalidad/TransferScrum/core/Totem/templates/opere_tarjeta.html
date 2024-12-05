@@ -1,0 +1,60 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Opere Tarjeta{% endblock title %}
+
+{% block style %}
+<style>
+#icon-card{
+    font-size: 6rem;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+#mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 5rem;
+}
+#mid>img{
+    aspect-ratio: auto;
+    width: 10rem;
+    mix-blend-mode: multiply;
+}
+
+#cancelar{
+    align-self: end;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: var(--max-width);
+    margin-bottom: 1rem;
+}
+</style>
+{% endblock style %}
+
+{% block content %}
+<div id="content">
+    <form method="post" id="mid" onclick="pagar(event)">
+        <img src="static/img/payment.png"/>
+        <h3>Por favor, opere su tarjeta</h3>
+    </form>
+    <div id="cancelar">
+        <a href="{{url_for('cancel')}}" class="fs-1 text-danger" draggable="false"><i class="bi bi-x-circle"></i></a>
+        <span>CANCELAR OPERACI&Oacute;N</span>
+    </div>
+</div>
+{% endblock content %}
+    
+{% block script %}
+<script>
+    function pagar(e){
+        e.currentTarget.submit();
+    }
+</script>
+{% endblock script %}

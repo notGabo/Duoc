@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22B0187E-0B21-2285-204C-5E382A564BAD" name="Toxicidad">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>716C318C-DC31-7851-9F0C-16371476E26A</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="86D8421F-5CB2-521C-0A01-336C746C2FEB">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>A172A0AA-0584-9A52-DC5D-CA4508228C00</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="A30A0AA7-35AF-1F46-2489-0A6154C04295">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>BDB30B88-E09F-FB60-3DDA-234A45F7541C</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Relaves_numero" id="472D85EA-5A78-1CA5-BE9D-0B12D7AC03A9">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>4C59FC1C-4CA9-1BAA-50C7-88C94533A6F8</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F304D58D-61CA-871A-7861-1F7B5930CC1E" referredColumn="AC38E095-6B08-E633-7184-3A7D98B43F3A"/>
+</associations>
+</Column>
+<Column name="Relaves_codigotiporelave" id="351B7E5B-A7A4-8C1F-F776-6B46B7FA0368">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>6B411B9C-378A-A80B-6E5A-D4CFC1E39C84</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F304D58D-61CA-871A-7861-1F7B5930CC1E" referredColumn="880161E3-A9B7-0842-9F61-3F9F799D315D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BB97F1A8-95DF-3FE4-1035-D2CE64CD7CBE" name="Toxicidad_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>73071804-1D54-523F-9209-71BAE9D65886</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86D8421F-5CB2-521C-0A01-336C746C2FEB"/>
+<colUsage columnID="472D85EA-5A78-1CA5-BE9D-0B12D7AC03A9"/>
+<colUsage columnID="351B7E5B-A7A4-8C1F-F776-6B46B7FA0368"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44EBDBB8-8D9F-ACD3-D5BE-C866F48B335B" name="Toxicidad_Relaves_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>754D8D07-7B32-ACAD-B10A-7128CCF7F8AE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="472D85EA-5A78-1CA5-BE9D-0B12D7AC03A9"/>
+<colUsage columnID="351B7E5B-A7A4-8C1F-F776-6B46B7FA0368"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

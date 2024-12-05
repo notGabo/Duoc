@@ -1,0 +1,89 @@
+/* Importar Fuentes: Chivo Mono , Comfortaa */
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --background-color: white;
+    --max-width: 340px;
+    --max-height: 756px;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: url(../img/touch-cursor.png) 16 16, default;
+}
+
+body{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+    margin: 0;
+    padding-top: 1rem;
+}
+main{
+    aspect-ratio: 9 / 20;
+    width: var(--max-width);
+    background-color: var(--background-color);
+    background-clip: border-box;
+    clip-path: stroke-box;
+    border-radius: 15px;
+    overflow: hidden;
+}
+#os-topbar{
+    position: relative;
+    z-index: 1000;
+
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-top: 5px;
+    height: 30px;
+}
+
+#clock{
+    font-family: 'Chivo Mono', monospace;
+}
+#battery{
+    aspect-ratio: auto;
+    width: 24px;
+    margin-left: 7px;
+    margin-right: 10px;
+}
+#signal{
+    aspect-ratio: auto;
+    width: 18px;
+
+}
+#os-control{
+    position: absolute;
+    top: var(--max-height);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(var(--max-width) / 2);
+    background-color: black;
+    border-radius: 15px;
+    height: 5px;
+    z-index: 999;
+}
+
+/* TOPBAR */
+#topbar{
+    position: relative;
+    height: 3.5rem;
+    padding: 5px;
+    display: flex;
+    border-bottom: 3px solid var(--bs-gray-300);
+    background-color: var(--background-color);
+}
+/* Map TomTom tag */
+.mapboxgl-ctrl.mapboxgl-ctrl-attrib{
+    visibility: hidden;
+}

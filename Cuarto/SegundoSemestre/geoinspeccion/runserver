@@ -1,0 +1,2 @@
+cd server-arduino-js
+node server.js

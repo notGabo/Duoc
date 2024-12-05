@@ -1,0 +1,2 @@
+feed_publisher_name,feed_publisher_url,feed_lang,feed_start_date,feed_end_date,feed_version
+Transantiago,http://www.transantiago.cl,es,20160114,20160331,V19.20160116

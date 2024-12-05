@@ -1,0 +1,164 @@
+{% extends "blueprints/main_template.html" %}
+{% block title %}Resumen{% endblock title %}
+
+{% block style %}
+<style>
+#in-submit{
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 2px solid var(--background-color);
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px white;
+    color: var(--bs-light);
+    background: hsl(0, 0%, 13%);
+    height: 2.5rem;
+    width: 12rem;
+
+    transition-property: font-size, box-shadow, color, background;
+    transition-duration: 100ms;
+}
+#in-submit:active, #in-submit:focus{
+    font-size: 0.9rem;
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px white,
+                inset -5px -5px 10px -3px #3d3d3d,
+                inset 5px 5px 10px -3px #000000;
+    color: var(--bs-gray-400);
+    background: hsl(0, 0%, 10%);
+}
+#resumen-container{
+    height: 26rem;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px #bebebe,
+                -5px -5px 10px hsl(0, 0%, 95%);
+    width: calc(var(--max-width) - 1.5rem);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+tr>td{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+tr>td:first-child{
+    font-weight: 600;
+    width: 30%;
+}
+tr>td:last-child{
+    width: 70%;
+}
+tr{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    height: 2.5rem;
+    line-height: 1rem;
+}
+tr:last-child{
+    border-bottom: none;
+}
+table caption{
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 0;
+}
+#total{
+    background-color: var(--bs-dark);
+    border-radius: 10px;
+    color: var(--bs-light);
+    padding: 1rem;
+    font-size: 1.25rem;
+    width: 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+#asientos-equipaje{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    height: 2.5rem;
+}
+
+</style>
+{% endblock style %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-end flex-wrap h-100">
+    <form method="post" class="w-100 d-flex justify-content-center align-items-center flex-wrap">
+        <div id="resumen-container">
+            <h2 class="text-center">RESUMEN</h2>
+            <div>
+                <div id="asientos-equipaje" class="d-flex flex-nowrap justify-content-between align-items-center w-100 py-1">
+                    <div class="w-50">
+                        <span class="fw-semibold me-2">Asientos</span>
+                        <span>{{ session.reserva.travel.asientos }}</span>
+                    </div>
+                    <div class="w-50">
+                        <span class="fw-semibold me-2">Equipaje</span>
+                        <span>{{ session.reserva.travel.equipaje }}</span>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <td>Destino</td>
+                        <td id="address"></td>
+                    </tr>
+                    <tr>
+                        <td>Duraci&oacute;n de viaje</td>
+                        <td id="duracion"></td>
+                    </tr>
+                    <tr>
+                        <td>Valor Reserva</td>
+                        <td id="vehiculo-value"></td>
+                    </tr>
+                    <tr>
+                        <td>Valor viaje</td>
+                        <td id="viaje-value"></td>
+                    </tr>
+                    <caption>
+                        <i class="bi bi-info-circle-fill text-primary"></i> Se aplicar&aacute; una tarifa inicial de $300 CLP
+                    </caption>
+                </table>
+            </div>
+
+            <div id="total">
+                <span class="me-3 fw-light">TOTAL</span>
+                <span class="text-center" id="total-value"></span>
+            </div>
+        </div>
+
+        <input class="mt-4" id="in-submit" type="submit" value="CONFIRMAR"/>
+    </form>
+    {% include "blueprints/navigator.html" %}
+</div>
+{% endblock content %}
+
+{% block script %}
+<script>
+    let eta_formated = {{ session.reserva.travel.eta }}/60;
+
+    if(eta_formated >= 60){
+        eta_formated =`${Math.round(eta_formated/60)} horas y ${Math.round(eta_formated%60)} minutos`;
+    }else{
+        eta_formated =`${Math.round(eta_formated)} minutos`;
+    }
+
+    document.getElementById("duracion").innerText = eta_formated;
+
+    const vehiculo_formated = ({{ valores.vehiculo }}).toLocaleString("es-CL");
+    const distancia_formated = ({{ valores.distancia }}).toLocaleString("es-CL");
+    const total_formated = ({{ valores.total }}).toLocaleString("es-CL");
+
+    document.getElementById("vehiculo-value").innerText = `$${vehiculo_formated} CLP`;
+    document.getElementById("viaje-value").innerText = `$${distancia_formated} CLP`;
+    document.getElementById("total-value").innerText = `$${total_formated} CLP`;
+
+    let address = "{{ session.reserva.travel.address }}";
+
+    if(address.includes("|")){
+        address = address.substring(0, address.indexOf("|")) + "<br>" + address.substring(address.indexOf("|")+1, address.length).sub().bold();
+    }
+
+    document.getElementById("address").innerHTML = address;
+
+</script>
+{% endblock script %}

@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>AmericansOlapProject</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>UCyP9hfQvRPU1J9082A05iZ/FnI=11/8/2023 12:42:28 PM11/8/2023 12:15:33 PM</TimeStamp>
+        <ID>
+          <String>DW Americans</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>bSCrz/LYXj3Wg843npj6raVpY9Y=11/8/2023 12:16:20 PM11/8/2023 12:16:20 PM</TimeStamp>
+        <ID>
+          <String>DW Americans</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KQzqt6r8aBT1fBKNWBHunlnHuzY=11/8/2023 12:21:47 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>Dim Vendedor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>vpkp9Z/rygPjK+y5yiNt01X2SI8=11/8/2023 12:24:24 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>Dim Sucursal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>IktGPdo1WXNl5W+SCDpVVvKN76E=11/8/2023 12:22:10 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>Dim Canal</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xp7ItS6Qqm+rKkMdscESUbcWbX0=11/8/2023 12:21:51 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>Dim Tiempo</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ivsjTNV0M/dpHRuyCEjeICJ3ooU=11/8/2023 12:24:28 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>Dim Producto</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p1glQqsOeic0ywGJCitwqmNzRrk=11/8/2023 12:27:16 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>Dim Detalle Venta</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>S0vQswFHmac/V2+QWO/xOHoS3Xs=11/8/2023 12:21:28 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>Dim Clientes</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>XF+GCYUcKLUHhDvzAA7x71l9PWU=11/8/2023 12:26:50 PM11/8/2023 12:17:47 PMqR5SQt2rTaEx3Eco48YWkznqsV4=11/8/2023 12:17:48 PM11/8/2023 12:17:47 PM</TimeStamp>
+        <ID>
+          <String>DW Americans</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>ZKb49K1Q0zSccjfdBUZJSmUm5YM=11/8/2023 12:14:41 PM11/8/2023 12:14:40 PM</TimeStamp>
+      <ID>
+        <String>AmericansOlapProject</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-11-08T15:42:54.963333Z</LastDeployed>
+</DeploymentSnapshot>

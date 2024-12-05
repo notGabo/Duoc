@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36DE3820-99A9-AAF4-EB1B-F2E4AFD1D75D" name="Piscina">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>196ECF75-5C8C-3D20-2BAE-8CBBB2C0B86B</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="47CE3A1F-9C53-66DA-5F5D-62949852B626">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>3B2974C7-6F80-3833-0C1E-F7905214A16E</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="B959F7F4-D80D-64A1-43CE-17B9BC65D316">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>B1F514FA-845D-5037-5B04-EDD0426CDD81</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Relaves_numero" id="BC1B419D-4534-499A-7703-39EC676120EE">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>2F1D5B65-CE2F-5CC5-5769-C2436185DFB1</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6672E0D0-41CE-3FA0-ED09-D676CF4B4976" referredColumn="AC38E095-6B08-E633-7184-3A7D98B43F3A"/>
+</associations>
+</Column>
+<Column name="Relaves_codigotiporelave" id="AB08B990-47A9-18E3-C096-1AB70579E51F">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>C004FD12-5F5E-9D7E-B3E0-8965D535D2D3</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6672E0D0-41CE-3FA0-ED09-D676CF4B4976" referredColumn="880161E3-A9B7-0842-9F61-3F9F799D315D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D08E84E1-36D1-EC62-F46B-92CF0C1F1D0D" name="Piscina_PK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>9278F265-DFAB-E411-EF93-6878CBA7F16A</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47CE3A1F-9C53-66DA-5F5D-62949852B626"/>
+<colUsage columnID="BC1B419D-4534-499A-7703-39EC676120EE"/>
+<colUsage columnID="AB08B990-47A9-18E3-C096-1AB70579E51F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0795D630-B06C-37C0-A622-DB77B552F795" name="Piscina_Relaves_FK">
+<createdBy>Usuario</createdBy>
+<createdTime>2022-05-12 20:29:46 UTC</createdTime>
+<generatorID>4D804B06-EDB7-F56F-271C-FB08DBC6B6DE</generatorID>
+<ownerDesignName>lolito</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BC1B419D-4534-499A-7703-39EC676120EE"/>
+<colUsage columnID="AB08B990-47A9-18E3-C096-1AB70579E51F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

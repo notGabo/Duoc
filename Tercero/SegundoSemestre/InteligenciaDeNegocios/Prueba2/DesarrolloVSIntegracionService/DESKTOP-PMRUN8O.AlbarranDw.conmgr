@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="DESKTOP-PMRUN8O.AlbarranDw"
+  DTS:DTSID="{992C4CAD-2E7E-4A7B-8E88-D4EFC9DE19D2}"
+  DTS:CreationName="ADO">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=DESKTOP-KVQQK3S;Initial Catalog=AlbarranDw;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DesarrolloVSIntegracionService-{992C4CAD-2E7E-4A7B-8E88-D4EFC9DE19D2}DESKTOP-PMRUN8O.AlbarranDw;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

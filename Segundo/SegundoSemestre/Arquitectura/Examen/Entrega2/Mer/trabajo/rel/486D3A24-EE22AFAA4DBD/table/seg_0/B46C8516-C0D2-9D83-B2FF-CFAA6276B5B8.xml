@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B46C8516-C0D2-9D83-B2FF-CFAA6276B5B8" name="ficha_paciente">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>21E6D229-82FE-51ED-60B8-D38B617699A4</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_ficha" id="03F432AD-4F77-0E55-2E98-C81893C9D8AA">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>6A5CE923-DBB9-5BAC-28E6-7456F3276B72</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diagnostico_paciente" id="30CA8EF6-8D4C-D4A3-176C-8F913D4503DD">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>43C3BC12-F8A4-232B-896A-F6FC6E2F37BB</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 CHAR</dataTypeSize>
+<ownDataTypeParameters>200 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="operaciones" id="E66962E7-07F5-04CA-E118-5616037DA5A0">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>EA97FCCD-2045-F970-BE10-8DC928A690BA</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="riesgo_salud" id="5A74ABC7-ECB8-ED28-B7EF-F3BBC281C23B">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>14187E07-68AC-E2C3-C046-4D785F7DB58D</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="evaluacion_id_evalu" id="F80EDEB3-3B43-F8C3-5DA2-97158C684091">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>B301F842-3ABF-E503-8D7A-0822D292982D</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF28F125-E80C-7071-E5C0-0D0BEA9F382D" referredColumn="35AC3D6A-54FA-0ECE-4F8C-CB19677886AE"/>
+</associations>
+</Column>
+<Column name="paciente_rut_paciente" id="848EFDFB-307E-FA9F-9BF0-7961DA914B17">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>A5B14131-ADD8-9A57-DBBE-B883E3BE7868</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4CAB519E-A1D4-E520-177E-6D3E8F8E28C4" referredColumn="EBAA7C6D-A7C4-FF67-A53B-025667D879F5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4506B273-EF5F-DD55-057A-EFEB2315C0FA" name="ficha_paciente_PK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>81AF64A7-E4BE-ABF3-F599-93AB078989DD</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03F432AD-4F77-0E55-2E98-C81893C9D8AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DE82BD0-E6DA-D502-9D75-B804CE57F34E" name="ficha_paciente__IDX">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F083694F-FFE7-47E3-65B0-9D21C9B06E3E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="848EFDFB-307E-FA9F-9BF0-7961DA914B17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C92FF0D-FE16-690D-C645-401CE93EEC37" name="ficha_pac_eva_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>3DD5918A-BA10-FAF9-4733-6522059BCFF0</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F80EDEB3-3B43-F8C3-5DA2-97158C684091"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1773C4F6-A18C-51B2-B3C9-BE3D1151F966" name="ficha_pac_pac_FK">
+<createdBy>fgald</createdBy>
+<createdTime>2022-11-10 04:38:24 UTC</createdTime>
+<generatorID>F083694F-FFE7-47E3-65B0-9D21C9B06E3E</generatorID>
+<ownerDesignName>trabajo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="848EFDFB-307E-FA9F-9BF0-7961DA914B17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

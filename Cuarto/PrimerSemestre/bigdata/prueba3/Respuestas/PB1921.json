@@ -1,0 +1,14 @@
+{
+    "FechaDeEjecucion": "26/06/2024 21:38:15",
+    "Id": "PB1921",
+    "Nombre": "Parada 1 / (M) Plaza Quilicura",
+    "CodigoEstado": 0,
+    "DescripcionStatus": "Itinerario obtenido satisfactoriamente",
+    "BusesActivos": "SJPD-77, SHXG-41, SLLY-52, SLGS-99, SKDF-92, SKDJ-25, SPCG-32, SKDH-73, SHXG-98, SHXG-83, SLPC-22, SHXD-68",
+    "ContadorBusesActivos": 12,
+    "ServiciosActivos": "430, 435, B06, B21, 425, 429",
+    "ServiciosInactivos": "429C",
+    "ContadorServiciosActivos": 6,
+    "ContadorServiciosInactivos": 1,
+    "ServiciosTotales": 7
+}

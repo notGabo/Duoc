@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2021-04-01" view-index="0" gantt-divider-location="376" resource-divider-location="449" version="3.2.3240" locale="es_ES">
+    <description/>
+    <view zooming-state="default:11" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="228" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="64" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="68" order="2"/>
+        <option id="filter.completedTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="294" order="0"/>
+        <field id="1" name="Función" width="151" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="39" name="Examen" color="#000000" meeting="false" start="2022-07-04" duration="250" complete="0" thirdDate="2022-07-04" thirdDate-constraint="0" expand="true">
+            <task id="0" name="Identificar Historias de Usuario" meeting="false" start="2022-07-04" duration="22" complete="0" expand="false">
+                <depend id="8" type="2" difference="0" hardness="Strong"/>
+                <task id="2" name="Formular vision del proyecto" color="#8cb6ce" meeting="false" start="2022-07-04" duration="1" complete="0" thirdDate="2022-07-04" thirdDate-constraint="0" expand="true">
+                    <depend id="149" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="149" name="Identificar roles claves y stakeholder" meeting="false" start="2022-07-05" duration="1" complete="0" expand="true">
+                    <depend id="3" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="3" name="Armar equipo para el proyecto" color="#8cb6ce" meeting="false" start="2022-07-06" duration="3" complete="0" thirdDate="2022-07-05" thirdDate-constraint="0" expand="true">
+                    <depend id="4" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="4" name="Formar equipo scrum" color="#8cb6ce" meeting="false" start="2022-07-11" duration="10" complete="0" thirdDate="2022-07-04" thirdDate-constraint="0" expand="true">
+                    <depend id="5" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="5" name="Desarrollar epicas" color="#8cb6ce" meeting="false" start="2022-07-25" duration="5" complete="0" thirdDate="2022-07-04" thirdDate-constraint="0" expand="true">
+                    <depend id="6" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="6" name="Elaborar product backlog priorizado" color="#8cb6ce" meeting="false" start="2022-08-01" duration="1" complete="0" thirdDate="2022-08-01" thirdDate-constraint="0" expand="true">
+                    <depend id="7" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="7" name="Planificar Lanzamiento" meeting="false" start="2022-08-02" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="8" name="Planificacion y estimacion" meeting="false" start="2022-08-03" duration="14" complete="0" expand="false">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+                <task id="9" name="Formular historias de usuario" color="#8cb6ce" meeting="false" start="2022-08-03" duration="5" complete="0" thirdDate="2022-08-03" thirdDate-constraint="0" expand="true">
+                    <depend id="10" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="10" name="Estimar historias de usuario" color="#8cb6ce" meeting="false" start="2022-08-10" duration="5" complete="0" thirdDate="2022-08-10" thirdDate-constraint="0" expand="true">
+                    <depend id="11" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="11" name="Identificar tareas" color="#8cb6ce" meeting="false" start="2022-08-17" duration="3" complete="0" thirdDate="2022-08-17" thirdDate-constraint="0" expand="true">
+                    <depend id="12" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="12" name="Estimar tareas" meeting="false" start="2022-08-22" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="13" name="Implementacion" color="#000000" meeting="false" start="2022-08-23" duration="210" complete="0" thirdDate="2022-07-13" thirdDate-constraint="0" expand="true">
+                <depend id="37" type="2" difference="0" hardness="Strong"/>
+                <task id="14" name="Formular entregables del sprint" color="#8cb6ce" meeting="false" start="2022-08-23" duration="3" complete="0" thirdDate="2022-08-23" thirdDate-constraint="0" expand="true">
+                    <depend id="15" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="15" name="Formular Presupuesto" color="#8cb6ce" meeting="false" start="2022-08-26" duration="1" complete="0" thirdDate="2022-08-26" thirdDate-constraint="0" expand="true">
+                    <depend id="16" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="16" name="Sprint 0" color="#000000" meeting="false" start="2022-08-29" duration="6" complete="0" thirdDate="2022-07-15" thirdDate-constraint="0" expand="true">
+                    <depend id="19" type="2" difference="0" hardness="Strong"/>
+                    <task id="17" name="Capacitacion basica" color="#8cb6ce" meeting="false" start="2022-08-29" duration="3" complete="0" thirdDate="2022-08-29" thirdDate-constraint="0" expand="true">
+                        <depend id="18" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="18" name="Verificacion de la instalacion" color="#8cb6ce" meeting="false" start="2022-09-01" duration="3" complete="0" thirdDate="2022-08-29" thirdDate-constraint="0" expand="true"/>
+                </task>
+                <task id="19" name="Sprint 1" color="#000000" meeting="false" start="2022-09-06" duration="10" complete="0" thirdDate="2022-07-18" thirdDate-constraint="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                    <task id="20" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-09-06" duration="1" complete="0" thirdDate="2022-07-18" thirdDate-constraint="0" expand="true">
+                        <depend id="21" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="21" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-09-07" duration="6" complete="0" thirdDate="2022-07-19" thirdDate-constraint="0" expand="true">
+                        <depend id="22" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="22" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-09-15" duration="1" complete="0" thirdDate="2022-07-27" thirdDate-constraint="0" expand="true">
+                        <depend id="23" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="23" name="Retrospectiva del sprint" meeting="false" start="2022-09-16" duration="1" complete="0" expand="true">
+                        <depend id="24" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="24" name="Refinar el backlog del producto" meeting="false" start="2022-09-19" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="25" name="Sprint 2" color="#000000" meeting="false" start="2022-09-20" duration="10" complete="0" thirdDate="2022-07-18" thirdDate-constraint="0" expand="false">
+                    <depend id="31" type="2" difference="0" hardness="Strong"/>
+                    <task id="26" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-09-20" duration="1" complete="0" expand="true">
+                        <depend id="27" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="27" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-09-21" duration="6" complete="0" thirdDate="2022-08-01" thirdDate-constraint="0" expand="true">
+                        <depend id="28" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="28" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-09-29" duration="1" complete="0" expand="true">
+                        <depend id="29" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="29" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2022-09-30" duration="1" complete="0" expand="true">
+                        <depend id="30" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="30" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2022-10-03" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="31" name="Sprint 3" color="#000000" meeting="false" start="2022-10-04" duration="10" complete="0" thirdDate="2022-07-18" thirdDate-constraint="0" expand="false">
+                    <depend id="46" type="2" difference="0" hardness="Strong"/>
+                    <task id="32" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-10-04" duration="1" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="true">
+                        <depend id="33" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="33" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-10-05" duration="6" complete="0" thirdDate="2022-08-16" thirdDate-constraint="0" expand="true">
+                        <depend id="34" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="34" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-10-13" duration="1" complete="0" expand="true">
+                        <depend id="35" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="35" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2022-10-14" duration="1" complete="0" expand="true">
+                        <depend id="36" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="36" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2022-10-17" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="46" name="Sprint 4" color="#000000" meeting="false" start="2022-10-18" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="88" type="2" difference="0" hardness="Strong"/>
+                    <task id="47" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-10-18" duration="1" complete="0" expand="true">
+                        <depend id="48" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="48" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-10-19" duration="6" complete="0" expand="true">
+                        <depend id="49" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="49" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-10-27" duration="1" complete="0" expand="true">
+                        <depend id="50" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="50" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2022-10-28" duration="1" complete="0" expand="true">
+                        <depend id="51" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="51" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2022-10-31" duration="1" complete="0" expand="false"/>
+                </task>
+                <task id="88" name="Sprint 5" color="#000000" meeting="false" start="2022-11-01" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="82" type="2" difference="0" hardness="Strong"/>
+                    <task id="89" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-11-01" duration="1" complete="0" expand="true">
+                        <depend id="90" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="90" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-11-02" duration="6" complete="0" expand="true">
+                        <depend id="91" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="91" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-11-10" duration="1" complete="0" expand="true">
+                        <depend id="92" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="92" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2022-11-11" duration="1" complete="0" expand="true">
+                        <depend id="93" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="93" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2022-11-14" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="82" name="Sprint 6" color="#000000" meeting="false" start="2022-11-15" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="76" type="2" difference="0" hardness="Strong"/>
+                    <task id="83" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-11-15" duration="1" complete="0" expand="true">
+                        <depend id="84" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="84" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-11-16" duration="6" complete="0" expand="true">
+                        <depend id="85" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="85" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-11-24" duration="1" complete="0" expand="true">
+                        <depend id="86" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="86" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2022-11-25" duration="1" complete="0" expand="true">
+                        <depend id="87" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="87" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2022-11-28" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="76" name="Sprint 7" color="#000000" meeting="false" start="2022-11-29" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="70" type="2" difference="0" hardness="Strong"/>
+                    <task id="77" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-11-29" duration="1" complete="0" expand="true">
+                        <depend id="78" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="78" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-11-30" duration="6" complete="0" expand="true">
+                        <depend id="79" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="79" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-12-08" duration="1" complete="0" expand="true">
+                        <depend id="80" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="80" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2022-12-09" duration="1" complete="0" expand="true">
+                        <depend id="81" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="81" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2022-12-12" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="70" name="Sprint 8" color="#000000" meeting="false" start="2022-12-13" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="64" type="2" difference="0" hardness="Strong"/>
+                    <task id="71" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-12-13" duration="1" complete="0" expand="true">
+                        <depend id="72" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="72" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-12-14" duration="6" complete="0" expand="true">
+                        <depend id="73" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="73" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2022-12-22" duration="1" complete="0" expand="true">
+                        <depend id="74" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="74" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2022-12-23" duration="1" complete="0" expand="true">
+                        <depend id="75" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="75" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2022-12-26" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="64" name="Sprint 9" color="#000000" meeting="false" start="2022-12-27" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="58" type="2" difference="0" hardness="Strong"/>
+                    <task id="65" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2022-12-27" duration="1" complete="0" expand="true">
+                        <depend id="66" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="66" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2022-12-28" duration="6" complete="0" expand="true">
+                        <depend id="67" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="67" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-01-05" duration="1" complete="0" expand="true">
+                        <depend id="68" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="68" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-01-06" duration="1" complete="0" expand="true">
+                        <depend id="69" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="69" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-01-09" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="58" name="Sprint 10" color="#000000" meeting="false" start="2023-01-10" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="52" type="2" difference="0" hardness="Strong"/>
+                    <task id="59" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-01-10" duration="1" complete="0" expand="true">
+                        <depend id="60" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="60" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-01-11" duration="6" complete="0" expand="true">
+                        <depend id="61" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="61" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-01-19" duration="1" complete="0" expand="true">
+                        <depend id="62" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="62" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-01-20" duration="1" complete="0" expand="true">
+                        <depend id="63" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="63" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-01-23" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="52" name="Sprint 11" color="#000000" meeting="false" start="2023-01-24" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="112" type="2" difference="0" hardness="Strong"/>
+                    <task id="53" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-01-24" duration="1" complete="0" expand="true">
+                        <depend id="54" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="54" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-01-25" duration="6" complete="0" expand="true">
+                        <depend id="55" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="55" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-02-02" duration="1" complete="0" expand="true">
+                        <depend id="56" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="56" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-02-03" duration="1" complete="0" expand="true">
+                        <depend id="57" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="57" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-02-06" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="112" name="Sprint 12" color="#000000" meeting="false" start="2023-02-07" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="106" type="2" difference="0" hardness="Strong"/>
+                    <task id="113" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-02-07" duration="1" complete="0" expand="true">
+                        <depend id="114" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="114" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-02-08" duration="6" complete="0" expand="true">
+                        <depend id="115" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="115" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-02-16" duration="1" complete="0" expand="true">
+                        <depend id="116" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="116" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-02-17" duration="1" complete="0" expand="true">
+                        <depend id="117" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="117" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-02-20" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="106" name="Sprint 13" color="#000000" meeting="false" start="2023-02-21" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="100" type="2" difference="0" hardness="Strong"/>
+                    <task id="107" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-02-21" duration="1" complete="0" expand="true">
+                        <depend id="108" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="108" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-02-22" duration="6" complete="0" expand="true">
+                        <depend id="109" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="109" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-03-02" duration="1" complete="0" expand="true">
+                        <depend id="110" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="110" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-03-03" duration="1" complete="0" expand="true">
+                        <depend id="111" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="111" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-03-06" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="100" name="Sprint 14" color="#000000" meeting="false" start="2023-03-07" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="119" type="2" difference="0" hardness="Strong"/>
+                    <task id="101" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-03-07" duration="1" complete="0" expand="true">
+                        <depend id="102" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="102" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-03-08" duration="6" complete="0" expand="true">
+                        <depend id="103" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="103" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-03-16" duration="1" complete="0" expand="true">
+                        <depend id="104" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="104" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-03-17" duration="1" complete="0" expand="true">
+                        <depend id="105" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="105" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-03-20" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="119" name="Sprint 15" color="#000000" meeting="false" start="2023-03-21" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="94" type="2" difference="0" hardness="Strong"/>
+                    <task id="120" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-03-21" duration="1" complete="0" expand="true">
+                        <depend id="121" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="121" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-03-22" duration="6" complete="0" expand="true">
+                        <depend id="122" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="122" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-03-30" duration="1" complete="0" expand="true">
+                        <depend id="123" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="123" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-03-31" duration="1" complete="0" expand="true">
+                        <depend id="124" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="124" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-04-03" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="94" name="Sprint 16" color="#000000" meeting="false" start="2023-04-04" duration="10" complete="0" thirdDate="2022-08-15" thirdDate-constraint="0" expand="false">
+                    <depend id="125" type="2" difference="0" hardness="Strong"/>
+                    <task id="95" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-04-04" duration="1" complete="0" expand="true">
+                        <depend id="96" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="96" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-04-05" duration="6" complete="0" expand="true">
+                        <depend id="97" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="97" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-04-13" duration="1" complete="0" expand="true">
+                        <depend id="98" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="98" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-04-14" duration="1" complete="0" expand="true">
+                        <depend id="99" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="99" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-04-17" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="125" name="Sprint 17" color="#000000" meeting="false" start="2023-04-18" duration="10" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false">
+                    <depend id="131" type="2" difference="0" hardness="Strong"/>
+                    <task id="126" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-04-18" duration="1" complete="0" expand="true">
+                        <depend id="127" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="127" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-04-19" duration="6" complete="0" expand="true">
+                        <depend id="128" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="128" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-04-27" duration="1" complete="0" expand="true">
+                        <depend id="129" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="129" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-04-28" duration="1" complete="0" expand="true">
+                        <depend id="130" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="130" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-05-01" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="131" name="Sprint 18" color="#000000" meeting="false" start="2023-05-02" duration="10" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false">
+                    <depend id="137" type="2" difference="0" hardness="Strong"/>
+                    <task id="132" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-05-02" duration="1" complete="0" expand="true">
+                        <depend id="133" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="133" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-05-03" duration="6" complete="0" expand="true">
+                        <depend id="134" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="134" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-05-11" duration="1" complete="0" expand="true">
+                        <depend id="135" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="135" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-05-12" duration="1" complete="0" expand="true">
+                        <depend id="136" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="136" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-05-15" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="137" name="Sprint 19" color="#000000" meeting="false" start="2023-05-16" duration="10" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false">
+                    <depend id="143" type="2" difference="0" hardness="Strong"/>
+                    <task id="138" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-05-16" duration="1" complete="0" expand="true">
+                        <depend id="139" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="139" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-05-17" duration="6" complete="0" expand="true">
+                        <depend id="140" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="140" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-05-25" duration="1" complete="0" expand="true">
+                        <depend id="141" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="141" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-05-26" duration="1" complete="0" expand="true">
+                        <depend id="142" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="142" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-05-29" duration="1" complete="0" expand="true"/>
+                </task>
+                <task id="143" name="Sprint 20" color="#000000" meeting="false" start="2023-05-30" duration="10" complete="0" thirdDate="2023-02-13" thirdDate-constraint="0" expand="false">
+                    <task id="144" name="Completar entregable/incremento del producto" color="#8cb6ce" meeting="false" start="2023-05-30" duration="1" complete="0" expand="true">
+                        <depend id="145" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="145" name="Demostrar el sprint" color="#8cb6ce" meeting="false" start="2023-05-31" duration="6" complete="0" expand="true">
+                        <depend id="146" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="146" name="Validar el sprint" color="#8cb6ce" meeting="false" start="2023-06-08" duration="1" complete="0" expand="true">
+                        <depend id="147" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="147" name="Retrospectiva del sprint" color="#8cb6ce" meeting="false" start="2023-06-09" duration="1" complete="0" expand="true">
+                        <depend id="148" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="148" name="Refinar el backlog del producto" color="#8cb6ce" meeting="false" start="2023-06-12" duration="1" complete="0" expand="true"/>
+                </task>
+            </task>
+            <task id="37" name="Lanzamiento" meeting="false" start="2023-06-13" duration="3" complete="0" expand="false">
+                <depend id="43" type="2" difference="0" hardness="Strong"/>
+                <task id="40" name="Enviar Entregables" meeting="false" start="2023-06-13" duration="1" complete="0" expand="true">
+                    <depend id="41" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="41" name="Lanzamiento del producto" meeting="false" start="2023-06-14" duration="1" complete="0" expand="true">
+                    <depend id="42" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="42" name="Retrospectiva del proyecto" meeting="false" start="2023-06-15" duration="1" complete="0" expand="true"/>
+            </task>
+            <task id="43" name="Cierre del proyecto" color="#000000" meeting="false" start="2023-06-16" duration="1" complete="0" thirdDate="2023-06-16" thirdDate-constraint="0" expand="true">
+                <task id="44" name="Reunion de cierre" meeting="false" start="2023-06-16" duration="1" complete="0" expand="true">
+                    <depend id="45" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="45" name="Celebracion" color="#8cb6ce" meeting="true" start="2023-06-19" duration="0" complete="0" thirdDate="2023-04-28" thirdDate-constraint="0" expand="true"/>
+            </task>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Jefe de proyectos" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="Especialista BBDD e infraestructura" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="2" name="Arquitecto de software" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="3" name="Scrum master" function="SoftwareDevelopment:3" contacts="" phone=""/>
+        <resource id="4" name="Desarrolladores" function="SoftwareDevelopment:2" contacts="" phone=""/>
+        <resource id="5" name="Tester" function="SoftwareDevelopment:4" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="40" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="15" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="3" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="44" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="41" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="42" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="149" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="17" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="45" resource-id="0" function="Default:1" responsible="false" load="1.0"/>
+        <allocation task-id="45" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="41" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="42" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="40" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="17" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="23" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="3" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="18" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="2" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="15" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="45" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="1.0"/>
+        <allocation task-id="22" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="24" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="45" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="100.0"/>
+        <allocation task-id="18" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="9" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="42" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="17" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="23" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="14" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="20" resource-id="3" function="SoftwareDevelopment:3" responsible="false" load="1.0"/>
+        <allocation task-id="11" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="45" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="10" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="9" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="40" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="12" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="7" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="20" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="5" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="24" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="18" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="42" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="17" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="23" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="14" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="21" resource-id="4" function="SoftwareDevelopment:2" responsible="false" load="2.0"/>
+        <allocation task-id="45" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="23" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="10" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="21" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="7" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="17" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="24" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="42" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+        <allocation task-id="5" resource-id="5" function="SoftwareDevelopment:4" responsible="false" load="3.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

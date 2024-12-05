@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="ColegioGeniosTraviesos" company="" webLink="http://" view-date="2024-03-01" view-index="0" gantt-divider-location="515" resource-divider-location="300" version="3.3.3309" locale="en_US">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Name" width="284" order="0"/>
+        <field id="tpd4" name="Begin date" width="107" order="1"/>
+        <field id="tpd5" name="End date" width="108" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+        <option id="color.recent"><![CDATA[#009999 #990099 #006699 #999900 #996600 #009933 #cccc00]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" uid="dbf81164fb404f909a272369ee6fe4ac" name="Colegio Genios Traviesos" color="#009933" meeting="false" start="2024-03-11" duration="91" complete="0" expand="true">
+            <task id="3" uid="af5d50c7a6384263a838ed5076567be8" name="Instalación Infraestructura" meeting="false" start="2024-06-17" duration="1" complete="0" expand="true">
+                <depend id="4" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="4" uid="e5715c8dd6ff4c2a841a60599ebf9281" name="Instalación redes" meeting="false" start="2024-06-18" duration="2" complete="0" expand="true"/>
+            <task id="5" uid="0f5a4ea07bc44b7da4327e1d9b9f8f32" name="Cotizaciones y presupuestos" meeting="false" start="2024-03-11" duration="1" complete="0" expand="true">
+                <depend id="6" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="6" uid="974754ec2d804cb09c51269ce261ec0b" name="Creación plan de riesgos" meeting="false" start="2024-03-12" duration="2" complete="0" expand="true"/>
+            <task id="7" uid="8729f6cd13a046da926a230cac5e63eb" name="Proyecto controles de acceso" color="#cccc00" meeting="false" start="2024-03-11" duration="86" complete="0" expand="true">
+                <task id="8" uid="1fb0b460f51f458984776311a0716b1d" name="Toma de requerimientos" meeting="false" start="2024-03-11" duration="3" complete="0" expand="true">
+                    <depend id="9" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="9" uid="65a1e2af70cf4ccc8d0990ddbfd0fb9d" name="Planificaciones" meeting="false" start="2024-03-14" duration="3" complete="0" expand="true">
+                    <depend id="10" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="10" uid="483ab1bea5a54f05bd012603b1369a24" name="Desarrollo proyecto" meeting="false" start="2024-03-19" duration="71" complete="0" expand="true">
+                    <depend id="12" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="11" uid="b0b4bda4d47a4ab187084f5cbb21f662" name="Control de calidad y qa" color="#996600" meeting="false" start="2024-06-26" duration="5" complete="0" expand="true">
+                    <task id="12" uid="c3fbdece5d70416ca05ee8f0d66b73cc" name="Pruebas de electricidad" meeting="false" start="2024-06-26" duration="2" complete="0" expand="true">
+                        <depend id="13" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="13" uid="9b585009842b438283e1acc3e7d2355e" name="Pruebas de seguridad a servidores" meeting="false" start="2024-06-28" duration="1" complete="0" expand="true">
+                        <depend id="14" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="14" uid="30393304e2c140fa80518cbfec9e6263" name="Pruebas de estres" meeting="false" start="2024-07-01" duration="1" complete="0" expand="true">
+                        <depend id="15" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="15" uid="8874affa72a84cbc91698d76cf5f9368" name="Escritura de documentos" meeting="false" start="2024-07-02" duration="1" complete="0" expand="true">
+                        <depend id="16" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="16" uid="58a28346925a41e5b451ab8f2017b9f3" name="Mantenimiento y pruebas a sistema" meeting="false" start="2024-07-03" duration="4" complete="0" expand="true"/>
+                <task id="21" uid="272a3c899f8b4a4596a4b8bda01dc18e" name="Reuniones comite de seguridad" color="#999900" meeting="false" start="2024-03-19" duration="67" complete="0" expand="true">
+                    <task id="17" uid="fd1fb75aa8014e42b5b14ee693b2c120" name="Reunion comite de seguridad 1" meeting="false" start="2024-03-19" duration="1" complete="0" expand="true">
+                        <depend id="18" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="18" uid="48909a231b634fe6bb51de085bd53b64" name="Reunion comite de seguridad 2" meeting="false" start="2024-04-19" duration="1" complete="0" thirdDate="2024-04-19" thirdDate-constraint="1" expand="true">
+                        <depend id="19" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="19" uid="983d46aa5b3f4166b6069e7fceb6b1f6" name="Reunion comite de seguridad 3" meeting="false" start="2024-05-20" duration="1" complete="0" thirdDate="2024-05-20" thirdDate-constraint="1" expand="true">
+                        <depend id="20" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="20" uid="322ff0c2cadf431db94dfad7e391c237" name="Reunion comite de seguridad 4" meeting="false" start="2024-06-19" duration="1" complete="0" thirdDate="2024-06-19" thirdDate-constraint="1" expand="true"/>
+                </task>
+            </task>
+            <task id="22" uid="e5492fedc21049c0ac6abbc777a5ce80" name="Proyecto Compras en casino" color="#990099" meeting="false" start="2024-03-11" duration="91" complete="0" expand="true">
+                <task id="23" uid="0d83a316b05346289451cd3ca7a30a15" name="Toma de requerimientos" color="#8cb6ce" meeting="false" start="2024-03-11" duration="3" complete="0" expand="true">
+                    <depend id="24" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="24" uid="521614eaceb7435ab10d4ec72d78aa98" name="Planificaciones" color="#8cb6ce" meeting="false" start="2024-03-14" duration="3" complete="0" expand="true">
+                    <depend id="25" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="25" uid="6d547bbc392c4c9e95cd71697f1e62cd" name="Desarrollo proyecto" color="#8cb6ce" meeting="false" start="2024-03-19" duration="71" complete="0" expand="true">
+                    <depend id="27" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="26" uid="b7518c7f808045cc8068f4ca30e8982c" name="Control de calidad y qa" color="#996600" meeting="false" start="2024-06-26" duration="4" complete="0" expand="true">
+                    <task id="27" uid="51e3f07f862b415caba955935f8c8a93" name="Prueba de transacciones monetarias" color="#8cb6ce" meeting="false" start="2024-06-26" duration="2" complete="0" expand="true">
+                        <depend id="28" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="28" uid="2a3d720fc8494019ade7db60273b22df" name="Pruebas de seguridad a servidores" color="#8cb6ce" meeting="false" start="2024-06-28" duration="1" complete="0" expand="true">
+                        <depend id="30" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="30" uid="47b83800754e40e68074888ebd316e43" name="Escritura de documentos" color="#8cb6ce" meeting="false" start="2024-07-01" duration="1" complete="0" expand="true">
+                        <depend id="31" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="31" uid="93c9d1e1255f43ac90d24141e22fb2e3" name="Mantenimiento y pruebas a sistema" color="#8cb6ce" meeting="false" start="2024-07-02" duration="10" complete="0" expand="true"/>
+                <task id="32" uid="09d866313b8f4fdfa9d6f2ad1ef50031" name="Reuniones comite de seguridad" color="#999900" meeting="false" start="2024-03-19" duration="67" complete="0" expand="true">
+                    <task id="33" uid="69c82f72dbb446d080be230ee3778e61" name="Reunion comite de seguridad 1" color="#8cb6ce" meeting="false" start="2024-03-19" duration="1" complete="0" expand="true">
+                        <depend id="34" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="34" uid="c591fc84fe7c49108f5e917dcd728a6c" name="Reunion comite de seguridad 2" color="#8cb6ce" meeting="false" start="2024-04-19" duration="1" complete="0" thirdDate="2024-04-19" thirdDate-constraint="1" expand="true">
+                        <depend id="35" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="35" uid="f3d65a57066745d083690a3ab7610440" name="Reunion comite de seguridad 3" color="#8cb6ce" meeting="false" start="2024-05-20" duration="1" complete="0" thirdDate="2024-05-20" thirdDate-constraint="1" expand="true">
+                        <depend id="36" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="36" uid="f6ba822d74964a98985c113cead6c469" name="Reunion comite de seguridad 4" color="#8cb6ce" meeting="false" start="2024-06-19" duration="1" complete="0" thirdDate="2024-06-19" thirdDate-constraint="1" expand="true"/>
+                </task>
+            </task>
+            <task id="37" uid="c0f1df15ed9a4118a9e4c0d982177771" name="Proyecto dropoff" color="#009999" meeting="false" start="2024-03-11" duration="55" complete="0" expand="true">
+                <task id="38" uid="53e63d540ac344eaa8b78167891cdcfc" name="Toma de requerimientos" color="#8cb6ce" meeting="false" start="2024-03-11" duration="3" complete="0" expand="true">
+                    <depend id="39" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="39" uid="3ca8c3d6091c4e5b86cb5a906bf8ba50" name="Planificaciones" color="#8cb6ce" meeting="false" start="2024-03-14" duration="3" complete="0" expand="true">
+                    <depend id="40" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="40" uid="858efaeaf22c4010883647559f3442b6" name="Desarrollo proyecto" color="#8cb6ce" meeting="false" start="2024-03-19" duration="35" complete="0" expand="true">
+                    <depend id="42" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="41" uid="320837746c644477872720a8478b0151" name="Control de calidad y qa" color="#996600" meeting="false" start="2024-05-07" duration="4" complete="0" expand="true">
+                    <task id="42" uid="24fd666beb1040a194daaf137469723b" name="Prueba de transacciones monetarias" color="#8cb6ce" meeting="false" start="2024-05-07" duration="2" complete="0" expand="true">
+                        <depend id="43" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="43" uid="6a293b95d06f43368d54ea8ebcaba232" name="Pruebas de seguridad a servidores" color="#8cb6ce" meeting="false" start="2024-05-09" duration="1" complete="0" expand="true">
+                        <depend id="44" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="44" uid="d6b88fa1d6fe415e97defcb12f59b264" name="Escritura de documentos" color="#8cb6ce" meeting="false" start="2024-05-10" duration="1" complete="0" expand="true">
+                        <depend id="45" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                </task>
+                <task id="45" uid="8b76bea6b47c4baf8c8282602d8689f0" name="Mantenimiento y pruebas a sistema" color="#8cb6ce" meeting="false" start="2024-05-13" duration="10" complete="0" expand="true"/>
+                <task id="46" uid="410446a7615f4a9097085db87ad156ef" name="Reuniones comite de seguridad" color="#999900" meeting="false" start="2024-03-19" duration="45" complete="0" expand="true">
+                    <task id="47" uid="731466d380354782aae8bdf709780cb9" name="Reunion comite de seguridad 1" color="#8cb6ce" meeting="false" start="2024-03-19" duration="1" complete="0" expand="true">
+                        <depend id="48" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="48" uid="807a80da4865493d94e7f2ddecb229f6" name="Reunion comite de seguridad 2" color="#8cb6ce" meeting="false" start="2024-04-19" duration="1" complete="0" thirdDate="2024-04-19" thirdDate-constraint="1" expand="true">
+                        <depend id="49" type="2" difference="0" hardness="Strong"/>
+                    </task>
+                    <task id="49" uid="859b451c76e146d38f7233a19b0c3d2e" name="Reunion comite de seguridad 3" color="#8cb6ce" meeting="false" start="2024-05-20" duration="1" complete="0" thirdDate="2024-05-20" thirdDate-constraint="1" expand="true"/>
+                </task>
+            </task>
+        </task>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

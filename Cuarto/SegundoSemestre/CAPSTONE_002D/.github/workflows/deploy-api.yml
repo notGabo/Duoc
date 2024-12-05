@@ -1,0 +1,89 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Deploy API to Server
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "production" branch
+  push:
+    branches: [ "production", "backend" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v4
+
+        # create dotenv
+      - name: Create dotenv
+        uses: iamsauravsharma/create-dotenv@v3.1.0
+        with:
+          input-prefix: ENV_
+          file-path: ./backend/.env
+        env:
+          ENV_ENVIRONMENT: '"${{ vars.ENVIRONMENT }}"'
+          # Project info
+          ENV_PROJECT_NAME: '"${{ vars.PROJECT_NAME }}"'
+          ENV_PROJECT_VERSION: '"${{ vars.PROJECT_VERSION }}"'
+          # API variables
+          ENV_API_PROTOCOL: '"${{ vars.API_PROTOCOL }}"'
+          ENV_API_HOST_IP: '"${{ secrets.API_HOST_IP }}"'
+          ENV_API_BIND_IP: '"${{ secrets.API_HOST_IP }}"'
+          ENV_API_PORT: ${{ secrets.API_PORT }}
+          ENV_API_WORKERS: ${{ vars.API_WORKERS }}
+          ENV_API_SECRET_KEY: '"${{ secrets.API_SECRET_KEY}}"'
+          ENV_API_ALGORITHM: '"${{ secrets.API_ALGORITHM}}"'
+          # Database variables
+          ENV_DB_HOST: '"${{ secrets.DB_HOST }}"'
+          ENV_DB_PORT: '"${{ secrets.DB_PORT }}"'
+          ENV_DB_DSN_ALIAS: '"${{ secrets.DB_DSN_ALIAS }}"'
+          ENV_DB_TNS_FILE_NAME: '"${{ secrets.DB_TNS_FILE_NAME }}"'
+          ENV_DB_USER: '"${{ secrets.DB_USER }}"'
+          ENV_DB_PASSWORD: '"${{ secrets.DB_PASSWORD }}"'
+          ENV_DB_WALLET_DIR_NAME: '"${{ secrets.DB_WALLET_DIR_NAME }}"'
+          ENV_DB_PEM_FILE_NAME: '"${{ secrets.DB_PEM_FILE_NAME }}"'
+          ENV_DB_WALLET_PASSWORD: '"${{ secrets.DB_WALLET_PASSWORD }}"'
+          # Frontend variables
+          ENV_FE_URL: '"${{ vars.FE_URL }}"'
+          ENV_SENDER_EMAIL: '"${{ secrets.SENDER_EMAIL }}"'
+          ENV_SENDER_PASSWORD: '"${{ secrets.SENDER_PASSWORD }}"'
+          # other variables
+          ENV_LOGS_DIR_NAME: '"${{ vars.LOGS_DIR_NAME }}"'
+          #tmux variables
+          ENV_API_SCREEN_NAME: '"${{ secrets.API_SCREEN_NAME }}"'
+
+        # send dotenv to server
+      - name: Copy single file
+        uses: Burnett01/rsync-deployments@7.0.1
+        with:
+          path: ./backend/.env
+          remote_path: /home/${{ secrets.SERVER_USER}}/${{ vars.DEPLOY_DIRECTORY}}
+          remote_host: ${{ secrets.SERVER_HOST }}
+          remote_port: ${{ secrets.SERVER_PORT }}
+          remote_user: ${{ secrets.SERVER_USER }}
+          remote_key: ${{ secrets.SERVER_KEY }}
+          remote_key_pass: ${{ secrets.SERVER_KEY_PASS }}
+
+        # deploy to server
+      - name: Deploy with github
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          port: ${{ secrets.SERVER_PORT }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_KEY }}
+          passphrase: ${{ secrets.SERVER_KEY_PASS }}
+          script: |
+            cd ${{ vars.DEPLOY_DIRECTORY }}
+            git checkout ${{ github.event.inputs.branch }}
+            git fetch --all
+            git pull
+            bash ./start-api.sh
